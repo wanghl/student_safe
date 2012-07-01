@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.zephyr.studentsafe.bo.Studentrfid" table="studentrfid" catalog="studentsafe">
+        <id name="studentUID" type="string">
+            <column name="StudentUID" length="50" />
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="studentID" type="string">
+            <column name="StudentID" length="50" />
+        </property>
+        <property name="studentName" type="string">
+            <column name="StudentName" length="40" />
+        </property>
+        <property name="rfidCardID" type="string">
+            <column name="RfidCardID" length="50" />
+        </property>
+        <property name="studentSex" type="string">
+            <column name="StudentSex" length="2" />
+        </property>
+        <property name="classUID" type="string">
+            <column name="class" length="50" />
+        </property>
+        <property name="teacherUID" type="string">
+            <column name="teacher" length="50" />
+        </property>
+        <property name="studentBirthday" type="date">
+            <column name="StudentBirthday" length="0" />
+        </property>
+        <property name="lastScanDate" type="date">
+            <column name="LastScanDate" length="0" />
+        </property>
+        <property name="lastScanState" type="int">
+            <column name="LastScanState" length="8" />
+        </property>
+ 
+        <set name="studentFamily" table="studentfamily" cascade="all" outer-join="true">
+        	<key column="studentUID"></key>
+        	<one-to-many class="com.zephyr.studentsafe.bo.Studentfamily" ></one-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
