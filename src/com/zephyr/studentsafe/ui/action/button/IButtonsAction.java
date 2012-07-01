@@ -4,18 +4,18 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.JComponent;
 
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 /**
- * @author lenovo UI界面中所有按钮的action处理 从mainframe类中分离出来
+ * @author lenovo UI陆莽脙忙脰脨脣霉脫脨掳麓脜楼碌脛action麓娄脌铆 麓脫mainframe脌脿脰脨路脰脌毛鲁枚脌麓
  */
 public interface IButtonsAction {
 
-	// 开始按钮事件
+	// 驴陋脢录掳麓脜楼脢脗录镁
 	public void startButtonPerformeAction(ActionEvent evt, JComponent jcp)
 			throws StudentSafeException;
 
-	// 设置按钮事件
+	// 脡猫脰脙掳麓脜楼脢脗录镁
 	public void settingButtonPerformeAction(ActionEvent evt, JComponent jcp)
 			throws StudentSafeException;
 

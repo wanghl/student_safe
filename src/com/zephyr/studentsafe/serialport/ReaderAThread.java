@@ -59,6 +59,23 @@ public class ReaderAThread implements Runnable{
 		
 	}
 	
+
+
+	/**
+	 *<b>¹¦ÄÜ:</b><br>
+	 *<br>
+	 *wanghongliang,2012-6-30
+	 *@param aa
+	 *@param bb
+	 *@return
+	 *@throws Exception String
+	 */
+	public Test getTest(String aa,int bb ) throws Exception{
+		Test t = new Test ();
+		return t ;
+	}
+	
+>>>>>>> develop
 	
 
 }

@@ -8,8 +8,8 @@ import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.log4j.Logger;
 
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 public class SettingProperites {
 	
@@ -24,7 +24,7 @@ public class SettingProperites {
 		return map.get(key);
 	}
 	
-	//±£´æÅäÖÃ
+	//Â±Â£Â´Ã¦Ã…Ã¤Ã–Ãƒ
 	public static void saveSetting() throws StudentSafeException{
 		PropertiesConfiguration g = StudentSafeUtil.getConfig();
 		for (Iterator<String> it = map.keySet().iterator();it.hasNext();){
@@ -34,8 +34,8 @@ public class SettingProperites {
 				g.save();
 			} catch (ConfigurationException e) {
 				// TODO Auto-generated catch block
-				log.error("±£´æÅäÖÃÎÄ¼ş´íÎó£º"+ e.getLocalizedMessage());
-				throw new StudentSafeException("±£´æÅäÖÃÎÄ¼ş´íÎó£º"+ e.getLocalizedMessage());
+				log.error("Â±Â£Â´Ã¦Ã…Ã¤Ã–ÃƒÃÃ„Â¼Ã¾Â´Ã­ÃÃ³Â£Âº"+ e.getLocalizedMessage());
+				throw new StudentSafeException("Â±Â£Â´Ã¦Ã…Ã¤Ã–ÃƒÃÃ„Â¼Ã¾Â´Ã­ÃÃ³Â£Âº"+ e.getLocalizedMessage());
 			}
 		}
 		

@@ -2,10 +2,10 @@
  * SendMobileMessage.java
  * com.zephyr.studentsafe.mobilemessage
  *
- * Function£º TODO 
+ * FunctionÂ£Âº TODO 
  *
  *   ver     date      		author
- * ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+ * Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤
  *   		 2010-9-8 		lenovo
  *
  * Copyright (c) 2010, TNT All Rights Reserved.
@@ -24,7 +24,7 @@ import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.bo.Messagelog;
 import com.zephyr.studentsafe.bo.SendMessageResult;
 import com.zephyr.studentsafe.dao.BaseDAO;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 /**
  * ClassName:SendMobileMessage
@@ -34,7 +34,7 @@ import com.zephyr.sudentsafe.exception.StudentSafeException;
  * @author   lenovo
  * @version  
  * @since    Ver 1.1
- * @Date	 2010-9-8		ÏÂÎç07:19:59
+ * @Date	 2010-9-8		ÃÃ‚ÃÃ§07:19:59
  *
  * @see 	 
  */
@@ -46,7 +46,7 @@ public class SendMobileMessage implements ISendMobileMessage{
 		SendMessageResult sendResult = new SendMessageResult();
 		Random  random = new Random();
 		try{
-			//³õÊ¼»¯MAS 
+			//Â³ÃµÃŠÂ¼Â»Â¯MAS 
 			APIClient handler = MobileMessageHandler.getInstance();
 			String phoneNumber = message.get("phoneNumber");
 			String content =  message.get("message");
@@ -55,34 +55,34 @@ public class SendMobileMessage implements ISendMobileMessage{
 			
 			if(result == APIClient.IMAPI_SUCC)
 	        {            
-				log.info("¶ÌĞÅ·¢ËÍ³É¹¦");
-				sendResult.setMemo("µÈ´ı»ØÖ´");
+				log.info("Â¶ÃŒÃÃ…Â·Â¢Ã‹ÃÂ³Ã‰Â¹Â¦");
+				sendResult.setMemo("ÂµÃˆÂ´Ã½Â»Ã˜Ã–Â´");
 	        	sendResult.setState(Constants.SEND_MESSAGE_WAIT_RPT);
 	        	sendResult.setSmid(Long.toString(smID));
 	        }
 	        else if(result == APIClient.IMAPI_CONN_ERR){
-	        	log.info("Êı¾İ¿âÁ¬½ÓÊ§°Ü");
-	        	sendResult.setMemo("¶ÌĞÅ·şÎñÆ÷Êı¾İ¿âÁ¬½ÓÊ§°Ü");
+	        	log.info("ÃŠÃ½Â¾ÃÂ¿Ã¢ÃÂ¬Â½Ã“ÃŠÂ§Â°Ãœ");
+	        	sendResult.setMemo("Â¶ÃŒÃÃ…Â·Ã¾ÃÃ±Ã†Ã·ÃŠÃ½Â¾ÃÂ¿Ã¢ÃÂ¬Â½Ã“ÃŠÂ§Â°Ãœ");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else if(result == APIClient.IMAPI_DATA_ERR){
-	        	log.info("²ÎÊı´íÎó");
-	        	sendResult.setMemo("²ÎÊı´íÎó");
+	        	log.info("Â²ÃÃŠÃ½Â´Ã­ÃÃ³");
+	        	sendResult.setMemo("Â²ÃÃŠÃ½Â´Ã­ÃÃ³");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else if(result == APIClient.IMAPI_DATA_TOOLONG){
-	        	log.info("ÏûÏ¢ÄÚÈİÌ«³¤");
-	        	sendResult.setMemo("ÏûÏ¢ÄÚÈİÌ«³¤");
+	        	log.info("ÃÃ»ÃÂ¢Ã„ÃšÃˆÃÃŒÂ«Â³Â¤");
+	        	sendResult.setMemo("ÃÃ»ÃÂ¢Ã„ÃšÃˆÃÃŒÂ«Â³Â¤");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else if(result == APIClient.IMAPI_INS_ERR){
-	        	log.info("Êı¾İ¿â²åÈë´íÎó");
-	        	sendResult.setMemo("Êı¾İ¿â²åÈë´íÎó");
+	        	log.info("ÃŠÃ½Â¾ÃÂ¿Ã¢Â²Ã¥ÃˆÃ«Â´Ã­ÃÃ³");
+	        	sendResult.setMemo("ÃŠÃ½Â¾ÃÂ¿Ã¢Â²Ã¥ÃˆÃ«Â´Ã­ÃÃ³");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else{
-	        	log.info("³öÏÖÆäËû´íÎó,·µ»Ø´íÎóºÅ:" + result);
-	        	sendResult.setMemo("³öÏÖÆäËû´íÎó");
+	        	log.info("Â³Ã¶ÃÃ–Ã†Ã¤Ã‹Ã»Â´Ã­ÃÃ³,Â·ÂµÂ»Ã˜Â´Ã­ÃÃ³ÂºÃ…:" + result);
+	        	sendResult.setMemo("Â³Ã¶ÃÃ–Ã†Ã¤Ã‹Ã»Â´Ã­ÃÃ³");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 		}
@@ -96,7 +96,7 @@ public class SendMobileMessage implements ISendMobileMessage{
 
 	@Override
 	public void saveLog(SendMessageResult sendResult,Map<String,String> map) {
-		//¼ÇÂ¼ÈÕÖ¾
+		//Â¼Ã‡Ã‚Â¼ÃˆÃ•Ã–Â¾
 		BaseDAO dao = new BaseDAO();
 		Messagelog log = new Messagelog();
 		log.setSmid(sendResult.getSmid());

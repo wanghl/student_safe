@@ -67,6 +67,7 @@ import org.quartz.SchedulerFactory;
 import org.quartz.impl.StdSchedulerFactory;
 
 import com.zephyr.studentsafe.bo.Constants;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.serialport.ReaderCheck;
 import com.zephyr.studentsafe.ui.action.button.ButtonsAction;
 import com.zephyr.studentsafe.ui.action.button.IButtonsAction;

@@ -2,10 +2,10 @@
  * HibernateUtil.java
  * com.zephyr.studentsafe.dao
  *
- * Function£º TODO 
+ * FunctionÂ£Âº TODO 
  *
  *   ver     date      		author
- * ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+ * Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤Â©Â¤
  *   		 2010-9-7 		lenovo
  *
  * Copyright (c) 2010, TNT All Rights Reserved.
@@ -18,7 +18,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 /**
  * ClassName:HibernateUtil
@@ -28,7 +28,7 @@ import com.zephyr.sudentsafe.exception.StudentSafeException;
  * @author   lenovo
  * @version  
  * @since    Ver 1.1
- * @Date	 2010-9-7		ÏÂÎç08:36:56
+ * @Date	 2010-9-7		ÃÃ‚ÃÃ§08:36:56
  *
  * @see 	 
  */
@@ -48,7 +48,7 @@ public class HibernateUtil {
 		sessionFactory = cfg.buildSessionFactory();
 		}catch (Exception e){
 			try {
-				throw new StudentSafeException("±¾µØÊı¾İ¿â³õÊ¼»¯Á¬½ÓÒì³£:" + e.getLocalizedMessage());
+				throw new StudentSafeException("Â±Â¾ÂµÃ˜ÃŠÃ½Â¾ÃÂ¿Ã¢Â³ÃµÃŠÂ¼Â»Â¯ÃÂ¬Â½Ã“Ã’Ã¬Â³Â£:" + e.getLocalizedMessage());
 			} catch (StudentSafeException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

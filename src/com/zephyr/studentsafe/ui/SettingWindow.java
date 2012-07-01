@@ -36,8 +36,8 @@ import javax.swing.SwingUtilities;
 import org.apache.log4j.Logger;
 
 import com.zephyr.studentsafe.bo.Constants;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 /**
  * This code was edited or generated using CloudGarden's Jigloo SWT/Swing GUI
@@ -87,13 +87,13 @@ public class SettingWindow extends javax.swing.JFrame {
 					GroupLayout jPanel2Layout = new GroupLayout(
 							(JComponent) jPanel2);
 					jPanel2.setLayout(jPanel2Layout);
-					jPanel2.setBorder(BorderFactory.createTitledBorder("串口设置"));
+					jPanel2.setBorder(BorderFactory.createTitledBorder("麓庐驴脷脡猫脰脙"));
 					{
 						jLabel1 = new JLabel();
 						jLabel1.setText("\u6ce2\u7279\u7387");
 					}
 					{
-						// 自动获取当前机器的COM口列表
+						// 脳脭露炉禄帽脠隆碌卤脟掳禄煤脝梅碌脛COM驴脷脕脨卤铆
 						ComboBoxModel seralPortListModel = new DefaultComboBoxModel(
 								getSeralPortListA());
 						seralPortListA = new JComboBox();
@@ -285,7 +285,7 @@ public class SettingWindow extends javax.swing.JFrame {
 					GroupLayout jPanel3Layout = new GroupLayout(
 							(JComponent) jPanel3);
 					jPanel3.setLayout(jPanel3Layout);
-					jPanel3.setBorder(BorderFactory.createTitledBorder("杂项"));
+					jPanel3.setBorder(BorderFactory.createTitledBorder("脭脫脧卯"));
 					{
 						jLabel3 = new JLabel();
 						jLabel3
@@ -798,15 +798,15 @@ public class SettingWindow extends javax.swing.JFrame {
 		return ports.split(",");
 	}
 
-	// 取消按钮事件
+	// 脠隆脧没掳麓脜楼脢脗录镁
 
 	private void cancelButtonPerformeAction(ActionEvent evt) {
 		this.dispose();
 	}
 
-	// 确定按钮事件
+	// 脠路露篓掳麓脜楼脢脗录镁
 	private void submitButtonPerformeAction(ActionEvent evt) {
-		// IP地址
+		// IP碌脴脰路
 		SettingProperites.put(Constants.MAS_IP, masIP.getText());
 		// user name
 		SettingProperites.put(Constants.MAS_USER_NAME, masUser.getText());
@@ -833,11 +833,11 @@ public class SettingWindow extends javax.swing.JFrame {
 
 		try {
 			SettingProperites.saveSetting();
-			//关闭
+			//鹿脴卤脮
 			this.dispose();
 		} catch (StudentSafeException e) {
-			log.error("保存设置失败:" + e.getLocalizedMessage());
-			MessageWindow.show("保存设置失败:" + e.getLocalizedMessage(), null);
+			log.error("卤拢麓忙脡猫脰脙脢搂掳脺:" + e.getLocalizedMessage());
+			MessageWindow.show("卤拢麓忙脡猫脰脙脢搂掳脺:" + e.getLocalizedMessage(), null);
 			this.dispose();
 		}
 	}
