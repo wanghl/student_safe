@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- Generated 2010-9-14 23:25:58 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+	<class name="com.zephyr.studentsafe.bo.Messagelog" table="messagelog" >
+		<id name="messageLogUID" column="MessageLogUID" type="string"
+			length="50">
+			<generator class="uuid.hex"></generator>
+		</id>
+		<property name="messageDesc" type="string">
+			<column name="MessageDesc" length="500" />
+		</property>
+		<property name="sendPhone" type="string">
+			<column name="SendPhone" length="20" />
+		</property>
+		<property name="smid" type="string">
+			<column name="smid" length="10" />
+		</property>
+		<property name="state" type="int">
+			<column name="state" length="10" />
+		</property>
+		<property name="memo" type="string">
+			<column name="memo" length="10" />
+		</property>
+		<property name="studentName" type="string">
+			<column name="studentName" length="8" />
+		</property>
+		<property name="rfidcardid" type="string">
+			<column name="rfidcardid" length="8" />
+		</property>
+		<property name="className" type="string">
+			<column name="className" length="60" />
+		</property>
+		<property name="teacher" type="string">
+			<column name="teacher" length="60" />
+		</property>
+		<property name="messageType" type="int">
+			<column name="messageType" length="2" />
+		</property>
+		<property name="sendTime" type="timestamp">
+			<column name="SendTime" length="0" />
+		</property>
+		<property name="sendteacher" type="string">
+			<column name="sendteacher" length="32" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- Generated 2010-9-14 23:25:58 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+	<class name="com.zephyr.studentsafe.bo.CardException" table="card_exception" >
+		<id name="objUID" column="objUID" type="string"
+			length="50">
+			<generator class="uuid.hex"></generator>
+		</id>
+	
+		<property name="event" type="string">
+			<column name="event" length="10" />
+		</property>
+		<property name="memo" type="string">
+			<column name="memo" length="60" />
+		</property>
+		<property name="cardid" type="string">
+			<column name="cardid" length="10" />
+		</property>
+		<property name="scanDate" type="timestamp">
+			<column name="scan_date" length="0" />
+		</property>
+		
+
+	</class>
+</hibernate-mapping>
