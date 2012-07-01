@@ -45,7 +45,6 @@ import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.ProcessQueueDataExt;
 import com.zephyr.studentsafe.impl.StudentMap;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

@@ -11,7 +11,7 @@ import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.dao.HibernateUtil;
 import com.zephyr.studentsafe.dao.MessageLogDAO;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 
 /**

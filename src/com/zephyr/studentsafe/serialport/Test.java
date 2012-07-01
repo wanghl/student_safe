@@ -16,11 +16,9 @@ import javax.comm.UnsupportedCommOperationException;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 import com.zephyr.studentsafe.exception.StudentSafeException;
-=======
 import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
->>>>>>> develop
 
 public class Test {
 	static Enumeration portList;
@@ -32,10 +30,7 @@ public class Test {
 		while (portList.hasMoreElements()){
 			portId = (CommPortIdentifier) portList.nextElement();
 			if (portId.getPortType() == CommPortIdentifier.PORT_SERIAL){
-				if (portId.getName().equals("COM19")) {
-=======
 				if (portId.getName().equals("COM17")) {
->>>>>>> develop
 					serialPort_A = (SerialPort) portId.open("SerialReader", 5000);
 					break ;
 				}
@@ -55,19 +50,7 @@ public class Test {
 				list = null;
 				readBuffer = new byte[inputStream_A.available()];
 				numBytes = inputStream_A.read(readBuffer);
-<<<<<<< HEAD
-				String s = new String(readBuffer);
-				System.out.println(s);
-				for (int i = 0; i < readBuffer.length; i++) {
-					if (readBuffer[i] == 2);
-						readBuffer[i] = ' ';
-
-				}
-				String tmp = " ";
-				s = s.replaceAll("[^a-zA-Z0-9]+", " ");
-=======
-				StringBuilder stringBuilder = new StringBuilder(""); 
-
+				StringBuffer stringBuilder = new StringBuffer();
 				for (int i = 0 ; i < readBuffer.length; i++){
 					int v = readBuffer[i] & 0xff ;
 					String hv = Integer.toHexString(v);
@@ -88,7 +71,7 @@ public class Test {
 //				}
 //				String tmp = " ";
 //				s = s.replaceAll("[^a-zA-Z0-9]+", " ");
->>>>>>> develop
+
 //				System.out.println(new String(readBuffer));
 //				Pattern pattern = Pattern.compile("[a-zA-Z0-9]+");
 //			      java.util.regex.Matcher m = pattern.matcher(s);
@@ -99,14 +82,9 @@ public class Test {
 //			       		tmp +=c ;
 //			       	}
 //			      }
-<<<<<<< HEAD
-				list = StudentSafeUtil.getHexString(s.split(" "));
 				
 				System.out.println(list);
-=======
-//				list = StudentSafeUtil.getHexString(s.split(" "));
-//				
->>>>>>> develop
+
 			}
 		}
 		}

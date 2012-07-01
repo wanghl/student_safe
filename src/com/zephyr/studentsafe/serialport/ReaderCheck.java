@@ -13,15 +13,12 @@ import javax.comm.UnsupportedCommOperationException;
 import org.apache.log4j.Logger;
 
 import com.zephyr.studentsafe.bo.Constants;
-<<<<<<< HEAD
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
-=======
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
->>>>>>> develop
 
 public class ReaderCheck {
 	private static final Logger log = Logger.getLogger(ReaderCheck.class);

@@ -75,7 +75,6 @@ public class ReaderAThread implements Runnable{
 		return t ;
 	}
 	
->>>>>>> develop
 	
 
 }

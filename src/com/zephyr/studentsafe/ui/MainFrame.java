@@ -75,7 +75,7 @@ import com.zephyr.studentsafe.ui.action.menu.PopMenuClearAction;
 import com.zephyr.studentsafe.ui.action.menu.PopMenuSaveasFileAction;
 import com.zephyr.studentsafe.util.ReaderLogPaserFromFile;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 /**
 * This code was edited or generated using CloudGarden's Jigloo

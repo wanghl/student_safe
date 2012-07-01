@@ -56,7 +56,7 @@ public class MainApp {
 	 * @throws StudentSafeException 
 	 * @throws com.zephyr.sudentsafe.exception.StudentSafeException 
 	 */
-	public static void main(String[] argvs) throws PortInUseException, StudentSafeException, com.zephyr.sudentsafe.exception.StudentSafeException  {
+	public static void main(String[] argvs) throws PortInUseException, StudentSafeException {
 		
 		//初始化数据库连接
 		HibernateUtil.getSession();

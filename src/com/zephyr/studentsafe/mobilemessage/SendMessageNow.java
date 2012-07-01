@@ -20,7 +20,6 @@ import com.zephyr.studentsafe.util.StudentSafeUtil;
 import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.StudentQueue2DB;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
->>>>>>> develop
 import com.zephyr.studentsafe.bo.*;
 /**
  * @author lenovo

@@ -45,9 +45,9 @@ import com.zephyr.studentsafe.ui.SettingWindow;
 import com.zephyr.studentsafe.util.ReaderLogPaserFromFile;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 import com.zephyr.studentsafe.util.ThreadPoolManage;
-import com.zephyr.sudentsafe.exception.SimplJob;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
-import com.zephyr.sudentsafe.exception.T1;
+import com.zephyr.studentsafe.exception.SimplJob;
+import com.zephyr.studentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.T1;
 
 /**
  * @author lenovo
