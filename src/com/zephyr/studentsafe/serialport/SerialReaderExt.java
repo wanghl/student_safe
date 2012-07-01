@@ -25,13 +25,13 @@ import javax.comm.UnsupportedCommOperationException;
 import org.apache.log4j.Logger;
 
 import com.zephyr.studentsafe.bo.Student;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.ProcessReceiveData;
 import com.zephyr.studentsafe.impl.StudentMap;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.mobilemessage.SendMessageTask;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 import com.zephyr.studentsafe.util.ThreadPoolManage;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 /**
  * ClassName:SerialReader Function: 从串口读取数据。生产环境下，考虑使用多线程 Reason:

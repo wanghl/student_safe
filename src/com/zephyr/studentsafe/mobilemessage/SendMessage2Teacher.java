@@ -28,8 +28,8 @@ import com.zephyr.studentsafe.bo.Schooleinfor;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.dao.ClassInfoDAO;
 import com.zephyr.studentsafe.dao.StudentDAO;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 /**
  * @author lenovo 在工作日给班主任老师发送班级考勤 。

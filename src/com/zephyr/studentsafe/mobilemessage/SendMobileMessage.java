@@ -24,7 +24,7 @@ import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.bo.Messagelog;
 import com.zephyr.studentsafe.bo.SendMessageResult;
 import com.zephyr.studentsafe.dao.BaseDAO;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 /**
  * ClassName:SendMobileMessage

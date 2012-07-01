@@ -13,9 +13,9 @@ import javax.comm.PortInUseException;
 import javax.comm.SerialPort;
 import javax.comm.UnsupportedCommOperationException;
 
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 public class Test {
 	static Enumeration portList;

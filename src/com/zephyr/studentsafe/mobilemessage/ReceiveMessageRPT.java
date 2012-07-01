@@ -10,8 +10,8 @@ import com.jasson.im.api.RPTItem;
 import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.dao.HibernateUtil;
 import com.zephyr.studentsafe.dao.MessageLogDAO;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 /**
  * 接收处理短信的回执。此回执由收到短信的手机终端发出。 短息发送未成功的，需要重新发送

@@ -7,7 +7,7 @@ import com.jasson.im.api.APIClient;
 import com.jasson.im.api.MOItem;
 import com.zephyr.studentsafe.dao.MessageLogDAO;
 import com.zephyr.studentsafe.dao.PrivateMessageDAO;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 /**
  * @author lenovo

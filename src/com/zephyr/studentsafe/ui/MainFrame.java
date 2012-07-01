@@ -67,6 +67,7 @@ import org.quartz.SchedulerFactory;
 import org.quartz.impl.StdSchedulerFactory;
 
 import com.zephyr.studentsafe.bo.Constants;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.serialport.ReaderCheck;
 import com.zephyr.studentsafe.ui.action.button.ButtonsAction;
 import com.zephyr.studentsafe.ui.action.button.IButtonsAction;
@@ -74,7 +75,6 @@ import com.zephyr.studentsafe.ui.action.menu.PopMenuClearAction;
 import com.zephyr.studentsafe.ui.action.menu.PopMenuSaveasFileAction;
 import com.zephyr.studentsafe.util.ReaderLogPaserFromFile;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 /**
 * This code was edited or generated using CloudGarden's Jigloo

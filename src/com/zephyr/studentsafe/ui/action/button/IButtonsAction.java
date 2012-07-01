@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.JComponent;
 
-import com.zephyr.sudentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 /**
  * @author lenovo UI界面中所有按钮的action处理 从mainframe类中分离出来

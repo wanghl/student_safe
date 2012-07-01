@@ -21,11 +21,11 @@ import javax.comm.PortInUseException;
 import org.apache.log4j.Logger;
 
 import com.zephyr.studentsafe.dao.HibernateUtil;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.mobilemessage.MobileMessageHandler;
 import com.zephyr.studentsafe.mobilemessage.ReceiveMessageRPT;
 import com.zephyr.studentsafe.serialport.SerialReaderExt;
 import com.zephyr.studentsafe.util.ThreadPoolManage;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 /**
  * ClassName:MainApp

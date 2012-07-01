@@ -3,8 +3,8 @@ package com.zephyr.studentsafe.mobilemessage;
 import org.apache.log4j.Logger;
 
 import com.jasson.im.api.APIClient;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
-import com.zephyr.sudentsafe.exception.StudentSafeException;
 
 /**
  * 创建一个单例的APIClient 
