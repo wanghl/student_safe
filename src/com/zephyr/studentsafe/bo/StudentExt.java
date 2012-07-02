@@ -14,13 +14,33 @@ public class StudentExt implements Comparable{
 	private Calendar outSchooleTime;
 	private Calendar lastUpdateTime ;
 	
-	private String fristScanArea ;
-	private String lastScanArea ;
-	
 	private int readerAnoScanTime ; //未检测到次数统计。连续5次没有扫描到同一张卡 认为学生已经离开该检测范围。
 	private int readerBnoScanTime ;
 	private int readerCnoScanTime ;
 	
+	
+	private int noscantimes = 0;
+	private String direction ;//进出校门方向
+	
+	public int getNoscantimes() {
+		return noscantimes;
+	}
+
+	public void setNoscantimes(int noscantimes) {
+		this.noscantimes = noscantimes;
+	}
+
+	public String getDirection() {
+		return direction;
+	}
+
+	public void setDirection(String direction) {
+		this.direction = direction;
+	}
+
+	private String fristScanArea ;
+	private String lastScanArea ;
+
 	public int getReaderCnoScanTime() {
 		return readerCnoScanTime;
 	}

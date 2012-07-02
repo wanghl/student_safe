@@ -98,7 +98,8 @@ public class ProcessQueueDataExt{
 		stud.setLastScanDate(Calendar.getInstance().getTime());
 		dao.saveORupdate(stud);
 		log.info("卡号为" + s.getRfidCardID() + "的学生" + s.getEvent());
-		//sender.sendMessage(s);
+		//发短信
+		sender.sendMessage(s);
 		}
 		catch (Exception e){
 			log.error("处理卡号为" + s.getRfidCardID() + "的学生信息时发生错误！");

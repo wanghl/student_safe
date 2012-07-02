@@ -45,6 +45,7 @@ import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.ProcessQueueDataExt;
 import com.zephyr.studentsafe.impl.StudentMap;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
+import com.zephyr.studentsafe.impl.trigger.StudentReaderQueueWithTrigger;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -58,7 +59,7 @@ import freemarker.template.TemplateException;
  * @since Ver 1.1
  * @Date 2010-9-9 下午11:07:28
  * 
- * @see   
+ * @see
  */
 
 public class StudentSafeUtil {
@@ -75,8 +76,8 @@ public class StudentSafeUtil {
 			throw new StudentSafeException(e.getLocalizedMessage());
 		}
 	}
-	
-	public static Date formatDate(String dstr) throws ParseException{
+
+	public static Date formatDate(String dstr) throws ParseException {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		return sdf.parse(dstr);
 	}
@@ -95,10 +96,11 @@ public class StudentSafeUtil {
 
 		return sdf.format(new Date());
 	}
+
 	public static String getCurrentDateAllformated() {
 		Locale loc = new Locale("zh", "CN");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", loc);
-		
+
 		return sdf.format(new Date());
 	}
 
@@ -168,10 +170,10 @@ public class StudentSafeUtil {
 				} else if (s.length() == 9) {
 					s = s.substring(3, 9);
 					list.add(Integer.valueOf(s, 16).toString());
-				} else if (s.length() == 6){
+				} else if (s.length() == 6) {
 					s = s.substring(0, s.length());
 					list.add(Integer.valueOf(s, 16).toString());
-				}else if (s.length() == 7){
+				} else if (s.length() == 7) {
 					s = s.substring(0, s.length() - 1);
 					list.add(Integer.valueOf(s, 16).toString());
 				}
@@ -182,11 +184,35 @@ public class StudentSafeUtil {
 			}
 		} catch (NumberFormatException e1) {
 			log.error("收到错误格式数据，丢弃。" + s);
-			
+
 		} catch (Exception e) {
 			log.error(e.getLocalizedMessage());
 		}
 		return list;
+	}
+
+	/**
+	 *<b>功能: 解析卡号信息和进出校门信息。
+	 *        阅读器上送的是一串数字</b><br>
+	 *<br>
+	 * 
+	 * @author wanghongliang,2012-7-2
+	 *@param strs
+	 *@return
+	 */
+	public static List<String> paseStringWidthTriggerinfo(String[] stringArray) {
+
+		StringBuffer buffer = new StringBuffer();
+		List<String> list = new ArrayList<String>();
+		for (int i = 0; i < stringArray.length; i++) {
+			buffer.setLength(0);
+			buffer.append(stringArray[i]);
+			
+			list.add(Integer.valueOf(buffer.substring(4, 8), 16).toString() + 
+					"|" + buffer.substring(10, 12).toUpperCase());
+		}
+		return list ;
+
 	}
 
 	// TODO : 这个方法写的真恶心~~~ 没时间了 演示完了要好好重构下。
@@ -244,9 +270,11 @@ public class StudentSafeUtil {
 	}
 
 	public static void main(String[] argvs) throws InterruptedException {
-		//Integer s = new Integer(130);
-		System.out.println(Integer.toHexString(255));
+		// Integer s = new Integer(130);
+		String[] str = new String[]{
+				"1234567890AB","1232423423423ba","1234567dd890AB","1234567890AB",
+		} ;
+		StudentSafeUtil.paseStringWidthTriggerinfo(str);
 	}
-	
-	
+
 }

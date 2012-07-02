@@ -7,6 +7,7 @@ import java.util.List;
 import javax.comm.UnsupportedCommOperationException;
 
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
+import com.zephyr.studentsafe.impl.trigger.SerialReaderWithTrigger;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 
 public class ReaderAThread implements Runnable{
@@ -70,8 +71,8 @@ public class ReaderAThread implements Runnable{
 	 *@return
 	 *@throws Exception String
 	 */
-	public Test getTest(String aa,int bb ) throws Exception{
-		Test t = new Test ();
+	public SerialReaderWithTrigger getTest(String aa,int bb ) throws Exception{
+		SerialReaderWithTrigger t = new SerialReaderWithTrigger ();
 		return t ;
 	}
 	
