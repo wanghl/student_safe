@@ -101,6 +101,14 @@ public class StudentExt implements Comparable{
 		return flg;
 	}
 	
+	public String getInOutEvent() {
+		if (direction.equals("AB")){
+			return "入校" ;
+		}else {
+			return "出校" ;
+		}
+	}
+	
 	public Calendar getEventTime(){
 		if (getEvent().equals("出校")){
 			return readerBTime ;

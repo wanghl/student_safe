@@ -76,7 +76,13 @@ public class ProcessStudentData implements Runnable {
 						// Œ¥ºÏ≤‚µΩ¥Œ ˝πÈ¡„°£
 						student.setNoscantimes(0);
 					}
+					
+					countNoscanTimes() ;
 				}
+			}
+			if (StudentReaderQueueWithTrigger.getListSize() == 0 ){
+				list = null ;
+				countNoscanTimes(); 
 			}
 		}
 
