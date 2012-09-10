@@ -2,10 +2,10 @@
  * StudentSafeUtil.java
  * com.zephyr.studentsafe.bo.util
  *
- * Function拢潞 TODO 
+ * Function： TODO 
  *
  *   ver     date      		author
- * 漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇漏陇
+ * ──────────────────────────────────
  *   		 2010-9-9 		lenovo
  *
  * Copyright (c) 2010, TNT All Rights Reserved.
@@ -41,10 +41,10 @@ import com.zephyr.studentsafe.bo.Student;
 import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.dao.BaseDAO;
-import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.ProcessQueueDataExt;
 import com.zephyr.studentsafe.impl.StudentMap;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -56,7 +56,7 @@ import freemarker.template.TemplateException;
  * @author lenovo
  * @version
  * @since Ver 1.1
- * @Date 2010-9-9 脧脗脦莽11:07:28
+ * @Date 2010-9-9 下午11:07:28
  * 
  * @see
  */
@@ -111,13 +111,13 @@ public class StudentSafeUtil {
 
 	public static String getCurrentDateFormat() {
 		Locale loc = new Locale("zh", "CN");
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy脛锚MM脭脗dd脠脮", loc);
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日", loc);
 
 		return sdf.format(new Date());
 	}
 
 	/**
-	 * @return 脜脨露脧脢脟路帽脰脺脛漏 0:脰脺脠脮 6:脰脺脕霉
+	 * @return 判断是否周末 0:周日 6:周六
 	 */
 	public static boolean isWeek() {
 		Calendar cd = Calendar.getInstance();
@@ -126,20 +126,20 @@ public class StudentSafeUtil {
 		return (day != 0 && day != 6) ? false : true;
 	}
 
-	// 路垄脣脥露脤脨脜禄脴脰麓麓煤脗毛录掳潞卢脪氓
+	// 发送短信回执代码及含义
 	private final static Map<Integer, String> map = new HashMap<Integer, String>() {
 		{
-			put(0, "路垄脣脥鲁脡鹿娄");
-			put(1, "路垄脣脥脛脷脠脻脦陋驴脮");
-			put(2, "路垄脣脥脛脷脠脻脰脨麓忙脭脷卤禄陆没麓脢脳茅");
-			put(3, "脢脰禄煤潞脜脗毛虏禄脮媒脠路");
-			put(4, "脢脰禄煤潞脜脗毛脦陋脭脣脫陋脡脤脣霉陆没脰鹿");
-			put(5, "脢脰禄煤潞脜脗毛脭脷潞脷脙没碌楼脰脨");
-			put(6, "脢脰禄煤潞脜脗毛虏禄脭脷掳脳脙没碌楼脰脨");
-			put(7, "脝贸脪碌脟路路脩");
-			put(8, "脥篓脩露脪矛鲁拢");
-			put(101, "脧碌脥鲁脪矛鲁拢");
-			put(102, "露脤脨脜脦脼路篓碌陆麓茂脢脰禄煤");
+			put(0, "发送成功");
+			put(1, "发送内容为空");
+			put(2, "发送内容中存在被禁词组");
+			put(3, "手机号码不正确");
+			put(4, "手机号码为运营商所禁止");
+			put(5, "手机号码在黑名单中");
+			put(6, "手机号码不在白名单中");
+			put(7, "企业欠费");
+			put(8, "通讯异常");
+			put(101, "系统异常");
+			put(102, "短信无法到达手机");
 		}
 
 	};
@@ -149,14 +149,14 @@ public class StudentSafeUtil {
 	}
 
 	/**
-	 * 陆芦麓脫脭脛露脕脝梅脢脮碌陆碌脛脢庐脕霉陆酶脰脝脢媒脳陋脦陋脢庐陆酶脰脝脢媒
+	 * 将从阅读器收到的十六进制数转为十进制数
 	 * 
 	 * @param str
 	 * @return
 	 */
 	public static List<String> getHexString(String[] str) {
-		// TODO: 脭脛露脕脝梅麓芦脌麓碌脛驴篓潞脜碌脷脪禄脦禄卤铆脢戮驴篓脝卢碌脛碌莽鲁脴碌莽脕驴 隆拢0脦陋脮媒鲁拢1脦陋碌莽鲁脴碌莽脕驴碌脥
-		// 脨猫脢碌脧脰录脿驴脴驴篓脝卢碌莽脕驴碌脛鹿娄脛脺
+		// TODO: 阅读器传来的卡号第一位表示卡片的电池电量 。0为正常1为电池电量低
+		// 需实现监控卡片电量的功能
 		List<String> list = new ArrayList<String>();
 		String s = "";
 		try {
@@ -181,7 +181,7 @@ public class StudentSafeUtil {
 				// list.add(Integer.valueOf(str[i].trim(), 16).toString());
 			}
 		} catch (NumberFormatException e1) {
-			log.error("脢脮碌陆麓铆脦贸赂帽脢陆脢媒戮脻拢卢露陋脝煤隆拢" + s);
+			log.error("收到错误格式数据，丢弃。" + s);
 			
 		} catch (Exception e) {
 			log.error(e.getLocalizedMessage());
@@ -189,7 +189,7 @@ public class StudentSafeUtil {
 		return list;
 	}
 
-	// TODO : 脮芒赂枚路陆路篓脨麓碌脛脮忙露帽脨脛~~~ 脙禄脢卤录盲脕脣 脩脻脢戮脥锚脕脣脪陋潞脙潞脙脰脴鹿鹿脧脗隆拢
+	// TODO : 这个方法写的真恶心~~~ 没时间了 演示完了要好好重构下。
 	@SuppressWarnings("unused")
 	public static Map<String, String> makeMessageData(Studentfamily family,
 			String studentName, Calendar date, String flag)
@@ -198,7 +198,7 @@ public class StudentSafeUtil {
 		Map<String, String> map = new HashMap<String, String>();
 		Map<String, String> ret = new HashMap<String, String>();
 		Locale loc = new Locale("zh", "CN");
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy脛锚MM脭脗dd脠脮hh碌茫mm路脰", loc);
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日hh点mm分", loc);
 		String message = null;
 		Schooleinfor sinfo = (Schooleinfor) dao.get(Schooleinfor.class);
 		if (sinfo != null) {
@@ -209,7 +209,7 @@ public class StudentSafeUtil {
 			map.put("schooleName", sinfo.getSchooleName());
 			map.put("headMaster", sinfo.getHeadMaster());
 			try {
-				message = makeMessage(flag.equals("脠毛脨拢") ? sinfo
+				message = makeMessage(flag.equals("入校") ? sinfo
 						.getInSchooleMsg() : sinfo.getOutSchooleMsg(), map);
 			} catch (StudentSafeException e) {
 				throw new StudentSafeException(-1, e.getLocalizedMessage());
@@ -233,12 +233,12 @@ public class StudentSafeUtil {
 			temp.process(data, sw);
 
 		} catch (TemplateException e) {
-			log.error("脳茅脰炉露脤脨脜脛脷脠脻鲁枚麓铆:" + e.getLocalizedMessage());
-			throw new StudentSafeException(-1, "脳茅脰炉露脤脨脜脛脷脠脻鲁枚麓铆");
+			log.error("组织短信内容出错:" + e.getLocalizedMessage());
+			throw new StudentSafeException(-1, "组织短信内容出错");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			log.error("脳茅脰炉露脤脨脜脛脷脠脻鲁枚麓铆:" + e.getLocalizedMessage());
-			throw new StudentSafeException(-1, "脳茅脰炉露脤脨脜脛脷脠脻鲁枚麓铆");
+			log.error("组织短信内容出错:" + e.getLocalizedMessage());
+			throw new StudentSafeException(-1, "组织短信内容出错");
 		}
 		return sw.toString();
 	}

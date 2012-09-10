@@ -30,7 +30,7 @@ public class Test {
 		while (portList.hasMoreElements()){
 			portId = (CommPortIdentifier) portList.nextElement();
 			if (portId.getPortType() == CommPortIdentifier.PORT_SERIAL){
-				if (portId.getName().equals("COM17")) {
+				if (portId.getName().equals("COM1")) {
 					serialPort_A = (SerialPort) portId.open("SerialReader", 5000);
 					break ;
 				}
@@ -50,6 +50,7 @@ public class Test {
 				list = null;
 				readBuffer = new byte[inputStream_A.available()];
 				numBytes = inputStream_A.read(readBuffer);
+				System.out.println(new String(readBuffer));
 				StringBuffer stringBuilder = new StringBuffer();
 				for (int i = 0 ; i < readBuffer.length; i++){
 					int v = readBuffer[i] & 0xff ;
@@ -59,8 +60,9 @@ public class Test {
 					}
 					stringBuilder.append(hv);
 				}
+				System.out.println(stringBuilder) ;
 				String[] s = stringBuilder.toString().split("ffff0");
-				System.out.println(stringBuilder.toString()) ;
+				System.out.println(StudentSafeUtil.getHexString(s)) ;
 
 				
 //				list = StudentSafeUtil.getHexString(new String(readBuffer).split(" "));
@@ -83,7 +85,7 @@ public class Test {
 //			       	}
 //			      }
 				
-				System.out.println(list);
+			//	System.out.println(list);
 
 			}
 		}
