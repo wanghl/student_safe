@@ -39,5 +39,12 @@ public interface IButtonsAction {
 	// mas relase button
 	public void relaseButtonPerformeAction(ActionEvent evt, JComponent jcp)
 			throws StudentSafeException;
+	
+	public void clearRfidTablePerformeAction(ActionEvent evt,JComponent jcp) throws StudentSafeException ;
+	
+	public void excuteDebugModel(ActionEvent evt,JComponent jcp) throws StudentSafeException ;
+	
+	public void messageChanelPerformeAction(ActionEvent evt,JComponent jcp) throws StudentSafeException ;
+	public void studentDataBatchProcess(ActionEvent evt,JComponent jcp) throws StudentSafeException ;
 
 }

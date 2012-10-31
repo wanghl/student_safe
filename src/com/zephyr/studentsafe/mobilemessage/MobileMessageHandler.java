@@ -20,6 +20,7 @@ public class MobileMessageHandler {
 	private static String APPID ;
 	private static String DBNAME ; 
 	
+	private static boolean alive =  false ;
 	public synchronized static APIClient getInstance() throws StudentSafeException{
 			if ( handler == null ){
 				handler = new APIClient();
@@ -55,6 +56,29 @@ public class MobileMessageHandler {
         	throw new StudentSafeException(APIClient.IMAPI_CONN_ERR,"MAS apiID²»´æÔÚ");
         }
 	}
+	
+	public static  void relaseConnection(){
+		alive = false;
+		handler.release();
+		handler = null ;
+			
+		
+		
+	}
+	
+	public static void alive(){
+		try {
+				if( ! alive ){
+					handler = new APIClient();
+					init() ;
+					alive = true ;
+				}
+		} catch (StudentSafeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	
 	public static void main(String[] argvs) throws StudentSafeException{
 		APIClient a = MobileMessageHandler.getInstance();

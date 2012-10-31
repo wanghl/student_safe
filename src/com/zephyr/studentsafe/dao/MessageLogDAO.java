@@ -72,6 +72,7 @@ public class MessageLogDAO extends BaseDAO {
 
 	public void updateRPT(RPTItem[] items) {
 
+		log.info("收到短信回执 开始更新数据库 ");
 		Session s = null;
 		try {
 			s = HibernateUtil.getSession();
@@ -85,7 +86,6 @@ public class MessageLogDAO extends BaseDAO {
 					Messagelog msg = (Messagelog) list.get(0);
 					msg.setMemo(StudentSafeUtil.getMobileRPT(it.getCode()));
 					msg.setState(it.getCode());
-					log.info("收到短信回执 开始更新数据库  SMID：" + it.getSmID());
 					s.update(msg);
 				}
 			}

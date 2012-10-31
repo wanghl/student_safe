@@ -35,10 +35,10 @@ public class PopMenuSaveasFileAction implements ActionListener {
 					out.close();
 				} catch (FileNotFoundException e1) {
 					log.error(e1.getLocalizedMessage());
-					MessageWindow.show(e1.getLocalizedMessage(), null);
+					MessageWindow.show(e1.getLocalizedMessage());
 				} catch (IOException e) {
 					log.error(e.getLocalizedMessage());
-					MessageWindow.show(e.getLocalizedMessage(), null);
+					MessageWindow.show(e.getLocalizedMessage());
 				}
 		}
 	}

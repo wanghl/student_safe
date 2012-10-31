@@ -36,6 +36,13 @@
         <property name="lastScanState" type="int">
             <column name="LastScanState" length="8" />
         </property>
+        
+        <property name="callTimes" type="string">
+            <column name="callTimes" length="8" />
+        </property>
+        <property name="lowCardNumber" type="string">
+            <column name="LowCardNumber" length="32" />
+        </property>
  
         <set name="studentFamily" table="studentfamily" cascade="all" outer-join="true">
         	<key column="studentUID"></key>

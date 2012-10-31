@@ -24,11 +24,10 @@ import com.zephyr.studentsafe.bo.*;
  *发送短信
  */
 public class SendMessageNow {
-	private final static Logger log = Logger.getLogger(SendMessageNow.class);
+	private final static Logger c_log = Logger.getLogger(SendMessageNow.class);
 	private StudentDAO dao = new StudentDAO();
 	private ISendMobileMessage sender = new SendMobileMessage() ;
 	public void sendMessage(StudentExt student){
-		log.info("开始执行发送短信任务....");
 		Studentrfid rfid = dao.getStudentbyCardID(student.getRfidCardID());
 		Studentfamily family = null ;
 		Map<String,String> map = new HashMap<String,String>();
@@ -47,7 +46,6 @@ public class SendMessageNow {
 				map.put("className", rfid.getClassUID());
 				map.put("teacher", rfid.getTeacherUID());
 				sender.sendMessage(map);
-				StudentQueue2DB.put(new StudentExt());
 			
 				}catch(StudentSafeException e){
 					//发送失败
@@ -61,7 +59,12 @@ public class SendMessageNow {
 					log.setClassName(map.get("className"));
 					log.setTeacher(map.get("teacher"));
 					log.setRfidcardid(map.get("rfidcardid"));
-					dao.saveORupdate(log);
+					try {
+						dao.saveORupdate(log);
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						c_log.error(e1);
+					}
 					continue ;
 				}
 			}
@@ -72,8 +75,13 @@ public class SendMessageNow {
 			e.setCardid(rfid.getRfidCardID());
 			e.setMemo("未填写家长信息，无法发送短信");
 			e.setScanDate(Calendar.getInstance().getTime());
-			dao.saveORupdate(e);
-			log.error("卡号"+rfid.getRfidCardID()+"无家长信息!");
+			try {
+				dao.saveORupdate(e);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				c_log.error(e);
+			}
+			c_log.error("卡号"+rfid.getRfidCardID()+"无家长信息!");
 		}
 	}
 

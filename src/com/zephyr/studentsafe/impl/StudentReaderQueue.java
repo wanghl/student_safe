@@ -15,20 +15,14 @@ package com.zephyr.studentsafe.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
-import com.zephyr.studentsafe.bo.Student;
-import com.zephyr.studentsafe.bo.StudentExt;
 
 /**
  * ClassName:StudentInQueue
- * Function: TODO ADD FUNCTION
+ * Function: 保存读头读到的卡号和触发器信息。格式为 卡号|触发器 
+ * 			 例如 ，12345|12 12345表示卡号，12表示触发器编号(1表示校内触发器，2表示校外触发器)
  * Reason:	 TODO ADD REASON
  *
  * @author   lenovo
@@ -40,8 +34,8 @@ import com.zephyr.studentsafe.bo.StudentExt;
  */
 public class StudentReaderQueue {
 	
-	// 保存AB阅读器读卡信息 list的第一个对象用于区分AB阅读器
-	private static List<List<String>> studentReaderSet = new ArrayList<List<String>>();
+	//
+	private static List<List<String>> studentReaderSet =  new  ArrayList<List<String>>();
 	
 	private StudentReaderQueue (){
 		

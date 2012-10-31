@@ -48,12 +48,12 @@ public class StudentDAO extends BaseDAO {
 	//TODO :需重构， 这个方法改掉。使用byEnsample模式
 	public Studentrfid getStudentbyCardID(String cardID) {
 		Session s = null;
-		List<Studentrfid> list = null;
+		Studentrfid student = null ;
 		try {
 			s = HibernateUtil.getSession();
 			s.beginTransaction();
-			list = s.createCriteria(Studentrfid.class).add(
-					Expression.eq("rfidCardID", cardID)).list();
+			student = (Studentrfid) s.createCriteria(Studentrfid.class).add(
+					Expression.eq("rfidCardID", cardID)).uniqueResult();
 			s.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -62,7 +62,7 @@ public class StudentDAO extends BaseDAO {
 				s.close();
 			}
 		}
-		return list.isEmpty() ? null : list.get(0);
+		return student;
 
 	}
 	//TODO: 重构之  和上面的方法合并
@@ -209,6 +209,36 @@ public class StudentDAO extends BaseDAO {
 		}
 		return list ;
 	}
+	
+	@SuppressWarnings( { "unchecked", "null" })
+	public List<Studentrfid> getStudent() {
+		Session s = null;
+		List<Studentrfid> list = null;
+		try {
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			// List<Studentrfid> l = s.createCriteria(Studentrfid.class).list();
+			list = s.createSQLQuery("select * from studentrfid").addEntity(Studentrfid.class)
+					.list();
+			if(!list.isEmpty())
+			{
+				for(Iterator<Studentrfid> it = list.iterator(); it.hasNext();)
+				{
+					it.next().getStudentFamily().iterator();
+				}
+			}
+			s.getTransaction().commit();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if (s != null) {
+				s.close();
+			}
+		}
+		return list;
+	}
+
 
 	public static void main(String[] argvs) {
 		StudentDAO dao = new StudentDAO();

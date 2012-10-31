@@ -283,7 +283,7 @@ public class MainFrame extends javax.swing.JFrame {
 								action.initButtonPerformeAction(e, initButton) ;
 							} catch (StudentSafeException e1) {
 								try {
-									MessageWindow.show(e1.getLocalizedMessage(), null);
+									MessageWindow.show(e1.getLocalizedMessage());
 									throw e1;
 								} catch (StudentSafeException e2) {
 									// TODO Auto-generated catch block
@@ -307,7 +307,7 @@ public class MainFrame extends javax.swing.JFrame {
 								action.sendButtonPerformeAction(e, sendMsgButton) ;
 							} catch (StudentSafeException e1) {
 								try {
-									MessageWindow.show(e1.getLocalizedMessage(), null);
+									MessageWindow.show(e1.getLocalizedMessage());
 									throw e1;
 								} catch (StudentSafeException e2) {
 									// TODO Auto-generated catch block
@@ -331,7 +331,7 @@ public class MainFrame extends javax.swing.JFrame {
 								action.receiveRPTButtonPerformeAction(e, receiveRPTButton) ;
 							} catch (StudentSafeException e1) {
 								try {
-									MessageWindow.show(e1.getLocalizedMessage(), null);
+									MessageWindow.show(e1.getLocalizedMessage());
 									throw e1;
 								} catch (StudentSafeException e2) {
 									// TODO Auto-generated catch block
@@ -355,7 +355,7 @@ public class MainFrame extends javax.swing.JFrame {
 								action.relaseButtonPerformeAction(e, relaseButton) ;
 							} catch (StudentSafeException e1) {
 								try {
-									MessageWindow.show(e1.getLocalizedMessage(), null);
+									MessageWindow.show(e1.getLocalizedMessage());
 									throw e1;
 								} catch (StudentSafeException e2) {
 									// TODO Auto-generated catch block
@@ -482,10 +482,10 @@ public class MainFrame extends javax.swing.JFrame {
         					startButton.addActionListener(new ActionListener() {
         						public void actionPerformed(ActionEvent evt) {
         							try {
-										action.startButtonPerformeAction(evt, startButton);
+										action.startButtonPerformeAction(evt, null);
 									} catch (StudentSafeException e) {
 										try {
-											MessageWindow.show(e.getLocalizedMessage(), null);
+											MessageWindow.show(e.getLocalizedMessage());
 											throw e;
 										} catch (StudentSafeException e1) {
 											// TODO Auto-generated catch block
@@ -509,7 +509,7 @@ public class MainFrame extends javax.swing.JFrame {
 										action.settingButtonPerformeAction(evt, setingButton);
 									} catch (StudentSafeException e) {
 										try {
-											MessageWindow.show(e.getLocalizedMessage(), null);
+											MessageWindow.show(e.getLocalizedMessage());
 
 											throw e;
 										} catch (StudentSafeException e1) {
@@ -532,7 +532,7 @@ public class MainFrame extends javax.swing.JFrame {
 										action.helpButtonPerformeAction(e, helpButton);
 									} catch (StudentSafeException e1) {
 										try {
-											MessageWindow.show(e1.getLocalizedMessage(), null);
+											MessageWindow.show(e1.getLocalizedMessage());
 
 											throw e1;
 										} catch (StudentSafeException e2) {
@@ -664,11 +664,11 @@ public class MainFrame extends javax.swing.JFrame {
     			
             	}catch (StudentSafeException e){
             		log.error(e.getLocalizedMessage());
-            		MessageWindow.show(e.getLocalizedMessage(), null);
+            		MessageWindow.show(e.getLocalizedMessage());
             		System.exit(1);
             	}catch (Exception e){
             		log.error(e.getLocalizedMessage());
-            		MessageWindow.show(e.getLocalizedMessage(), null);
+            		MessageWindow.show(e.getLocalizedMessage());
             		System.exit(1);
             	}
             }
@@ -706,7 +706,7 @@ public class MainFrame extends javax.swing.JFrame {
 				
 				
 			} catch (StudentSafeException e) {
-				MessageWindow.show(e.getLocalizedMessage(), null) ;
+				MessageWindow.show(e.getLocalizedMessage()) ;
 			}
     	}
     	return jTree1;

@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 public class MessageWindow {
 	
-	public static void show(String message,String type){
+	public static void show(String message){
 		JFrame jframe = new JFrame();
 		JOptionPane.showMessageDialog(jframe, message);
 	}

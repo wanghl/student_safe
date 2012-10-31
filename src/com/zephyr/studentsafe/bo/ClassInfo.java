@@ -25,5 +25,13 @@ public class ClassInfo {
 	public void setTeacher(String teacher) {
 		this.teacher = teacher;
 	}
+	
+	
+	public String toString(){
+		return className;
+		
+	}
+	                         
+	
 
 }

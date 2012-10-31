@@ -25,14 +25,12 @@ public class ReceiveMessageRPT extends TimerTask {
 
 	public void run() {
 		// 接收回执的数量
-		while (true) {
 			try {
-				Thread.sleep(StudentSafeUtil
-						.getIntValue(Constants.RECEIVE_RPT_TIME));
 				// 初始化
 				APIClient handler = MobileMessageHandler.getInstance();
 				RPTItem[] items = handler.receiveRPT();
-				if (items != null && items.length < 0) {
+				System.out.println("接收回执 长度" + items.length);
+				if (items != null && items.length == 0) {
 					log.info("无回执内容");
 					return;
 				}
@@ -47,7 +45,6 @@ public class ReceiveMessageRPT extends TimerTask {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				continue; 
 			} catch (Exception ex) {
 				log.error(ex.getLocalizedMessage());
 				try {
@@ -57,9 +54,7 @@ public class ReceiveMessageRPT extends TimerTask {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				continue ;
 			}
-		}
 	}
 
 	public static void main(String[] argvs) throws StudentSafeException {

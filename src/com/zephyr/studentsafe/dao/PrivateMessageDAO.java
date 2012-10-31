@@ -43,14 +43,6 @@ public class PrivateMessageDAO extends BaseDAO{
 		}
 	}
 	
-	public static void main(String...strings ){
-		PrivateMessageDAO p = new PrivateMessageDAO();
-		PrivateMessage m = new PrivateMessage();
-		m.setMessage_content("ÄãÑ¾ÊÇSB ");
-		m.setPhone_number("13488669242");
-		m.setSend_time(new Date(System.currentTimeMillis()));
-		p.saveORupdate(m);
-		
-	}
+	
 
 }

@@ -13,7 +13,7 @@
 
 package com.zephyr.studentsafe.bo;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.Set;
 
 /**
@@ -26,7 +26,7 @@ import java.util.Set;
  * 
  * @see
  */
-public class Studentrfid {
+public class Studentrfid implements Comparable{
 
 	private String studentUID;
 	private String studentID;
@@ -37,6 +37,48 @@ public class Studentrfid {
 	private java.util.Date lastScanDate ;
 	private String classUID;
 	private String teacherUID ;
+	private String ClassName ;
+	public String getClassName() {
+		return ClassName;
+	}
+
+	public void setClassName(String className) {
+		ClassName = className;
+	}
+
+	private Set<Studentfamily> studentFamily;
+	
+	private int serial ;
+	
+	public int getSerial() {
+		return serial;
+	}
+
+	public void setSerial(int serial) {
+		this.serial = serial;
+	}
+
+	//剩余通话时长
+	private String callTimes ;
+	//低频卡号
+	private String lowCardNumber ;
+	
+	public String getCallTimes() {
+		return callTimes;
+	}
+
+	public void setCallTimes(String callTimes) {
+		this.callTimes = callTimes;
+	}
+
+	public String getLowCardNumber() {
+		return lowCardNumber;
+	}
+
+	public void setLowCardNumber(String lowCardNumber) {
+		this.lowCardNumber = lowCardNumber;
+	}
+
 	public int getLastScanState() {
 		return lastScanState;
 	}
@@ -70,7 +112,7 @@ public class Studentrfid {
 		this.lastScanDate = lastScanDate;
 	}
 
-	private Set<Studentfamily> studentFamily;
+
 
 	public Set<Studentfamily> getStudentFamily() {
 		return studentFamily;
@@ -126,6 +168,16 @@ public class Studentrfid {
 
 	public void setStudentBirthday(Date studentBirthday) {
 		this.studentBirthday = studentBirthday;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		if (rfidCardID == null)
+		{
+			return 1;
+		}
+		return Integer.parseInt(rfidCardID);
 	}
 
 }

@@ -1,1 +1,1 @@
-${teacherName}老师您好！${date}${className}考勤情况:应到${studentCount}人实到${currentCount}人,未到校学生名单：${studentList}
+${familyName}${familySex}您好！您的孩子${studentName}同学已于${date}安全抵达学校。${schooleName}。校长：${headMaster}

@@ -18,18 +18,23 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.StringWriter;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
+
+import javax.comm.CommPortIdentifier;
 
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
@@ -42,10 +47,9 @@ import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.dao.BaseDAO;
 import com.zephyr.studentsafe.exception.StudentSafeException;
-import com.zephyr.studentsafe.impl.ProcessQueueDataExt;
+import com.zephyr.studentsafe.impl.ProcessQueueData;
 import com.zephyr.studentsafe.impl.StudentMap;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
-import com.zephyr.studentsafe.impl.trigger.StudentReaderQueueWithTrigger;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -65,15 +69,22 @@ import freemarker.template.TemplateException;
 public class StudentSafeUtil {
 	private final static Logger log = Logger.getLogger(StudentSafeUtil.class);
 
+	private static PropertiesConfiguration config = null;
+	//随机数种子
+	private  static final String allChars = "1234567890abcdef";
 	public static PropertiesConfiguration getConfig()
 			throws StudentSafeException {
-		try {
-			PropertiesConfiguration config = new PropertiesConfiguration(
-					"resource/studentsafe.properties");
-			config.setReloadingStrategy(new FileChangedReloadingStrategy());
-			return config;
-		} catch (ConfigurationException e) {
-			throw new StudentSafeException(e.getLocalizedMessage());
+		if (config == null) {
+			try {
+				config = new PropertiesConfiguration(
+						"resource/studentsafe.properties");
+				config.setReloadingStrategy(new FileChangedReloadingStrategy());
+				return config;
+			} catch (ConfigurationException e) {
+				throw new StudentSafeException(e.getLocalizedMessage());
+			}
+		} else {
+			return config ;
 		}
 	}
 
@@ -82,8 +93,15 @@ public class StudentSafeUtil {
 		return sdf.parse(dstr);
 	}
 
-	public static String getStringValue(String key) throws StudentSafeException {
-		return getConfig().getString(key);
+	public static String getStringValue(String key) {
+		String value = null;
+		try {
+			value = getConfig().getString(key);
+		} catch (StudentSafeException e) {
+			// TODO Auto-generated catch block
+			log.error("读配置文件错误！" + e.getLocalizedMessage());
+		}
+		return value;
 	}
 
 	public static int getIntValue(String key) throws StudentSafeException {
@@ -161,39 +179,31 @@ public class StudentSafeUtil {
 		// 需实现监控卡片电量的功能
 		List<String> list = new ArrayList<String>();
 		String s = "";
+		String tigger = "";
+		String rfid = "";
 		try {
-			for (int i = 0; i < str.length; i++) {
+			for (int i = 1; i < str.length; i++) {
 				s = str[i];
-				if (s.length() == 10) {
-					s = s.substring(3, 9);
-					list.add(Integer.valueOf(s, 16).toString());
-				} else if (s.length() == 9) {
-					s = s.substring(3, 9);
-					list.add(Integer.valueOf(s, 16).toString());
-				} else if (s.length() == 6) {
-					s = s.substring(0, s.length());
-					list.add(Integer.valueOf(s, 16).toString());
-				} else if (s.length() == 7) {
-					s = s.substring(0, s.length() - 1);
-					list.add(Integer.valueOf(s, 16).toString());
+				// 第一位不为01的 去掉。标签信号01开头，读头心跳包02开头，还有些有乱码的 长度不够的 全部屏蔽
+				if (!s.substring(0, 2).equals("01")) {
+					continue;
 				}
-				// if ( str[i].length() != 6){
-				// continue;
-				// }
-				// list.add(Integer.valueOf(str[i].trim(), 16).toString());
+				rfid = s.substring(6, 14);
+				tigger = s.substring(16, 18);
+				list.add(Integer.valueOf(rfid, 16).toString() + "&" + tigger);
 			}
 		} catch (NumberFormatException e1) {
-			log.error("收到错误格式数据，丢弃。" + s);
+			e1.printStackTrace();
 
 		} catch (Exception e) {
-			log.error(e.getLocalizedMessage());
+			e.printStackTrace();
+			System.err.println(s);
 		}
 		return list;
 	}
 
 	/**
-	 *<b>功能: 解析卡号信息和进出校门信息。
-	 *        阅读器上送的是一串数字</b><br>
+	 *<b>功能: 解析卡号信息和进出校门信息。 阅读器上送的是一串数字</b><br>
 	 *<br>
 	 * 
 	 * @author wanghongliang,2012-7-2
@@ -207,11 +217,11 @@ public class StudentSafeUtil {
 		for (int i = 0; i < stringArray.length; i++) {
 			buffer.setLength(0);
 			buffer.append(stringArray[i]);
-			
-			list.add(Integer.valueOf(buffer.substring(4, 8), 16).toString() + 
-					"|" + buffer.substring(10, 12).toUpperCase());
+
+			list.add(Integer.valueOf(buffer.substring(4, 8), 16).toString()
+					+ "|" + buffer.substring(10, 12).toUpperCase());
 		}
-		return list ;
+		return list;
 
 	}
 
@@ -252,10 +262,10 @@ public class StudentSafeUtil {
 		/* Merge data model with template */
 		StringWriter sw = new StringWriter();
 		try {
-			FileOutputStream out = new FileOutputStream(new File("ftl.dat"));
+			FileOutputStream out = new FileOutputStream(new File("message.ftl"));
 			out.write(ftlTemplate.getBytes());
 			Configuration cfg = new Configuration();
-			Template temp = cfg.getTemplate("ftl.dat", "gbk");
+			Template temp = cfg.getTemplate("message.ftl", "gbk");
 			temp.process(data, sw);
 
 		} catch (TemplateException e) {
@@ -269,12 +279,52 @@ public class StudentSafeUtil {
 		return sw.toString();
 	}
 
+	public static String[] getSerialPortList() {
+		String ports = "未连接,";
+		CommPortIdentifier portId;
+		Enumeration serList = CommPortIdentifier.getPortIdentifiers();
+		while (serList.hasMoreElements()) {
+			portId = (CommPortIdentifier) serList.nextElement();
+			ports += portId.getName() + ",";
+		}
+		return ports.split(",");
+	}
+	
+	//生成一个定长随机数  
+	public  static String getRandom(){
+	
+		StringBuffer sb = new StringBuffer();
+		Random random = new Random();
+		for( int i = 0 ; i < 32 ; i++ ){
+			sb.append(allChars.charAt(random.nextInt(allChars.length())));
+		}
+		return sb.toString();
+	}
+	
+	//生成MD5
+	public static String getMD5String(byte[] b){
+		MessageDigest md5;
+		StringBuilder sb = new StringBuilder();
+		try
+		{
+			md5 = MessageDigest.getInstance("MD5");
+			md5.update(b);
+			byte[] tmp = md5.digest();
+			for (byte bb:tmp) {
+				sb.append(Integer.toHexString(bb&0xff));
+			}
+		} catch (NoSuchAlgorithmException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+       return sb.toString();
+	}
+
+
 	public static void main(String[] argvs) throws InterruptedException {
-		// Integer s = new Integer(130);
-		String[] str = new String[]{
-				"1234567890AB","1232423423423ba","1234567dd890AB","1234567890AB",
-		} ;
-		StudentSafeUtil.paseStringWidthTriggerinfo(str);
+		Map map = new HashMap();
+		
 	}
 
 }

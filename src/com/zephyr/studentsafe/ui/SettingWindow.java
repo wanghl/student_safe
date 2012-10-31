@@ -37,6 +37,7 @@ import org.apache.log4j.Logger;
 
 import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.exception.StudentSafeException;
+import com.zephyr.studentsafe.util.SettingProperites;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 
 /**
@@ -837,7 +838,7 @@ public class SettingWindow extends javax.swing.JFrame {
 			this.dispose();
 		} catch (StudentSafeException e) {
 			log.error("±£¥Ê…Ë÷√ ß∞‹:" + e.getLocalizedMessage());
-			MessageWindow.show("±£¥Ê…Ë÷√ ß∞‹:" + e.getLocalizedMessage(), null);
+			MessageWindow.show("±£¥Ê…Ë÷√ ß∞‹:" + e.getLocalizedMessage());
 			this.dispose();
 		}
 	}

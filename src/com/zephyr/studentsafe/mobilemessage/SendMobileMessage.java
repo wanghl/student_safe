@@ -39,7 +39,7 @@ import com.zephyr.studentsafe.exception.StudentSafeException;
  * @see 	 
  */
 public class SendMobileMessage implements ISendMobileMessage{
-	private final static Logger log = Logger.getLogger(SendMobileMessage.class);
+	private final static Logger c_log = Logger.getLogger(SendMobileMessage.class);
 
 	@Override
 	public synchronized void sendMessage(Map<String,String> message) {
@@ -55,39 +55,39 @@ public class SendMobileMessage implements ISendMobileMessage{
 			
 			if(result == APIClient.IMAPI_SUCC)
 	        {            
-				log.info("短信发送成功");
+				c_log.info("短信发送成功");
 				sendResult.setMemo("等待回执");
 	        	sendResult.setState(Constants.SEND_MESSAGE_WAIT_RPT);
 	        	sendResult.setSmid(Long.toString(smID));
 	        }
 	        else if(result == APIClient.IMAPI_CONN_ERR){
-	        	log.info("数据库连接失败");
+	        	c_log.info("数据库连接失败");
 	        	sendResult.setMemo("短信服务器数据库连接失败");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else if(result == APIClient.IMAPI_DATA_ERR){
-	        	log.info("参数错误");
+	        	c_log.info("参数错误");
 	        	sendResult.setMemo("参数错误");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else if(result == APIClient.IMAPI_DATA_TOOLONG){
-	        	log.info("消息内容太长");
+	        	c_log.info("消息内容太长");
 	        	sendResult.setMemo("消息内容太长");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else if(result == APIClient.IMAPI_INS_ERR){
-	        	log.info("数据库插入错误");
+	        	c_log.info("数据库插入错误");
 	        	sendResult.setMemo("数据库插入错误");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 	        else{
-	        	log.info("出现其他错误,返回错误号:" + result);
+	        	c_log.info("出现其他错误,返回错误号:" + result);
 	        	sendResult.setMemo("出现其他错误");
 	        	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 	        }
 		}
 		catch(StudentSafeException e){
-			log.error(e.getMessageDetail());
+			c_log.error(e.getMessageDetail());
 			sendResult.setMemo(e.getMessageDetail());
         	sendResult.setState(Constants.SEND_MESSAGE_FAIL);
 		}
@@ -110,7 +110,12 @@ public class SendMobileMessage implements ISendMobileMessage{
 		log.setTeacher(map.get("teacher"));
 		log.setRfidcardid(map.get("rfidcardid"));
 		log.setSendTime(new Date());
-		dao.saveORupdate(log);
+		try {
+			dao.saveORupdate(log);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			c_log.error(e);
+		}
 		
 	}
 	
