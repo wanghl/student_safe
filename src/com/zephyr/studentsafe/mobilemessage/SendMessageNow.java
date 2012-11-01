@@ -1,10 +1,8 @@
 package com.zephyr.studentsafe.mobilemessage;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
@@ -16,7 +14,6 @@ import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.dao.StudentDAO;
 import com.zephyr.studentsafe.exception.StudentSafeException;
-import com.zephyr.studentsafe.impl.StudentQueue2DB;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 import com.zephyr.studentsafe.bo.*;
 /**
@@ -27,8 +24,7 @@ public class SendMessageNow {
 	private final static Logger c_log = Logger.getLogger(SendMessageNow.class);
 	private StudentDAO dao = new StudentDAO();
 	private ISendMobileMessage sender = new SendMobileMessage() ;
-	public void sendMessage(StudentExt student){
-		Studentrfid rfid = dao.getStudentbyCardID(student.getRfidCardID());
+	public void sendMessage(Studentrfid rfid,StudentExt student){
 		Studentfamily family = null ;
 		Map<String,String> map = new HashMap<String,String>();
 		if ( ! rfid.getStudentFamily().isEmpty()){
@@ -43,8 +39,8 @@ public class SendMessageNow {
 				}
 				map.put("studentName", rfid.getStudentName());
 				map.put("rfidcardid", rfid.getRfidCardID());
-				map.put("className", rfid.getClassUID());
-				map.put("teacher", rfid.getTeacherUID());
+				map.put("className", rfid.getClassInfo().getClassUID());
+				map.put("teacher", rfid.getClassInfo().getTeacher());
 				sender.sendMessage(map);
 			
 				}catch(StudentSafeException e){

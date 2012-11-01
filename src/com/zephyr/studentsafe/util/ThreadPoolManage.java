@@ -1,21 +1,12 @@
 package com.zephyr.studentsafe.util;
 
-import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 
 
 public class ThreadPoolManage {
 	
-	private  static final int MIX_POOL_SIZE = 3; 
-	private  static final int MAX_POOL_SIZE = 15;
-	private  static final int keepAliveTime = 10;
-	private  static final TimeUnit unit = TimeUnit.SECONDS;
-	private  static final int QueueSize = 5;
-	@SuppressWarnings("unused")
 	private  static ThreadPoolExecutor threadPool = null;
 
 	private  static ThreadPoolExecutor getPoolManage() {
@@ -28,7 +19,6 @@ public class ThreadPoolManage {
 		}
 	}
 	
-	@SuppressWarnings("static-access")
 	public static ThreadPoolExecutor getThreadPool(){
 		
 		return getPoolManage();

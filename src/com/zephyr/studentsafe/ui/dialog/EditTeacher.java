@@ -1,10 +1,7 @@
 package com.zephyr.studentsafe.ui.dialog;
-import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -12,15 +9,11 @@ import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 import com.zephyr.studentsafe.bo.Teacher;
 import com.zephyr.studentsafe.dao.TeacherDAO;
-import com.zephyr.studentsafe.ui.MessageWindow;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 
 
@@ -37,6 +30,11 @@ import com.zephyr.studentsafe.util.StudentSafeUtil;
 * LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
 */
 public class EditTeacher extends javax.swing.JDialog {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	{
 		//Set Look & Feel

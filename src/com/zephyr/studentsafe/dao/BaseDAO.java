@@ -1,23 +1,18 @@
 package com.zephyr.studentsafe.dao;
 
-import java.util.Calendar;
 import java.util.List;
 
-import org.hibernate.Criteria;
-import org.hibernate.Query;
+
 import org.hibernate.Session;
 import org.hibernate.criterion.Example;
-import org.hibernate.criterion.Expression;
+
 
 import sun.security.provider.MD5;
 
-import com.zephyr.studentsafe.bo.CardException;
-import com.zephyr.studentsafe.bo.ClassInfo;
-import com.zephyr.studentsafe.bo.Messagelog;
-import com.zephyr.studentsafe.bo.Schooleinfor;
+
 import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
-import com.zephyr.studentsafe.bo.Studenttimebook;
+
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 
 public class BaseDAO {
@@ -233,9 +228,10 @@ public class BaseDAO {
 	
 	public static void main(String[] argvs){
 		BaseDAO d = new BaseDAO();
-//		d.get(Studenttimebook.class);
-		List l = d.getTeacherByName("¿œ¿Ó");
-		System.out.println(l.get(0).toString());
+		
+		Studentrfid s = new Studentrfid();
+		s.setRfidCardID("132627");
+		d.getObjList(Studentrfid.class) ;
 	}
 	
 }

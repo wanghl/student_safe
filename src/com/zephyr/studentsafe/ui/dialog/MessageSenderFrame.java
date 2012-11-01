@@ -1,14 +1,10 @@
 package com.zephyr.studentsafe.ui.dialog;
-import java.awt.AWTEvent;
 import java.awt.BorderLayout;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
@@ -38,6 +34,10 @@ import com.zephyr.studentsafe.util.StudentSafeUtil;
 * LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
 */
 public class MessageSenderFrame extends javax.swing.JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel jPanel1;
 	private JLabel jLabel3;
 	private JLabel jLabel5;

@@ -1,20 +1,14 @@
 package com.zephyr.studentsafe.ui.action.button;
 
 import java.awt.event.ActionEvent;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Timer;
 
-import javax.comm.PortInUseException;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
@@ -33,27 +27,18 @@ import com.jasson.im.api.APIClient;
 import com.jasson.im.api.RPTItem;
 import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.dao.HibernateUtil;
-import com.zephyr.studentsafe.exception.SimplJob;
 import com.zephyr.studentsafe.exception.StudentSafeException;
-import com.zephyr.studentsafe.exception.T1;
 import com.zephyr.studentsafe.impl.ProcessStudentData;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
-import com.zephyr.studentsafe.impl.TestClass;
 import com.zephyr.studentsafe.mobilemessage.MobileMessageHandler;
 import com.zephyr.studentsafe.mobilemessage.ReceiveMessageRPT;
 import com.zephyr.studentsafe.mobilemessage.SendMessage2Teacher;
 import com.zephyr.studentsafe.serialport.SerialReaderManage;
-import com.zephyr.studentsafe.ui.FrameClear;
-import com.zephyr.studentsafe.ui.HelpFrame;
-import com.zephyr.studentsafe.ui.MainFrame;
 import com.zephyr.studentsafe.ui.MessageWindow;
-import com.zephyr.studentsafe.ui.SettingWindow;
 import com.zephyr.studentsafe.ui.ZephyrPntMainFrame;
-import com.zephyr.studentsafe.ui.dialog.DebugWindow;
 import com.zephyr.studentsafe.ui.dialog.MessageSenderFrame;
 import com.zephyr.studentsafe.ui.dialog.SettingFrame;
 import com.zephyr.studentsafe.ui.dialog.StudentImportMainFrame;
-import com.zephyr.studentsafe.util.ReaderLogPaserFromFile;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 import com.zephyr.studentsafe.util.ThreadPoolManage;
 
@@ -67,14 +52,7 @@ public class ButtonsAction implements IButtonsAction {
 	@Override
 	public void helpButtonPerformeAction(ActionEvent evt, JComponent jcp)
 			throws StudentSafeException {
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				HelpFrame inst = new HelpFrame();
-				inst.setLocationRelativeTo(null);
-				inst.setVisible(true);
-			}
-		});
-
+		
 	}
 
 	@Override
@@ -207,7 +185,7 @@ public class ButtonsAction implements IButtonsAction {
 			public void run() {
 				try {
 					SettingFrame inst = new SettingFrame();
-					inst.setLocationRelativeTo(new ZephyrPntMainFrame());
+					inst.setLocationRelativeTo(null);
 					inst.setVisible(true);
 
 				} catch (Exception el) {
@@ -1229,8 +1207,8 @@ public class ButtonsAction implements IButtonsAction {
 			// Í£Ö¹°´Å¥
 			// Í£Ö¹ÔÄ¶ÁÆ÷Ïß³Ì
 			SerialReaderManage.shutDownThread();
-			// log.info("ÖÕÖ¹ÅÐ¶ÏÂß¼­");
-			// ProcessStudentData.shutDown();
+			log.info("ÖÕÖ¹ÅÐ¶ÏÂß¼­");
+			 ProcessStudentData.shutDown();
 			// ¹Ø±ÕÏß³Ì³Ø
 			ThreadPoolManage.relaseThreadPool();
 
@@ -1309,15 +1287,7 @@ public class ButtonsAction implements IButtonsAction {
 	@Override
 	public void excuteDebugModel(ActionEvent evt, JComponent jcp)
 			throws StudentSafeException {
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				DebugWindow inst = new DebugWindow();
-				inst.setLocationRelativeTo(new ZephyrPntMainFrame());
-				inst.setVisible(true);
-				// ¿ªÆôµ÷ÊÔÄ£Ê½
-				ProcessStudentData._DEBUG_MODEL = 1;
-			}
-		});
+		
 
 	}
 

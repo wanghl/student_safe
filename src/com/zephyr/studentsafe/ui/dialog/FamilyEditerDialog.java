@@ -1,19 +1,13 @@
 package com.zephyr.studentsafe.ui.dialog;
-import com.jgoodies.forms.layout.CellConstraints;
-import com.jgoodies.forms.layout.FormLayout;
 import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.dao.BaseDAO;
 
 import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
-import javax.swing.JDialog;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -35,6 +29,10 @@ import javax.swing.SwingUtilities;
 * LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
 */
 public class FamilyEditerDialog extends javax.swing.JDialog {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel jPanel1;
 	private JTextField studentid;
 	private JButton applyButton;

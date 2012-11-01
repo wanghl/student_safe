@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Locale;
 
 import org.hibernate.Session;
-import org.hibernate.criterion.Expression;
 
-import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Studenttimebook;
 
 public class StudentTimeBookDAO extends BaseDAO{

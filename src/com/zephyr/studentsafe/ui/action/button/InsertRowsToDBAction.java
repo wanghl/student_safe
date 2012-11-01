@@ -138,9 +138,11 @@ public class InsertRowsToDBAction implements ActionListener {
 //										.getValueAt(i, 6).toString()));
 //							}
 							// student class
-							student.setClassUID(classKey);
-							// student teacher
-							student.setTeacherUID(teacherKey);
+							ClassInfo c = new ClassInfo();
+							c.setTeacher(teacherKey);
+							c.setClassUID(classKey);
+							
+							student.setClassInfo(c);
 							
 							
 							if (model.getValueAt(i, 9) != null) {
@@ -170,7 +172,7 @@ public class InsertRowsToDBAction implements ActionListener {
 							}
 							family.setIsSendMessage(1);
 							set.add(family);
-							if (student.getStudentFamily() !=null && student.getStudentFamily().isEmpty()){
+							if (student.getStudentFamily() == null || student.getStudentFamily().isEmpty()){
 								
 								student.setStudentFamily(set);
 							}
@@ -227,6 +229,10 @@ public class InsertRowsToDBAction implements ActionListener {
 			ImportStudentInfoAction.insertDB = true;
 		}
 
+	}
+	
+	public static void main(String[] argvs){
+		System.out.println(75+81);
 	}
 
 }

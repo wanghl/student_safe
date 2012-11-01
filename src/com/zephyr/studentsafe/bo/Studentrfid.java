@@ -26,7 +26,7 @@ import java.util.Set;
  * 
  * @see
  */
-public class Studentrfid implements Comparable{
+public class Studentrfid{
 
 	private String studentUID;
 	private String studentID;
@@ -35,16 +35,27 @@ public class Studentrfid implements Comparable{
 	private String studentSex;
 	private Date studentBirthday;
 	private java.util.Date lastScanDate ;
-	private String classUID;
-	private String teacherUID ;
-	private String ClassName ;
-	public String getClassName() {
-		return ClassName;
+	private Teacher teacherInfo ;
+	
+	
+	public Teacher getTeacherInfo() {
+		return teacherInfo;
 	}
 
-	public void setClassName(String className) {
-		ClassName = className;
+	public void setTeacherInfo(Teacher teacherInfo) {
+		this.teacherInfo = teacherInfo;
 	}
+
+	public ClassInfo getClassInfo() {
+		return classInfo;
+	}
+
+	public void setClassInfo(ClassInfo classInfo) {
+		this.classInfo = classInfo;
+	}
+
+	private ClassInfo classInfo ;
+	
 
 	private Set<Studentfamily> studentFamily;
 	
@@ -88,21 +99,7 @@ public class Studentrfid implements Comparable{
 	}
 
 	private int lastScanState;
-	public String getClassUID() {
-		return classUID;
-	}
-
-	public void setClassUID(String classUID) {
-		this.classUID = classUID;
-	}
-
-	public String getTeacherUID() {
-		return teacherUID;
-	}
-
-	public void setTeacherUID(String teacherUID) {
-		this.teacherUID = teacherUID;
-	}
+	
 
 	public java.util.Date getLastScanDate() {
 		return lastScanDate;
@@ -170,14 +167,6 @@ public class Studentrfid implements Comparable{
 		this.studentBirthday = studentBirthday;
 	}
 
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		if (rfidCardID == null)
-		{
-			return 1;
-		}
-		return Integer.parseInt(rfidCardID);
-	}
+	
 
 }

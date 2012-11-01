@@ -1,13 +1,9 @@
 package com.zephyr.studentsafe.dao;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.criterion.Expression;
 import com.zephyr.studentsafe.bo.*;
 import com.jasson.im.api.MOItem;
 import com.jasson.im.api.RPTItem;
@@ -42,8 +38,8 @@ public class MessageLogDAO extends BaseDAO {
 				msglog.setMemo("消息未读取");
 				msglog.setStudentName(rfid.getStudentName());
 				msglog.setRfidcardid(rfid.getRfidCardID());
-				msglog.setClassName(rfid.getClassUID());
-				msglog.setTeacher(rfid.getTeacherUID());
+				msglog.setClassName(rfid.getClassInfo().getClassUID());
+				msglog.setTeacher(rfid.getClassInfo().getTeacher());
 				msglog.setMessageType(Constants.MESSAGE_TYPE_MO);
 				log.info("收到手机回复 ：" + it.getContent());
 

@@ -57,6 +57,9 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 	private JScrollPane jScrollPane1;
 	private JScrollPane jScrollPane2;
 	private static JTable rfidInfoTable;
+	private JMenuItem jMenuItem2;
+	private JPopupMenu jPopupMenu1;
+	private static JTextArea logMessageBox;
 	private JMenuItem jMenuItem4;
 	private JSeparator jSeparator8;
 	private JTabbedPane jTabbedPane;
@@ -75,10 +78,7 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 	private JMenuItem clearRfidTable;
 	private JMenuItem saveMenuItem;
 	private JMenuItem jMenuItem3;
-	private JMenuItem jMenuItem2;
-	private JPopupMenu jPopupMenu1;
 	private JMenuItem jMenuItem1;
-	private static JTextPane logMessageBox;
 	private static JTable dataMonitTable;
 	private JScrollPane jScrollPane3;
 	private JTabbedPane jTabbedPane1;
@@ -425,25 +425,27 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 							jScrollPane2.setFont(new java.awt.Font("黑体",1,14));
 							jScrollPane2.setPreferredSize(new java.awt.Dimension(804, 125));
 							{
-								logMessageBox = new JTextPane();
+								logMessageBox = new JTextArea();
+								
 								jScrollPane2.setViewportView(logMessageBox);
+								logMessageBox.setFont(new java.awt.Font("楷体",0,16));
 								{
 									jPopupMenu1 = new JPopupMenu();
 									setComponentPopupMenu(logMessageBox, jPopupMenu1);
 									{
 										jMenuItem2 = new JMenuItem();
-										jPopupMenu1.add(jMenuItem2);
-										jMenuItem2.setText("\u6e05\u9664\u5185\u5bb9");
 										jMenuItem2.setMnemonic('r');
 										jMenuItem2.addActionListener(new ActionListener(){
 
 											@Override
-											public void actionPerformed(
-													ActionEvent e) {
+											public void actionPerformed(ActionEvent e) {
+												// TODO Auto-generated method stub
 												logMessageBox.setText("");
 											}
 											
-										});
+										}) ;
+										jPopupMenu1.add(jMenuItem2);
+										jMenuItem2.setText("\u6e05\u7a7a\u65e5\u5fd7");
 									}
 								}
 							}
@@ -585,9 +587,9 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 
 							@Override
 							public void actionPerformed(ActionEvent e) {
-								StudentInfoManage inst = new StudentInfoManage(new ZephyrPntMainFrame());
+								StudentInfoManage inst = new StudentInfoManage(null);
 								inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-								inst.setLocationRelativeTo(new ZephyrPntMainFrame());
+								inst.setLocationRelativeTo(null);
 								
 								inst.setVisible(true);
 								
@@ -601,8 +603,8 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 						jMenuItem4.setText("\u6559\u5e08\u7ba1\u7406");
 						jMenuItem4.addActionListener(new ActionListener() {
 							public void actionPerformed(ActionEvent evt) {
-								TeacherManage inst = new TeacherManage(new ZephyrPntMainFrame());
-								inst.setLocationRelativeTo(new ZephyrPntMainFrame());
+								TeacherManage inst = new TeacherManage(null);
+								inst.setLocationRelativeTo(null);
 								inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 								inst.setVisible(true);
 							}
@@ -674,7 +676,10 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 	}
 	
 	public static void printLog(final String message){
-		logMessageBox.replaceSelection(message);
+		logMessageBox.append(message);
+		//这句话让LOG实时刷新到jtextarea上。
+		//月月光啊月月光 ~~ 涨工资啊涨工资~ ! ~~~ 有一个美丽的传说
+		logMessageBox.paintImmediately(logMessageBox.getBounds());
 	//	logMessageBox.paintImmediately(logMessageBox.getBounds()) ;
 		
 	}
@@ -705,7 +710,7 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 		}
 	}
 	
-	public static JTextPane getMessageBox(){
+	public static JTextArea getMessageBox(){
 		return logMessageBox ;
 	}
 	

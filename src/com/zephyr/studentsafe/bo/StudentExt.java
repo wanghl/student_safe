@@ -1,8 +1,7 @@
 package com.zephyr.studentsafe.bo;
 
-import java.util.Calendar;
 
-public class StudentExt implements Comparable{
+public class StudentExt {
 
 	private String objuid; 
 	
@@ -134,11 +133,6 @@ public class StudentExt implements Comparable{
 		this.rfidCardID = rfidCardID;
 	}
 
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 	
 }

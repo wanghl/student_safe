@@ -3,7 +3,6 @@ package com.zephyr.studentsafe.ui.dialog;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,35 +10,27 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
-import javax.swing.ButtonGroup;
-import javax.swing.ComboBoxModel;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.ListModel;
 import javax.swing.SwingUtilities;
 import javax.swing.border.BevelBorder;
-import javax.swing.border.LineBorder;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
@@ -52,9 +43,7 @@ import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Teacher;
 import com.zephyr.studentsafe.dao.ClassInfoDAO;
 import com.zephyr.studentsafe.dao.StudentDAO;
-import com.zephyr.studentsafe.serialport.RfidReader;
 import com.zephyr.studentsafe.ui.MessageWindow;
-import com.zephyr.studentsafe.ui.ZephyrPntMainFrame;
 
 /**
  * This code was edited or generated using CloudGarden's Jigloo SWT/Swing GUI
@@ -67,6 +56,10 @@ import com.zephyr.studentsafe.ui.ZephyrPntMainFrame;
  * ANY CORPORATE OR COMMERCIAL PURPOSE.
  */
 public class StudentInfoManage extends javax.swing.JDialog {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel jPanel1;
 	private JScrollPane jScrollPane1;
 	private JButton newFamilyButton;
@@ -374,7 +367,6 @@ public class StudentInfoManage extends javax.swing.JDialog {
 
 								}
 							}
-							teacherList = new JComboBox();
 							jPanel4.add(teacherList);
 							teacherList.insertItemAt(null, 0);
 							teacherList.setSelectedIndex(0);
@@ -404,10 +396,10 @@ public class StudentInfoManage extends javax.swing.JDialog {
 							editButton.setPreferredSize(new java.awt.Dimension(139, 27));
 							editButton.addActionListener(new ActionListener() {
 								public void actionPerformed(ActionEvent evt) {
-									if(studentInfoTable.getSelectedRow() > 0)
+									if(studentInfoTable.getSelectedRow() >= 0)
 									{
 										studentEdit();
-									}else if (familyInfoTable.getSelectedRow() > 0){
+									}else if (familyInfoTable.getSelectedRow() >= 0){
 										familyedit();
 									}else {
 										MessageWindow.show("请选择要编辑的学生或家长信息");
@@ -422,9 +414,9 @@ public class StudentInfoManage extends javax.swing.JDialog {
 							newStudentButton.setPreferredSize(new java.awt.Dimension(139, 27));
 							newStudentButton.addActionListener(new ActionListener() {
 								public void actionPerformed(ActionEvent evt) {
-									NewStudentInfo inst = new NewStudentInfo(new ZephyrPntMainFrame());
+									NewStudentInfo inst = new NewStudentInfo(null);
 									inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-									inst.setLocationRelativeTo(new ZephyrPntMainFrame());
+									inst.setLocationRelativeTo(null);
 									inst.setVisible(true);
 								}
 							});
@@ -462,6 +454,7 @@ public class StudentInfoManage extends javax.swing.JDialog {
 	// 查询按钮事件
 	private void queryButtonEvent() {
 		Studentrfid student = new Studentrfid();
+		StudentDAO sdao = new StudentDAO();
 		List list = null;
 		String cardNumber = studentNumber.getText().equals("") ? null : studentNumber.getText();
 
@@ -477,18 +470,28 @@ public class StudentInfoManage extends javax.swing.JDialog {
 		}
 
 		student.setStudentName(studentName.getText().equals("") ? null : studentName.getText());
-		if (classList.getSelectedItem() != null)
+//		if (classList.getSelectedItem() != null)
+//		{
+//			student.setClassUID(((ClassInfo) classList.getSelectedItem()).getClassUID());
+//
+//		}
+//		if (teacherList.getSelectedItem() != null)
+//		{
+//			list = dao.getTeacherByName(teacherList.getSelectedItem().toString());
+//			student.setTeacherUID(list.get(0).toString());
+//		}
+		
+		if(classList.getSelectedItem() != null)
 		{
-			student.setClassUID(((ClassInfo) classList.getSelectedItem()).getClassUID());
-
+			student.setClassInfo((ClassInfo)classList.getSelectedItem());
 		}
-		if (teacherList.getSelectedItem() != null)
+		
+		if(teacherList.getSelectedItem() != null)
 		{
-			list = dao.getTeacherByName(teacherList.getSelectedItem().toString());
-			student.setTeacherUID(list.get(0).toString());
+			student.setTeacherInfo(((Teacher)teacherList.getSelectedItem()));
 		}
 
-		list = dao.getByExample(Studentrfid.class, student);
+		list = sdao.studentQuery(student);
 		if (!list.isEmpty())
 		{
 			updateTable(list);
@@ -533,8 +536,7 @@ public class StudentInfoManage extends javax.swing.JDialog {
 								student.getStudentName(),
 								student.getRfidCardID(),
 								student.getLowCardNumber(),
-								((ClassInfo) dao.get(ClassInfo.class, student.getClassUID()))
-										.getClassName() });
+								student.getClassInfo().getClassName()});
 
 					for (Iterator<Studentfamily> its = student.getStudentFamily().iterator(); its
 							.hasNext();)
@@ -568,8 +570,8 @@ public class StudentInfoManage extends javax.swing.JDialog {
 		String rfid = studentInfoTable.getValueAt(selectRow, 2).toString();
 		final Studentrfid student = (Studentrfid) dao.getStudentbyCardID(rfid);
 
-		StudentEditerDialog inst = new StudentEditerDialog(new ZephyrPntMainFrame(), student);
-		inst.setLocationRelativeTo(new ZephyrPntMainFrame());
+		StudentEditerDialog inst = new StudentEditerDialog(null, student);
+		inst.setLocationRelativeTo(null);
 		inst.setVisible(true);
 
 	}
@@ -583,9 +585,8 @@ public class StudentInfoManage extends javax.swing.JDialog {
 		if(! l.isEmpty())
 		{
 			family = (Studentfamily) l.get(0);
-			ZephyrPntMainFrame frame = new ZephyrPntMainFrame();
-			FamilyEditerDialog inst = new FamilyEditerDialog(frame,family);
-			inst.setLocationRelativeTo(frame);
+			FamilyEditerDialog inst = new FamilyEditerDialog(null,family);
+			inst.setLocationRelativeTo(null);
 			inst.setVisible(true);
 			
 		}
@@ -600,9 +601,8 @@ public class StudentInfoManage extends javax.swing.JDialog {
 		}
 		StudentDAO dao = new StudentDAO();
 		Studentrfid student = dao.getStudentbyCardID(studentInfoTable.getValueAt(selectedRow, 2).toString()) ;
-		ZephyrPntMainFrame frame = new ZephyrPntMainFrame();
-		NewStudentInfo inst = new NewStudentInfo(frame,student);
-		inst.setLocationRelativeTo(frame);
+		NewStudentInfo inst = new NewStudentInfo(null,student);
+		inst.setLocationRelativeTo(null);
 		inst.setVisible(true);
 	}
 	public static JButton getQueryButton() {

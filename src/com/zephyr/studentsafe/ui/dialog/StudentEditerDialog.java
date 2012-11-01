@@ -6,28 +6,21 @@ import com.zephyr.studentsafe.dao.StudentDAO;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.util.List;
-import java.util.Map;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
-import javax.swing.ComboBoxModel;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JTable;
-import javax.swing.KeyStroke;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
-import javax.swing.table.DefaultTableModel;
 
 
 /**
@@ -43,6 +36,10 @@ import javax.swing.table.DefaultTableModel;
 * LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
 */
 public class StudentEditerDialog extends javax.swing.JDialog {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel jPanel1;
 	private JLabel jLabel4;
 	private JLabel jLabel5;
@@ -210,7 +207,7 @@ public class StudentEditerDialog extends javax.swing.JDialog {
 		lowCardNumberInput.setText(student.getLowCardNumber());
 		for(int i = 0 ; i < classSelecter.getItemCount() ; i++ )
 		{
-			if(((ClassInfo)classSelecter.getItemAt(i)).getClassUID().equals(student.getClassUID()))
+			if(((ClassInfo)classSelecter.getItemAt(i)).getClassUID().equals(student.getClassInfo().getClassUID()))
 			{
 				classSelecter.setSelectedItem(((ClassInfo)classSelecter.getItemAt(i)));
 				break ;
@@ -226,8 +223,7 @@ public class StudentEditerDialog extends javax.swing.JDialog {
 		studentrfid.setStudentName(stuentNameInput.getText());
 		studentrfid.setRfidCardID(cardNumberInput.getText());
 		studentrfid.setLowCardNumber(lowCardNumberInput.getText());
-		studentrfid.setClassUID(((ClassInfo)classSelecter.getSelectedItem()).getClassUID());
-		studentrfid.setTeacherUID(((ClassInfo)classSelecter.getSelectedItem()).getTeacher());
+		studentrfid.setClassInfo((ClassInfo)classSelecter.getSelectedItem());
 		try
 		{
 			dao.saveORupdate(studentrfid);

@@ -3,15 +3,8 @@ package com.zephyr.studentsafe.ui.dialog;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.WindowEvent;
 
 import javax.swing.*;
@@ -20,14 +13,12 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableModel;
 
-import com.zephyr.studentsafe.impl.ProcessStudentData;
 import com.zephyr.studentsafe.serialport.RfidReader;
 import com.zephyr.studentsafe.ui.action.TableEventHandle;
 import com.zephyr.studentsafe.ui.action.button.ExportRowsToExcel;
 import com.zephyr.studentsafe.ui.action.button.ImportFromDatabase;
 import com.zephyr.studentsafe.ui.action.button.ImportStudentInfoAction;
 import com.zephyr.studentsafe.ui.action.button.InsertRowsToDBAction;
-import com.zephyr.studentsafe.ui.action.button.ReadCardNumber4Dev;
 import com.zephyr.studentsafe.ui.action.button.ReadeCardNumberAction;
 
 /**
@@ -41,6 +32,11 @@ import com.zephyr.studentsafe.ui.action.button.ReadeCardNumberAction;
  * ANY CORPORATE OR COMMERCIAL PURPOSE.
  */
 public class StudentImportMainFrame extends javax.swing.JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	{
 		// Set Look & Feel

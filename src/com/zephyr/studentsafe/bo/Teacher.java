@@ -31,6 +31,10 @@ public class Teacher {
 	public void setPhone_number(String phoneNumber) {
 		phone_number = phoneNumber;
 	} 
+	
+	public String toString(){
+		return name ;
+	}
 
 
 }

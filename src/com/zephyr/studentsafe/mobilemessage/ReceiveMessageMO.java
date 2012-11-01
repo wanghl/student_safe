@@ -1,11 +1,8 @@
 package com.zephyr.studentsafe.mobilemessage;
 
-import java.io.UnsupportedEncodingException;
-import java.util.TimerTask;
 
 import com.jasson.im.api.APIClient;
 import com.jasson.im.api.MOItem;
-import com.zephyr.studentsafe.dao.MessageLogDAO;
 import com.zephyr.studentsafe.dao.PrivateMessageDAO;
 import com.zephyr.studentsafe.exception.StudentSafeException;
 

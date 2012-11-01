@@ -16,23 +16,18 @@ import com.zephyr.studentsafe.ui.dialog.AboutFrame;
  */
 public class Log4jGUIAppender extends AppenderSkeleton {
 
-	@Override
 	protected void append(LoggingEvent loggingevent) {
-		final String message = this.layout.format(loggingevent);
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				
-				if (ZephyrPntMainFrame.getMessageBox() == null)
-					return;
-				ZephyrPntMainFrame.printLog(message);
-			}
-		});
+		String message = this.layout.format(loggingevent);
+
+		if (ZephyrPntMainFrame.getMessageBox() == null)
+			return;
+		ZephyrPntMainFrame.printLog(message);
 
 	}
 
-	@Override
 	public void close() {
-		if (this.closed) {
+		if (this.closed)
+		{
 			return;
 		}
 		this.closed = true;

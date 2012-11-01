@@ -32,7 +32,6 @@ import com.zephyr.studentsafe.bo.Teacher;
 import com.zephyr.studentsafe.dao.BaseDAO;
 import com.zephyr.studentsafe.dao.TeacherDAO;
 import com.zephyr.studentsafe.ui.MessageWindow;
-import com.zephyr.studentsafe.ui.ZephyrPntMainFrame;
 
 /**
  * This code was edited or generated using CloudGarden's Jigloo SWT/Swing GUI
@@ -45,6 +44,11 @@ import com.zephyr.studentsafe.ui.ZephyrPntMainFrame;
  * ANY CORPORATE OR COMMERCIAL PURPOSE.
  */
 public class TeacherManage extends javax.swing.JDialog {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	{
 		// Set Look & Feel
@@ -156,7 +160,7 @@ public class TeacherManage extends javax.swing.JDialog {
 
 							@Override
 							public void actionPerformed(ActionEvent e) {
-								int r = JOptionPane.showConfirmDialog(new ZephyrPntMainFrame(), "确定删除教师信息?",
+								int r = JOptionPane.showConfirmDialog(null, "确定删除教师信息?",
 										"删除确认", JOptionPane.YES_NO_CANCEL_OPTION);
 								if (r == JOptionPane.YES_NO_OPTION) 
 								{
@@ -187,9 +191,8 @@ public class TeacherManage extends javax.swing.JDialog {
 
 							@Override
 							public void actionPerformed(ActionEvent e) {
-								ZephyrPntMainFrame frame = new ZephyrPntMainFrame();
-								NewTeacher inst = new NewTeacher(frame);
-								inst.setLocationRelativeTo(frame);
+								NewTeacher inst = new NewTeacher(null);
+								inst.setLocationRelativeTo(null);
 								inst.setVisible(true);
 								
 							}
@@ -215,9 +218,8 @@ public class TeacherManage extends javax.swing.JDialog {
 								Teacher teacher = new Teacher();
 								teacher.setName(teacherTable.getValueAt(selectedRow, 1).toString());
 								List l   = dao.getByExample(Teacher.class, teacher);
-								ZephyrPntMainFrame frame = new ZephyrPntMainFrame();
-								EditTeacher inst = new EditTeacher(frame,(Teacher)l.get(0));
-								inst.setLocationRelativeTo(frame);
+								EditTeacher inst = new EditTeacher(null,(Teacher)l.get(0));
+								inst.setLocationRelativeTo(null);
 								inst.setVisible(true);
 							}
 							

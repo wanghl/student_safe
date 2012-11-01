@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Session;
-import org.hibernate.criterion.Example;
 
-import com.zephyr.studentsafe.bo.ClassInfo;
 import com.zephyr.studentsafe.bo.Studentrfid;
 
 

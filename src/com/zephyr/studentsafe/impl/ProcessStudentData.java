@@ -12,13 +12,10 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.sun.media.Log;
 import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.bo.StudentExt;
 import com.zephyr.studentsafe.exception.StudentSafeException;
-import com.zephyr.studentsafe.ui.ZephyrPntMainFrame;
 import com.zephyr.studentsafe.ui.action.ProcessJTableEvent;
-import com.zephyr.studentsafe.ui.dialog.DebugWindow;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 
 
@@ -52,10 +49,8 @@ public class ProcessStudentData implements Runnable {
 	public void run() {
 		// TODO Auto-generated method stub
 		log.info("Âß¼­ÅÐ¶ÏÏß³ÌÆô¶¯!");
-		while (true) {
-			if ( ! alive ){
-				return ;
-			}
+		while (alive) {
+			
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {

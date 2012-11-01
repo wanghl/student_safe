@@ -81,7 +81,7 @@ public class ImportDataToJTableAction {
 				Studentrfid rfid = null;
 				Studentfamily family = null;
 				String teacherName = (String) dao.getTeacherById(
-						((Studentrfid) list.get(0)).getTeacherUID()).get(0);
+						((Studentrfid) list.get(0)).getClassInfo().getTeacher()).get(0);
 				// getMaxDataRow() 返回有效数据行数 getMaxDataColumn返回有效数据列数
 				for (int i = 0; i < list.size(); i++)
 				{

@@ -2,13 +2,11 @@ package com.zephyr.studentsafe.mobilemessage;
 
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.TimerTask;
 
 import org.apache.log4j.Logger;
 import org.quartz.CronExpression;
@@ -91,8 +89,8 @@ public class SendMessage2Teacher implements Job{
 						sendMap.put("phoneNumber", cd.getTeacherMobile(c.getTeacher()));
 						sendMap.put("message", msgCount);
 						sendMap.put("messageType", Constants.MESSAGE_TYPE_KQ) ;
-						sendMap.put("className", s.get(0).getClassUID()) ;
-						sendMap.put("teacher",s.get(0).getTeacherUID()) ;
+						sendMap.put("className", s.get(0).getClassInfo().getClassUID()) ;
+						sendMap.put("teacher",s.get(0).getClassInfo().getTeacher()) ;
 						sender.sendMessage(sendMap) ;
 					//	buffer.append(msgCount + "\n\n");
 					//	sum += currentCount;

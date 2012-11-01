@@ -13,18 +13,18 @@
 
 package com.zephyr.studentsafe.dao;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
 
 import org.apache.log4j.Logger;
-import org.hibernate.Query;
+import org.hibernate.Criteria;
+import org.hibernate.FetchMode;
 import org.hibernate.Session;
+import org.hibernate.criterion.Example;
 import org.hibernate.criterion.Expression;
+import org.hibernate.criterion.Restrictions;
 
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Studenttimebook;
@@ -52,8 +52,11 @@ public class StudentDAO extends BaseDAO {
 		try {
 			s = HibernateUtil.getSession();
 			s.beginTransaction();
-			student = (Studentrfid) s.createCriteria(Studentrfid.class).add(
-					Expression.eq("rfidCardID", cardID)).uniqueResult();
+			student = (Studentrfid) s.createCriteria(Studentrfid.class)
+				.add(Expression.eq("rfidCardID", cardID))
+				.setFetchMode("classInfo", FetchMode.JOIN)
+				.setFetchMode("teacherInfo", FetchMode.JOIN)
+				.setMaxResults(1).uniqueResult();
 			s.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -65,7 +68,6 @@ public class StudentDAO extends BaseDAO {
 		return student;
 
 	}
-	//TODO: 重构之  和上面的方法合并
 	public List<Studentrfid> getStudentbyClassUID(String classUid) {
 		Session s = null;
 		List<Studentrfid> list = null;
@@ -237,6 +239,37 @@ public class StudentDAO extends BaseDAO {
 			}
 		}
 		return list;
+	}
+	
+	public List studentQuery(Studentrfid student){
+		Session s = null ;
+		List l = null ;
+		try{
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			Example example = Example.create(student);
+			example.excludeProperty("lastScanState");
+			Criteria query  = s.createCriteria(Studentrfid.class).add(example);
+			query.setFetchMode("classInfo", FetchMode.JOIN);
+			query.setFetchMode("teacherInfo", FetchMode.JOIN);
+			if(student.getClassInfo() != null)
+			{
+				query.add(Restrictions.eq("classInfo", student.getClassInfo())) ;
+			}
+			if(student.getTeacherInfo() != null)
+			{
+				query.add(Restrictions.eq("teacherInfo", student.getTeacherInfo()));
+			}
+			l = query.list();
+			s.getTransaction().commit();
+		}catch (Exception e){
+			e.printStackTrace();
+		}finally{
+			if (s != null){
+				s.close();
+			}
+		}
+		return l ;
 	}
 
 
