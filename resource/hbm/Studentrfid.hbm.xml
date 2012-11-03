@@ -4,6 +4,8 @@
 <!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
 <hibernate-mapping>
     <class name="com.zephyr.studentsafe.bo.Studentrfid" table="studentrfid" catalog="studentsafe">
+		<!-- 配置缓存,必须紧跟在class元素后面.对缓存中的Category对象采用读写型的并发访问策略 -->
+        <cache usage="read-write"/>
         <id name="studentUID" type="string">
             <column name="StudentUID" length="50" />
             <generator class="uuid.hex" />
@@ -26,27 +28,19 @@
         <property name="studentBirthday" type="date">
             <column name="StudentBirthday" length="0" />
         </property>
-        <property name="lastScanDate" type="date">
-            <column name="LastScanDate" length="0" />
-        </property>
-        <property name="lastScanState" type="int">
-            <column name="LastScanState" length="8" />
-        </property>
-        
-        <property name="callTimes" type="string">
-            <column name="callTimes" length="8" />
-        </property>
+       
         <property name="lowCardNumber" type="string">
             <column name="LowCardNumber" length="32" />
         </property>
  
         <set name="studentFamily" table="studentfamily" cascade="all" outer-join="true">
+        	<cache usage="read-write"/>
         	<key column="studentUID"></key>
         	<one-to-many class="com.zephyr.studentsafe.bo.Studentfamily" ></one-to-many>
         </set>
         <!-- class setting -->
-        <many-to-one name="classInfo" column="class" class="com.zephyr.studentsafe.bo.ClassInfo" fetch="select" /> 
+        <many-to-one name="classInfo" column="class" class="com.zephyr.studentsafe.bo.ClassInfo"  fetch="select" /> 
          <!-- teacher  -->
-        <many-to-one name="teacherInfo" column="teacher" class="com.zephyr.studentsafe.bo.Teacher" fetch="select" />  
+        <many-to-one name="teacherInfo" column="teacher" class="com.zephyr.studentsafe.bo.Teacher"  fetch="select" />  
     </class>
 </hibernate-mapping>

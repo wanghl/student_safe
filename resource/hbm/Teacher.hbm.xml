@@ -4,6 +4,7 @@
 <!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
 <hibernate-mapping>
     <class name="com.zephyr.studentsafe.bo.Teacher" table="do_org_user" catalog="studentsafe">
+       <cache usage="read-write"/>
         <id name="objUID" type="string">
             <column name="objuid" length="50" />
             <generator class="uuid.hex" />

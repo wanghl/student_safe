@@ -35,7 +35,7 @@ import com.zephyr.studentsafe.exception.StudentSafeException;
 public class HibernateUtil {
 	
 	private final static Logger log = Logger.getLogger(HibernateUtil.class);
-	private static SessionFactory sessionFactory ;
+	public  static SessionFactory sessionFactory ;
 	
 	private HibernateUtil(){
 		

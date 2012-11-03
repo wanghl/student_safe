@@ -3,8 +3,11 @@ package com.zephyr.studentsafe.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.FetchMode;
 import org.hibernate.Session;
+import org.hibernate.criterion.Expression;
 
+import com.zephyr.studentsafe.bo.ClassInfo;
 import com.zephyr.studentsafe.bo.Studentrfid;
 
 
@@ -69,12 +72,19 @@ public class ClassInfoDAO extends BaseDAO{
 		List l = new ArrayList() ;
 		try{
 			s = HibernateUtil.getSession();
+			ClassInfo classInfo  = new ClassInfo();
+			classInfo.setClassName(className);
+			classInfo =  (ClassInfo) getByExample(ClassInfo.class,classInfo).get(0);
 			s.beginTransaction();
-			l = s.createSQLQuery("SELECT s.* FROM studentrfid  s, class c WHERE s.class = c.objUID and c.classname='" + className +"'")
-				.addEntity(Studentrfid.class).list();
-			for (int i = 0 ; i < l.size() ;i ++){
-				((Studentrfid)l.get(i)).getStudentFamily().iterator().next();
-			}
+			l = s.createCriteria(Studentrfid.class)
+				.add(Expression.eq("classInfo", classInfo))
+				.setFetchMode("classInfo", FetchMode.JOIN)
+				.setFetchMode("teacherInfo", FetchMode.JOIN)
+				.list();
+//			for (int i = 0 ; i < l.size() ;i ++){
+//				((Studentrfid)l.get(i)).getStudentFamily().iterator();
+//			}
+//			
 			s.getTransaction().commit();
 		}catch (Exception e){
 			e.printStackTrace();

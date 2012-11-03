@@ -26,6 +26,7 @@ import org.hibernate.criterion.Example;
 import org.hibernate.criterion.Expression;
 import org.hibernate.criterion.Restrictions;
 
+import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Studenttimebook;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
@@ -44,19 +45,30 @@ public class StudentDAO extends BaseDAO {
 
 	private final static Logger log = Logger.getLogger(StudentDAO.class);
 
-	@SuppressWarnings("unchecked")
-	//TODO :需重构， 这个方法改掉。使用byEnsample模式
 	public Studentrfid getStudentbyCardID(String cardID) {
 		Session s = null;
 		Studentrfid student = null ;
+		List l = null ;
 		try {
 			s = HibernateUtil.getSession();
 			s.beginTransaction();
-			student = (Studentrfid) s.createCriteria(Studentrfid.class)
+			l =  s.createCriteria(Studentrfid.class)
 				.add(Expression.eq("rfidCardID", cardID))
+				.setCacheable(true)
 				.setFetchMode("classInfo", FetchMode.JOIN)
 				.setFetchMode("teacherInfo", FetchMode.JOIN)
-				.setMaxResults(1).uniqueResult();
+				.setCacheRegion("myCacheRegion")
+				.setMaxResults(1).list();
+			if(!l.isEmpty())
+			{
+				student = (Studentrfid) l.get(0);
+				for(Iterator<Studentfamily> it = student.getStudentFamily().iterator(); it.hasNext();){
+					it.next();
+				}
+				
+			}
+			
+			
 			s.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();

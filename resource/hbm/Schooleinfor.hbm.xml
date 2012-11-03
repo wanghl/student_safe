@@ -4,6 +4,7 @@
 <!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
 <hibernate-mapping>
     <class name="com.zephyr.studentsafe.bo.Schooleinfor" table="schooleinfor" >
+   		 <cache usage="read-write"/>
         <id name="SchooleUID" column="SchooleUID" type="string" length="50">
            <generator class="uuid.hex"></generator>
           </id>

@@ -10,6 +10,7 @@ import org.hibernate.criterion.Example;
 import sun.security.provider.MD5;
 
 
+import com.zephyr.studentsafe.bo.StudentProperty;
 import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
 
@@ -24,7 +25,6 @@ public class BaseDAO {
 			s.beginTransaction();
 
 			s.saveOrUpdate(obj);
-
 			s.getTransaction().commit();
 		} catch (Exception e) {
 			throw e;
@@ -43,7 +43,7 @@ public class BaseDAO {
 			s = HibernateUtil.getSession();
 			s.beginTransaction();
 			
-			list = s.createCriteria(clazz).list();
+			list = s.createCriteria(clazz).setCacheable(true).list();
 			
 			s.getTransaction().commit();
 		} catch (Exception e) {
@@ -192,6 +192,8 @@ public class BaseDAO {
 				example.excludeProperty("lastScanState");
 			}else if ( object instanceof Studentfamily){
 				example.excludeProperty("isSendMessage");
+			}else if(object instanceof StudentProperty){
+				example.excludeProperty("lastScanState");
 			}
 			l = s.createCriteria(clazz).add(example).list();
 			

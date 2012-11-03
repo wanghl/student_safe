@@ -1,6 +1,7 @@
 package com.zephyr.studentsafe.ui.action;
 
 import java.awt.Rectangle;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -86,7 +87,10 @@ public class ImportDataToJTableAction {
 				for (int i = 0; i < list.size(); i++)
 				{
 					rfid = (Studentrfid) list.get(i);
-					family = rfid.getStudentFamily().iterator().next();
+					for(Iterator it = rfid.getStudentFamily().iterator(); it.hasNext();)
+					{
+						family = (Studentfamily) it.next();
+					}
 					model.addRow(new Object[] { model.getRowCount() + 1,
 							className, rfid.getStudentName(), rfid.getRfidCardID(),
 							rfid.getLowCardNumber(),

@@ -1,12 +1,14 @@
 package com.zephyr.studentsafe.impl;
 
 import java.util.Calendar;
+import java.util.List;
 
 
 import org.apache.log4j.Logger;
 
 import com.zephyr.studentsafe.bo.CardException;
 import com.zephyr.studentsafe.bo.StudentExt;
+import com.zephyr.studentsafe.bo.StudentProperty;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Studenttimebook;
 import com.zephyr.studentsafe.dao.StudentDAO;
@@ -57,7 +59,13 @@ public class ProcessQueueData {
 			timeBook.setStudentName(student.getStudentName());
 			dao.saveORupdate(timeBook);
 			
-		
+			StudentProperty property = new StudentProperty();
+			property.setLinkStudent(student.getStudentUID());
+			List l  = dao.getByExample(StudentProperty.class, property) ;
+			if(! l.isEmpty())
+			{
+				property =  (StudentProperty) l.get(0);
+			}
 			// 刷新每天检测到的时间
 			Calendar c = Calendar.getInstance();
 			int h = c.get(Calendar.HOUR_OF_DAY);
@@ -68,19 +76,21 @@ public class ProcessQueueData {
 			if (h < 8 && s.getEvent().equals("入校"))
 			{
 				// 8点之前正常到校的
-				student.setLastScanState(1);
+				property.setLastScanState(1);
 			} else if ((h < 15 && h >= 8) && s.getEvent().equals("入校"))
 			{
 				// 8点（包括8点）到下午2点之间到校的 （这其中可能有部分是迟到的)
-				student.setLastScanState(2);
+				property.setLastScanState(2);
 
 			} else if (s.getEvent().equals("出校"))
 			{
 				student.setLastScanState(3);
 			}
-			student.setLastScanDate(Calendar.getInstance().getTime());
-			dao.saveORupdate(student);
+			property.setLastScanDate(Calendar.getInstance().getTime());
+			//dao.saveORupdate(student);
+			dao.saveORupdate(property);
 			// 发短信
+			
 			sender.sendMessage(student,s);
 		} catch (Exception e)
 		{

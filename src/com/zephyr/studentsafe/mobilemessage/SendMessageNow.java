@@ -40,7 +40,7 @@ public class SendMessageNow {
 				map.put("studentName", rfid.getStudentName());
 				map.put("rfidcardid", rfid.getRfidCardID());
 				map.put("className", rfid.getClassInfo().getClassUID());
-				map.put("teacher", rfid.getClassInfo().getTeacher());
+				map.put("teacher", rfid.getTeacherInfo().getObjUID());
 				sender.sendMessage(map);
 			
 				}catch(StudentSafeException e){
