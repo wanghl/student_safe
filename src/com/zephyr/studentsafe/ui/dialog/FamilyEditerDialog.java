@@ -9,6 +9,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JButton;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -82,6 +83,8 @@ public class FamilyEditerDialog extends javax.swing.JDialog {
 		try {
 			{
 				this.setTitle("\u7f16\u8f91\u5bb6\u957f\u4fe1\u606f");
+				this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/log.gif")).getImage());
+
 			}
 			{
 				jPanel1 = new JPanel();

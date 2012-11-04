@@ -6,6 +6,8 @@ import java.awt.GridLayout;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
@@ -19,12 +21,18 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+import org.jvnet.substance.SubstanceLookAndFeel;
+import org.jvnet.substance.skin.*;
+
+import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.dao.HibernateUtil;
+import com.zephyr.studentsafe.dao.StudentDAO;
 import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.ProcessStudentData;
 import com.zephyr.studentsafe.ui.action.button.ButtonsAction;
 import com.zephyr.studentsafe.ui.action.button.IButtonsAction;
 import com.zephyr.studentsafe.ui.dialog.AboutFrame;
+import com.zephyr.studentsafe.ui.dialog.NewStudentInfo;
 import com.zephyr.studentsafe.ui.dialog.StudentInfoManage;
 import com.zephyr.studentsafe.ui.dialog.TeacherManage;
 
@@ -112,8 +120,11 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 	
 	
 	public static void main(String[] args) {
+       // JFrame.setDefaultLookAndFeelDecorated(true);  
+       // JDialog.setDefaultLookAndFeelDecorated(true);  
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
+				//SubstanceLookAndFeel.setSkin(new SaharaSkin()) ;
 				ZephyrPntMainFrame inst = new ZephyrPntMainFrame();
 				inst.setLocationRelativeTo(null);
 				inst.setVisible(true);
@@ -402,6 +413,49 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 								//自动排序   
 								TableRowSorter sorter = new TableRowSorter(rfidInfoTable.getModel());
 								rfidInfoTable.setRowSorter(sorter);
+								//双击事件
+								rfidInfoTable.addMouseListener(new MouseListener(){
+
+									@Override
+									public void mouseClicked(MouseEvent e) {
+										// TODO Auto-generated method stub
+										if(e.getClickCount() == 2)
+										{
+											StudentDAO dao = new StudentDAO();
+											String rfidcardid = (String) rfidInfoTable.getValueAt(rfidInfoTable.getSelectedRow(), 1);
+											Studentrfid student = dao.getStudentbyCardID(rfidcardid);
+											NewStudentInfo inst = new NewStudentInfo(null,student,true);
+											inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+											inst.setLocationRelativeTo(null);
+											inst.setVisible(true);
+										}
+									}
+
+									@Override
+									public void mouseEntered(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+
+									@Override
+									public void mouseExited(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+
+									@Override
+									public void mousePressed(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+
+									@Override
+									public void mouseReleased(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+									
+								});
 								
 							}
 						}

@@ -39,7 +39,7 @@ public class ProcessQueueData {
 			long y = System.currentTimeMillis();
 			System.out.println(x);
 			System.out.println(y);
-			System.out.println("------------------------>"+(y-x));
+			System.out.println("------------------------>"+(y-x) % 1000);
 			// ¿¨ºÅ²»´æÔÚ
 			if (student == null)
 			{

@@ -22,6 +22,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -167,6 +168,8 @@ public class StudentInfoManage extends javax.swing.JDialog {
 		{
 			{
 				this.setTitle("\u5b66\u751f\u8d44\u6599\u7ba1\u7406");
+				this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/log.gif")).getImage());
+
 			}
 			{
 				jPanel1 = new JPanel();

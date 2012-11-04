@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -89,6 +90,9 @@ public class NewTeacher extends javax.swing.JDialog {
 				thisLayout.setVgap(5);
 				thisLayout.setColumns(1);
 				getContentPane().setLayout(thisLayout);
+				this.setTitle("\u65b0\u589e\u6559\u5e08\u4fe1\u606f");
+				this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/log.gif")).getImage());
+
 			}
 			{
 				jPanel1 = new JPanel();
@@ -159,6 +163,15 @@ public class NewTeacher extends javax.swing.JDialog {
 					jPanel1.add(cancelButton);
 					cancelButton.setBounds(207, 191, 99, 27);
 					cancelButton.setText("\u53d6\u6d88");
+					cancelButton.addActionListener(new ActionListener(){
+
+						@Override
+						public void actionPerformed(ActionEvent e) {
+							// TODO Auto-generated method stub
+							closeWindow();
+						}
+						
+					}) ;
 				}
 				{
 					jLabel5 = new JLabel();
@@ -194,6 +207,10 @@ public class NewTeacher extends javax.swing.JDialog {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	private void closeWindow(){
+		this.dispose();
 	}
 	
 	private void saveTeacher(){

@@ -16,6 +16,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -95,6 +96,8 @@ public class StudentEditerDialog extends javax.swing.JDialog {
 		try {
 			{
 				this.setTitle("\u7f16\u8f91\u5b66\u751f\u4fe1\u606f");
+				this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/log.gif")).getImage());
+
 			}
 			{
 				jPanel1 = new JPanel();
@@ -191,6 +194,16 @@ public class StudentEditerDialog extends javax.swing.JDialog {
 						jPanel2.add(cancelButton);
 						cancelButton.setText("\u53d6\u6d88");
 						cancelButton.setBounds(237, 2, 93, 28);
+						cancelButton.addActionListener(new ActionListener(){
+
+							@Override
+							public void actionPerformed(ActionEvent e) {
+								// TODO Auto-generated method stub
+								closeDialog();
+								
+							}
+							
+						});
 					}
 				}
 			}
@@ -234,6 +247,10 @@ public class StudentEditerDialog extends javax.swing.JDialog {
 		}
 		StudentInfoManage.getQueryButton().doClick();
 		this.dispose();
+	}
+	
+	public void closeDialog(){
+		this.dispose() ;
 	}
 	
 	public void processWindowEvent(WindowEvent e) {

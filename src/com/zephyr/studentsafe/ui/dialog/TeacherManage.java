@@ -12,6 +12,7 @@ import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -97,6 +98,8 @@ public class TeacherManage extends javax.swing.JDialog {
 		{
 			{
 				this.setTitle("\u6559\u5e08\u7ba1\u7406");
+				this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/log.gif")).getImage());
+
 			}
 			{
 				jPanel1 = new JPanel();

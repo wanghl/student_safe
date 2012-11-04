@@ -1309,7 +1309,8 @@ public class ButtonsAction implements IButtonsAction {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				StudentImportMainFrame inst = new StudentImportMainFrame();
-				inst.setLocationRelativeTo(new ZephyrPntMainFrame());
+				inst.setLocationRelativeTo(null);
+				inst.setDefaultCloseOperation(0);
 				inst.setVisible(true);
 			}
 		});

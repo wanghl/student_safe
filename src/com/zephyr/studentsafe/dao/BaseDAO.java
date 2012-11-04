@@ -76,6 +76,27 @@ public class BaseDAO {
 		return retsult ;
 	}
 	
+	// get object 需优化
+	public Object load(Class clazz,String id) {
+		Session s = null;
+		Object retsult = null ; 
+		try {
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			
+			retsult = s.load(clazz, id);
+			
+			s.getTransaction().commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if (s != null) {
+				s.close();
+			}
+		}
+		return retsult ;
+	}
+	
 	//需优化
 	public List getObjList(Class clazz) {
 		Session s = null;

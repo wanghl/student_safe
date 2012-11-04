@@ -96,20 +96,20 @@
         timeToLiveSeconds="4000"
         overflowToDisk="false"
         /> -->
-    <cache name="com.zephyr.studentsafe.bo.Studentrfid.classInfo"
+   <cache name="com.zephyr.studentsafe.bo.ClassInfo"
         maxElementsInMemory="10000"
         eternal="true"
-        timeToIdleSeconds="3600"
-        timeToLiveSeconds="4000"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="360"
         overflowToDisk="false"
-        /> -->
-    <cache name="com.zephyr.studentsafe.bo.Studentrfid.teacherInfo"
+        /> 
+    <cache name="com.zephyr.studentsafe.bo.Teacher"
         maxElementsInMemory="10000"
         eternal="true"
-        timeToIdleSeconds="3600"
-        timeToLiveSeconds="4000"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="360"
         overflowToDisk="false"
-        /> -->
+        /> 
 
     <!-- Place configuration for your caches following -->
     

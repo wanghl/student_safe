@@ -73,7 +73,7 @@ public class NewStudentInfo extends javax.swing.JDialog {
 	private JLabel jLabel3;
 	private JLabel jLabel4;
 	private JLabel jLabel5;
-	private JLabel jLabel6;
+	private JLabel removeFamilyButton;
 	private JButton cancelButton;
 	private JButton saveButton;
 	private JLabel addFamilyButton;
@@ -90,7 +90,7 @@ public class NewStudentInfo extends javax.swing.JDialog {
 	boolean update;
 	Studentrfid student;
 	List<Integer> newRows = new ArrayList<Integer>();
-
+	boolean showStudent = false ;
 	/**
 	 * Auto-generated main method to display this JDialog
 	 */
@@ -109,11 +109,19 @@ public class NewStudentInfo extends javax.swing.JDialog {
 		super(frame);
 		initGUI();
 	}
-
+	//编辑信息用
 	public NewStudentInfo(JFrame frame, Studentrfid student) {
 		super(frame);
 		initGUI();
 		this.student = student;
+		initData(student);
+	}
+	//双击进出校信息 显示学生资料用
+	public NewStudentInfo(JFrame frame ,Studentrfid student ,boolean enable){
+		super(frame);
+		initGUI();
+		this.student = student;
+		this.showStudent = enable;
 		initData(student);
 	}
 
@@ -122,6 +130,8 @@ public class NewStudentInfo extends javax.swing.JDialog {
 		{
 			{
 				this.setTitle("\u65b0\u589e\u4fe1\u606f");
+				this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/log.gif")).getImage());
+
 			}
 			{
 				jPanel1 = new JPanel();
@@ -259,13 +269,13 @@ public class NewStudentInfo extends javax.swing.JDialog {
 						});
 					}
 					{
-						jLabel6 = new JLabel();
-						jPanel2.add(jLabel6);
-						jLabel6.setText("jLabel6");
-						jLabel6.setBounds(39, 29, 33, 10);
-						jLabel6.setIcon(new ImageIcon(getClass().getClassLoader().getResource(
+						removeFamilyButton = new JLabel();
+						jPanel2.add(removeFamilyButton);
+						removeFamilyButton.setText("removeFamilyButton");
+						removeFamilyButton.setBounds(39, 29, 33, 10);
+						removeFamilyButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource(
 								"com/zephyr/studentsafe/icons/117.png")));
-						jLabel6.addMouseListener(new MouseListener() {
+						removeFamilyButton.addMouseListener(new MouseListener() {
 
 							@Override
 							public void mouseClicked(MouseEvent e) {
@@ -467,7 +477,8 @@ public class NewStudentInfo extends javax.swing.JDialog {
 		classInfo.setClassUID(student.getClassInfo().getClassUID());
 
 		classList.removeAllItems();
-		classList.insertItemAt(dao.get(ClassInfo.class, classInfo.getClassUID()), 0);
+		classList.insertItemAt(dao.get(ClassInfo.class, student.getClassInfo().getClassUID()), 0);
+		//classList.setSelectedItem(student.getClassInfo()) ;
 		classList.setSelectedIndex(0);
 		classList.setEnabled(false);
 		// for (int i = 0; i < classList.getItemCount(); i++)
@@ -491,6 +502,13 @@ public class NewStudentInfo extends javax.swing.JDialog {
 					family.getRelationship(),
 					family.getFamilyPhone()
 			});
+		}
+		//如果是在进出校信息表里双击某行 
+		if(showStudent)
+		{
+			addFamilyButton.setEnabled(false);
+			removeFamilyButton.setEnabled(false);
+			saveButton.setEnabled(false);
 		}
 	}
 
