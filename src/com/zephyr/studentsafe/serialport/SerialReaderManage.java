@@ -189,7 +189,7 @@ public class SerialReaderManage implements Runnable
 				try {
 					Thread.sleep(400);
 				} catch (InterruptedException el) {
-					log.error(el);
+					//log.error(el);
 				}
 				if (serialPort_A != null) {
 					
