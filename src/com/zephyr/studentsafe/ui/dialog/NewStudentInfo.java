@@ -422,6 +422,7 @@ public class NewStudentInfo extends javax.swing.JDialog {
 				family = new Studentfamily();
 				family.setFamilyName(model.getValueAt(i, 1).toString());
 				family.setFamilyPhone(model.getValueAt(i, 3).toString());
+				family.setRelationship(model.getValueAt(i, 2).toString());
 				set.add(family);
 
 			}

@@ -32,6 +32,10 @@
         <property name="lowCardNumber" type="string">
             <column name="LowCardNumber" length="32" />
         </property>
+        
+         <property name="remainingTime" type="string">
+            <column name="remaining_time" length="64" />
+        </property>
  
         <set name="studentFamily" table="studentfamily" cascade="all" outer-join="true">
         	<cache usage="read-write"/>

@@ -13,19 +13,25 @@
 
 package com.zephyr.studentsafe.dao;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.FetchMode;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.criterion.Example;
 import org.hibernate.criterion.Expression;
 import org.hibernate.criterion.Restrictions;
 
+import com.zephyr.studentsafe.bo.ClassInfo;
 import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Studenttimebook;
@@ -253,6 +259,76 @@ public class StudentDAO extends BaseDAO {
 		return list;
 	}
 	
+	public Map<ClassInfo,Object[]> studentInOutSchoolStatistics(String date ,int flag ){
+		Session s = null;
+		List list = null;
+		ClassInfoDAO dao = new ClassInfoDAO();
+		Object[] objarray = null ;
+		Map<ClassInfo,Object[]> map = new HashMap<ClassInfo,Object[]>();
+		try {
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			list = s.createCriteria(ClassInfo.class).list();
+			for(int i = 0 ; i < list.size() ; i ++)
+			{
+			 objarray = (Object[]) s.createSQLQuery("select (select count(*) from studentrfid where class='" + ((ClassInfo)list.get(i)).getClassUID() + "') AS pp, " +
+						"(select count(*) from studentrfid where rfidcardid != '' and class='" + ((ClassInfo)list.get(i)).getClassUID() + "') AS ppc, count(*)  from studentrfid s ,student_property p where p.link_student = s.studentuid " +
+						"and strcmp(p.last_scan_date,'" + date + "')=0 and  s.class='" + ((ClassInfo)list.get(i)).getClassUID() + "' and p.last_scan_state=" + flag)
+						.list().get(0);
+			 map.put(((ClassInfo)list.get(i)), objarray);
+				
+			}
+			
+			s.getTransaction().commit();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if (s != null) {
+				s.close();
+			}
+		}
+		return map;
+	}
+	
+	//统计未检测到学生名单
+	public Map<String,List> countUnCheckStudent(String className,String date ,int flag){
+		Session s = null;
+		List list = null;
+		ClassInfoDAO dao = new ClassInfoDAO();
+		Map<String,List> map = new HashMap<String,List>();
+		try {
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			ClassInfo classInfo = new ClassInfo();
+			classInfo.setClassName(className);
+			classInfo = (ClassInfo) dao.getByExample(ClassInfo.class, classInfo).get(0);
+			list = s.createSQLQuery("SELECT s.studentname , s.rfidcardid,classname ,MAX(TIME),t.event  FROM studenttimebook AS t,"
+										+" studentrfid AS s , student_property AS p, class AS c WHERE STRCMP(last_scan_date,'"+ date + "')=0  AND   last_scan_state<>"+ flag
+										+ " AND p.link_student = s.StudentUID AND  s.class='"+ classInfo.getClassUID() 
+										+ "'AND s.RfidCardID = t.RfidCardID AND s.class = c.objUID and s.rfidcardid != '' GROUP BY s.StudentName").list();
+				map.put("uncheck", list);
+			list = s.createSQLQuery("select s.studentname,s.rfidcardid,c.classname ,'无记录','无' from studentrfid s ,class c" +
+					" where s.class = c.objuid and s.studentuid not in (select link_student from student_property )" +
+					" and s.rfidcardid != '' and c.objuid='" + classInfo.getClassUID() + "'").list();
+				map.put("less", list);
+			
+			
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			
+			s.getTransaction().commit();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if (s != null) {
+				s.close();
+			}
+		}
+		return map;
+	}
+	
 	public List studentQuery(Studentrfid student){
 		Session s = null ;
 		List l = null ;
@@ -287,7 +363,8 @@ public class StudentDAO extends BaseDAO {
 
 	public static void main(String[] argvs) {
 		StudentDAO dao = new StudentDAO();
-		System.out.println(dao.getStudentAttendanceCount());
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		dao.countUnCheckStudent("2011级4班", "2012-11-05", 3);
 	}
 
 }

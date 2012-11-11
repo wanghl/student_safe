@@ -70,8 +70,7 @@ public class StudentSafeUtil {
 	private static PropertiesConfiguration config = null;
 	//随机数种子
 	private  static final String allChars = "1234567890abcdef";
-	public static PropertiesConfiguration getConfig()
-			throws StudentSafeException {
+	public static PropertiesConfiguration getConfig(){
 		if (config == null) {
 			try {
 				config = new PropertiesConfiguration(
@@ -79,11 +78,10 @@ public class StudentSafeUtil {
 				config.setReloadingStrategy(new FileChangedReloadingStrategy());
 				return config;
 			} catch (ConfigurationException e) {
-				throw new StudentSafeException(e.getLocalizedMessage());
+				log.error(e);
 			}
-		} else {
-			return config ;
-		}
+		} 
+		return config;
 	}
 
 	public static Date formatDate(String dstr) throws ParseException {
@@ -93,17 +91,14 @@ public class StudentSafeUtil {
 
 	public static String getStringValue(String key) {
 		String value = null;
-		try {
 			value = getConfig().getString(key);
-		} catch (StudentSafeException e) {
-			// TODO Auto-generated catch block
-			log.error("读配置文件错误！" + e.getLocalizedMessage());
-		}
+		
 		return value;
 	}
 
-	public static int getIntValue(String key) throws StudentSafeException {
-		return getConfig().getInt(key);
+	public static int getIntValue(String key) {
+			return getConfig().getInt(key);
+		
 	}
 
 	public static String getCurrentDateAll() {

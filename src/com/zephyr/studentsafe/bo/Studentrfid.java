@@ -70,16 +70,16 @@ public class Studentrfid{
 	}
 
 	//剩余通话时长
-	private String callTimes ;
+	private String remainingTime; ;
 	//低频卡号
 	private String lowCardNumber ;
 	
-	public String getCallTimes() {
-		return callTimes;
+	public String getRemainingTime() {
+		return remainingTime;
 	}
 
-	public void setCallTimes(String callTimes) {
-		this.callTimes = callTimes;
+	public void setRemainingTime(String callTimes) {
+		this.remainingTime = callTimes;
 	}
 
 	public String getLowCardNumber() {

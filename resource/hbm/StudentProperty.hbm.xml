@@ -13,10 +13,10 @@
             <column name="link_student" length="50" />
         </property>
         <property name="lastScanDate" type="date">
-            <column name="lase_scan_date" length="0" />
+            <column name="last_scan_date" length="0" />
         </property>
         <property name="lastScanState" type="int">
-            <column name="lase_scan_state" length="8" />
+            <column name="last_scan_state" length="8" />
         </property>
         <property name="remainingTime" type="string">
             <column name="remaining_time" length="64" />

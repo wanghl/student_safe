@@ -54,7 +54,7 @@ public class SettingFrame extends javax.swing.JFrame {
 	private JLabel jLabel10;
 	private JPasswordField password;
 	private static JCheckBox sendTeacherKQ;
-	private JTextField timeToSchoolPM;
+	private JTextField timeOutSchool;
 	private JLabel jLabel12;
 	private JTextField timeToSchool;
 	private JLabel jLabel11;
@@ -215,14 +215,10 @@ public class SettingFrame extends javax.swing.JFrame {
 							jPanel5.add(sendTeacherKQ);
 							sendTeacherKQ.setText("\u53d1\u9001\u73ed\u7ea7\u8003\u52e4");
 							sendTeacherKQ.setBounds(16, 15, 149, 27);
-							try {
 								if (StudentSafeUtil.getIntValue(Constants.SEND_TEACHER_KQ) == 1){
 									sendTeacherKQ.setSelected(true);
 								}
-							} catch (StudentSafeException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
+							
 						}
 						{
 							jLabel11 = new JLabel();
@@ -239,14 +235,14 @@ public class SettingFrame extends javax.swing.JFrame {
 						{
 							jLabel12 = new JLabel();
 							jPanel5.add(jLabel12);
-							jLabel12.setText("\u4e2d\u5348\u4e0a\u5b66\u65f6\u95f4");
+							jLabel12.setText("\u4e0b\u5348\u653e\u5b66\u65f6\u95f4");
 							jLabel12.setBounds(232, 48, 97, 18);
 						}
 						{
-							timeToSchoolPM = new JTextField();
-							jPanel5.add(timeToSchoolPM);
-							timeToSchoolPM.setBounds(335, 45, 94, 24);
-							timeToSchoolPM.setText("15");
+							timeOutSchool = new JTextField();
+							jPanel5.add(timeOutSchool);
+							timeOutSchool.setBounds(335, 45, 94, 24);
+							timeOutSchool.setText("16");
 						}
 					}
 					{
@@ -409,7 +405,7 @@ public class SettingFrame extends javax.swing.JFrame {
 		//time to school
 		SettingProperites.put(Constants.TIME_TO_SCHOOL, timeToSchool.getText()) ;
 		// time to school pm
-		SettingProperites.put(Constants.TIME_TO_SCHOOL_PM, timeToSchoolPM.getText());
+		SettingProperites.put(Constants.TIME_OUT_SCHOOL, timeOutSchool.getText());
 
 		try {
 			SettingProperites.saveSetting();

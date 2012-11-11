@@ -49,11 +49,11 @@ public class MobileMessageHandler {
         	log.info("短信发送服务初始化成功");
         else if(connectRe == APIClient.IMAPI_CONN_ERR){
         	log.info("连接MAS服务器失败");
-        	throw new StudentSafeException(APIClient.IMAPI_CONN_ERR,"连接MAS服务器失败");
+        	throw new StudentSafeException(APIClient.IMAPI_CONN_ERR,"连接MAS服务器失败!");
         }
         else if(connectRe == APIClient.IMAPI_API_ERR){
         	log.info("MAS apiID不存在");
-        	throw new StudentSafeException(APIClient.IMAPI_CONN_ERR,"MAS apiID不存在");
+        	throw new StudentSafeException(APIClient.IMAPI_CONN_ERR,"MAS apiID不存在!");
         }
 	}
 	
@@ -66,17 +66,13 @@ public class MobileMessageHandler {
 		
 	}
 	
-	public static void alive(){
-		try {
+	public static void alive() throws StudentSafeException{
 				if( ! alive ){
 					handler = new APIClient();
 					init() ;
 					alive = true ;
 				}
-		} catch (StudentSafeException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	}
 
 	

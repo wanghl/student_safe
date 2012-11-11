@@ -7,12 +7,14 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.zephyr.studentsafe.bo.CardException;
+import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.bo.StudentExt;
 import com.zephyr.studentsafe.bo.StudentProperty;
 import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Studenttimebook;
 import com.zephyr.studentsafe.dao.StudentDAO;
 import com.zephyr.studentsafe.mobilemessage.SendMessageNow;
+import com.zephyr.studentsafe.util.StudentSafeUtil;
 
 public class ProcessQueueData {
 	private final static Logger log = Logger.getLogger(ProcessQueueData.class);
@@ -34,12 +36,7 @@ public class ProcessQueueData {
 				log.info("学生" + s.getRfidCardID() + "进入点和离开点相同，不更新数据库记录");
 				return;
 			}
-			long x = System.currentTimeMillis();
 			Studentrfid student = dao.getStudentbyCardID(s.getRfidCardID());
-			long y = System.currentTimeMillis();
-			System.out.println(x);
-			System.out.println(y);
-			System.out.println("------------------------>"+(y-x) % 1000);
 			// 卡号不存在
 			if (student == null)
 			{
@@ -73,7 +70,9 @@ public class ProcessQueueData {
 			// 每天早上8点 中午14点给老师发送班级考勤短信。
 			// 早上入校（8点之前）状态是1 下午上课之间（1点半之前）入校状态是2
 			// 这样8点统计考勤的时候查询当天lastscanstate=1 的数据，14点统计的时候查询=2的
-			if (h < 8 && s.getEvent().equals("入校"))
+			int amTime = StudentSafeUtil.getIntValue(Constants.TIME_TO_SCHOOL);
+			int pmTime = StudentSafeUtil.getIntValue(Constants.TIME_OUT_SCHOOL);
+			if (h < amTime && s.getEvent().equals("入校"))
 			{
 				// 8点之前正常到校的
 				property.setLastScanState(1);
@@ -82,9 +81,9 @@ public class ProcessQueueData {
 				// 8点（包括8点）到下午2点之间到校的 （这其中可能有部分是迟到的)
 				property.setLastScanState(2);
 
-			} else if (s.getEvent().equals("出校"))
+			} else if (h >= pmTime && s.getEvent().equals("出校"))
 			{
-				student.setLastScanState(3);
+				property.setLastScanState(3);
 			}
 			property.setLastScanDate(Calendar.getInstance().getTime());
 			//dao.saveORupdate(student);
@@ -95,7 +94,7 @@ public class ProcessQueueData {
 		} catch (Exception e)
 		{
 			log.error("处理卡号为" + s.getRfidCardID() + "的学生信息时发生错误！");
-			log.error(e.getLocalizedMessage());
+			log.error(e);
 		}
 
 	}

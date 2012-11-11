@@ -28,7 +28,7 @@ public class Constants {
 	public static final String RECEIVE_RPT_TIME="receive_rpt_time";
 	public static final String SEND_TEACHER_KQ = "send_teacher_kq"; //给教师发进出校门班级考情
 	public static final String TIME_TO_SCHOOL = "time_to_school"; //早上上学时间
-	public static final String TIME_TO_SCHOOL_PM = "time_to_school_pm"; //下午上学时间.
+	public static final String TIME_OUT_SCHOOL = "time_out_school"; //下午放学时间.
 	
 	///.-------------------------------------------------------
 	//messagelog messagetype字段 ，信息类型

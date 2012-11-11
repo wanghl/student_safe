@@ -65,6 +65,24 @@ public class ClassInfoDAO extends BaseDAO{
 		}
 		return (l.isEmpty()) ? new Object[]{} : l.toArray();
 	}
+	//get class and teacher 
+	public List getClassInfo(){
+		Session s = null ;
+		List l = new ArrayList() ;
+		try{
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			l = s.createSQLQuery("SELECT c.classname ,t.name FROM class c ,do_org_user t WHERE c.teacher = t.objuid").list();
+			s.getTransaction().commit();
+		}catch (Exception e){
+			e.printStackTrace();
+		}finally{
+			if (s != null){
+				s.close();
+			}
+		}
+		return l ;
+	}
 	
 	//get student by class list
 	public List getStudentByClassName(String className){

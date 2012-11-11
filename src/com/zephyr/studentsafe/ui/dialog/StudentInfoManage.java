@@ -25,6 +25,7 @@ import javax.swing.JComboBox;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
@@ -44,7 +45,9 @@ import com.zephyr.studentsafe.bo.Studentrfid;
 import com.zephyr.studentsafe.bo.Teacher;
 import com.zephyr.studentsafe.dao.ClassInfoDAO;
 import com.zephyr.studentsafe.dao.StudentDAO;
+import com.zephyr.studentsafe.serialport.SerialReaderManage;
 import com.zephyr.studentsafe.ui.MessageWindow;
+import com.zephyr.studentsafe.util.ThreadPoolManage;
 
 /**
  * This code was edited or generated using CloudGarden's Jigloo SWT/Swing GUI
@@ -64,6 +67,7 @@ public class StudentInfoManage extends javax.swing.JDialog {
 	private JPanel jPanel1;
 	private JScrollPane jScrollPane1;
 	private JButton newFamilyButton;
+	private JButton deleteButton;
 	private JButton newStudentButton;
 	private JButton editButton;
 	public static JButton queryButton;
@@ -411,6 +415,22 @@ public class StudentInfoManage extends javax.swing.JDialog {
 							});
 						}
 						{
+							deleteButton = new JButton();
+							jPanel5.add(deleteButton);
+							deleteButton.setText("\u5220\u9664");
+							deleteButton.setPreferredSize(new java.awt.Dimension(139, 27));
+							deleteButton.addActionListener(new ActionListener(){
+
+								@Override
+								public void actionPerformed(ActionEvent e) {
+									// TODO Auto-generated method stub
+									deleteAction();
+									
+								}
+								
+							});
+						}
+						{
 							newStudentButton = new JButton();
 							jPanel5.add(newStudentButton);
 							newStudentButton.setText("\u65b0\u589e\u5b66\u751f\u4fe1\u606f");
@@ -610,6 +630,27 @@ public class StudentInfoManage extends javax.swing.JDialog {
 	}
 	public static JButton getQueryButton() {
 		return queryButton;
+	}
+	//删除 。
+	private void deleteAction(){
+		int selectedRow = studentInfoTable.getSelectedRow();
+		if(selectedRow < 0)
+		{
+			MessageWindow.show("请选择要删除的学生");
+			return ;
+		}
+		StudentDAO dao = new StudentDAO();
+		Studentrfid student = new Studentrfid();
+		student.setRfidCardID(studentInfoTable.getValueAt(selectedRow, 2).toString());
+		student = (Studentrfid) dao.getByExample(Studentrfid.class, student).get(0);
+		int r = JOptionPane.showConfirmDialog(null,
+		        "确定要删除卡号为[ " + student.getRfidCardID() + " ]的学生信息?", "提示...", JOptionPane.YES_NO_OPTION,
+		        JOptionPane.QUESTION_MESSAGE );
+		if(r == JOptionPane.YES_OPTION )
+		{
+			dao.delete(student);
+			queryButtonEvent();
+		}
 	}
 
 }

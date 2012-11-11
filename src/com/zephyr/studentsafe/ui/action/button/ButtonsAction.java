@@ -1,5 +1,6 @@
 package com.zephyr.studentsafe.ui.action.button;
 
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
@@ -9,8 +10,11 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Timer;
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
@@ -186,6 +190,7 @@ public class ButtonsAction implements IButtonsAction {
 				try {
 					SettingFrame inst = new SettingFrame();
 					inst.setLocationRelativeTo(null);
+					inst.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					inst.setVisible(true);
 
 				} catch (Exception el) {
@@ -254,7 +259,22 @@ public class ButtonsAction implements IButtonsAction {
 				if (SerialReaderManage.isThreadAlive()) {
 
 					log.info("连接MAS服务器...");
-					MobileMessageHandler.alive();
+					try{
+						MobileMessageHandler.alive();
+					}catch (StudentSafeException e)
+					{
+						log.error(e);
+						
+						int r = JOptionPane.showConfirmDialog(null,
+						        e.getMessage() + "\n是否继续启动程序？", "ERROR", JOptionPane.YES_NO_OPTION,
+						        JOptionPane.ERROR_MESSAGE );
+						if(r == JOptionPane.NO_OPTION )
+						{
+							SerialReaderManage.shutDownThread();
+							ThreadPoolManage.relaseThreadPool();
+							return ;
+						}
+					}
 
 					log.info("初始化数据库连接...");
 					// 先判断数据库连接是不是已经被关闭了，如果关闭，开启之
@@ -281,7 +301,7 @@ public class ButtonsAction implements IButtonsAction {
 				a.add("131740&12");
 				a.add("131741&12");
 				a.add("131742&12");
-//				a.add("131743&12");
+				a.add("131743&12");
 //				a.add("131744&12");
 //				a.add("131745&12");
 //				a.add("131746&12");
@@ -1226,6 +1246,7 @@ public class ButtonsAction implements IButtonsAction {
 			ZephyrPntMainFrame.startButton.setIcon(new ImageIcon(getClass()
 					.getClassLoader().getResource(
 							"com/zephyr/studentsafe/icons/start.png")));
+			jcp.setEnabled(true);
 
 		}
 		// 执行收回执任务

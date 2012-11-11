@@ -22,6 +22,7 @@ import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
 import org.jvnet.substance.SubstanceLookAndFeel;
+import org.jvnet.substance.api.SubstanceSkin;
 import org.jvnet.substance.skin.*;
 
 import com.zephyr.studentsafe.bo.Studentrfid;
@@ -32,6 +33,8 @@ import com.zephyr.studentsafe.impl.ProcessStudentData;
 import com.zephyr.studentsafe.ui.action.button.ButtonsAction;
 import com.zephyr.studentsafe.ui.action.button.IButtonsAction;
 import com.zephyr.studentsafe.ui.dialog.AboutFrame;
+import com.zephyr.studentsafe.ui.dialog.ClassManage;
+import com.zephyr.studentsafe.ui.dialog.InOutSchoolStatistics;
 import com.zephyr.studentsafe.ui.dialog.NewStudentInfo;
 import com.zephyr.studentsafe.ui.dialog.StudentInfoManage;
 import com.zephyr.studentsafe.ui.dialog.TeacherManage;
@@ -65,6 +68,10 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 	private JScrollPane jScrollPane1;
 	private JScrollPane jScrollPane2;
 	private static JTable rfidInfoTable;
+	private JSeparator jSeparator10;
+	private JSeparator jSeparator9;
+	private JMenuItem jMenuItem5;
+	private JMenu manage;
 	private JMenuItem jMenuItem2;
 	private JPopupMenu jPopupMenu1;
 	private static JTextArea logMessageBox;
@@ -121,12 +128,14 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 	
 	public static void main(String[] args) {
        // JFrame.setDefaultLookAndFeelDecorated(true);  
-       // JDialog.setDefaultLookAndFeelDecorated(true);  
+        //JDialog.setDefaultLookAndFeelDecorated(true);  
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				//SubstanceLookAndFeel.setSkin(new SaharaSkin()) ;
+				//SubstanceLookAndFeel.setSkin(new GraphiteAquaSkin()) ;
 				ZephyrPntMainFrame inst = new ZephyrPntMainFrame();
 				inst.setLocationRelativeTo(null);
+				//start db
+				HibernateUtil.alive();
 				inst.setVisible(true);
 			}
 		});
@@ -186,7 +195,7 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 										public void actionPerformed(ActionEvent evt) {
 											//startButton
 											try {
-												action.startButtonPerformeAction(evt, null) ;
+												action.startButtonPerformeAction(evt, startMenu) ;
 											} catch (StudentSafeException e) {
 												// TODO Auto-generated catch block
 												e.printStackTrace();
@@ -202,6 +211,7 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 									settingButton = new JButton();
 									settingButton.setBorder(BorderFactory.createTitledBorder(""));
 									settingButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/set.png")));
+									settingButton.setToolTipText("\u8bbe\u7f6e");
 									settingButton.addActionListener(new ActionListener() {
 										//setting button action .
 										public void actionPerformed(ActionEvent evt) {
@@ -263,6 +273,7 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 									countButton = new JButton();
 									countButton.setBorder(BorderFactory.createTitledBorder(""));
 									countButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/cc.png")));
+									countButton.setToolTipText("\u68c0\u6d4b\u7387\u7edf\u8ba1");
 									countButton.addActionListener(new ActionListener() {
 										public void actionPerformed(ActionEvent evt) {
 											countButtonActionPerformed(evt);
@@ -317,6 +328,7 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 									jButton3 = new JButton();
 									jButton3.setIcon(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/BWS_039.png")));
 									jButton3.setBorder(BorderFactory.createTitledBorder(""));
+									jButton3.setToolTipText("\u5173\u4e8e...");
 									jButton3.addActionListener(new ActionListener() {
 										public void actionPerformed(ActionEvent evt) {
 												showAboutDialog();
@@ -406,10 +418,15 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 									}
 								};
 								jScrollPane1.setViewportView(rfidInfoTable);
+								rfidInfoTable.setRowHeight(20);
+								//设置第列宽度
+								rfidInfoTable.setAutoResizeMode(JTable.AUTO_RESIZE_NEXT_COLUMN);
+								rfidInfoTable.getTableHeader().getColumnModel().getColumn(2).setPreferredWidth(150);
 								//居中显示
 								DefaultTableCellRenderer  renderer = (DefaultTableCellRenderer) rfidInfoTable.getTableHeader().getDefaultRenderer();
 								renderer.setHorizontalAlignment(renderer.CENTER);
-								//rfidInfoTable.setModel(rfidInfoTableModel);
+								rfidInfoTable.getTableHeader().setDefaultRenderer(renderer);
+								rfidInfoTable.setModel(rfidInfoTableModel);
 								//自动排序   
 								TableRowSorter sorter = new TableRowSorter(rfidInfoTable.getModel());
 								rfidInfoTable.setRowSorter(sorter);
@@ -634,35 +651,63 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 						jMenu4.add(jSeparator8);
 					}
 					{
-						jMenuItem3 = new JMenuItem();
-						jMenu4.add(jMenuItem3);
-						jMenuItem3.setText("\u5b66\u751f\u7ba1\u7406");
-						jMenuItem3.addActionListener(new ActionListener() {
-
-							@Override
-							public void actionPerformed(ActionEvent e) {
-								StudentInfoManage inst = new StudentInfoManage(null);
-								inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-								inst.setLocationRelativeTo(null);
+						manage = new JMenu();
+						jMenu4.add(manage);
+						manage.setText("\u6570\u636e\u7ba1\u7406");
+						{
+							jMenuItem4 = new JMenuItem();
+							manage.add(jMenuItem4);
+							jMenuItem4.setText("\u6559\u5e08\u7ba1\u7406");
+							jMenuItem4.setBounds(0, 26, 132, 26);
+							jMenuItem4.addActionListener(new ActionListener() {
+								public void actionPerformed(ActionEvent evt) {
+									TeacherManage inst = new TeacherManage(null);
+									inst.setLocationRelativeTo(null);
+									inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+									inst.setVisible(true);
+								}
+							});
+						}
+						{
+							jSeparator9 = new JSeparator();
+							manage.add(jSeparator9);
+						}
+						{
+							jMenuItem3 = new JMenuItem();
+							manage.add(jMenuItem3);
+							jMenuItem3.setText("\u5b66\u751f\u7ba1\u7406");
+							jMenuItem3.setBounds(0, 26, 132, 26);
+							jMenuItem3.addActionListener(new ActionListener() {
 								
-								inst.setVisible(true);
+								@Override
+								public void actionPerformed(ActionEvent e) {
+									StudentInfoManage inst = new StudentInfoManage(null);
+									inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+									inst.setLocationRelativeTo(null);
+									
+									inst.setVisible(true);
+									
+								}
 								
-							}
-							
-						}) ;
-					}
-					{
-						jMenuItem4 = new JMenuItem();
-						jMenu4.add(jMenuItem4);
-						jMenuItem4.setText("\u6559\u5e08\u7ba1\u7406");
-						jMenuItem4.addActionListener(new ActionListener() {
-							public void actionPerformed(ActionEvent evt) {
-								TeacherManage inst = new TeacherManage(null);
-								inst.setLocationRelativeTo(null);
-								inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-								inst.setVisible(true);
-							}
-						});
+							}) ;
+						}
+						{
+							jSeparator10 = new JSeparator();
+							manage.add(jSeparator10);
+						}
+						{
+							jMenuItem5 = new JMenuItem();
+							manage.add(jMenuItem5);
+							jMenuItem5.setText("\u73ed\u7ea7\u7ba1\u7406");
+							jMenuItem5.addActionListener(new ActionListener() {
+								public void actionPerformed(ActionEvent evt) {
+									ClassManage inst = new ClassManage(null);
+									inst.setLocationRelativeTo(null);
+									inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+									inst.setVisible(true);
+								}
+							});
+						}
 					}
 					{
 						jMenuItem1 = new JMenuItem();
@@ -745,6 +790,7 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 				inst.setLocationRelativeTo(null);
 				//inst.setUndecorated(true);
 				inst.getRootPane().setWindowDecorationStyle(JRootPane.INFORMATION_DIALOG) ;
+				inst.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 				inst.setVisible(true);
 			}
 		});
@@ -784,8 +830,14 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 	}
 	
 	private void countButtonActionPerformed(ActionEvent evt) {
-		System.out.println("countButton.actionPerformed, event="+evt);
-		//TODO add your code for countButton.actionPerformed
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				InOutSchoolStatistics inst = new InOutSchoolStatistics(null);
+				inst.setLocationRelativeTo(null);
+				inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+				inst.setVisible(true);
+			}
+		});
 	}
 	
 	/**
