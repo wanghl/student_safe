@@ -1,1 +1,1 @@
-${familyName}${familySex}您好！您的孩子${studentName}同学已于${date}离开学校。${schooleName}。
+${familyName}您好！您的孩子${studentName}同学已于${date}离开学校。${schooleName}。

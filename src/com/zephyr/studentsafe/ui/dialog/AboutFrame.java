@@ -82,7 +82,7 @@ public class AboutFrame extends javax.swing.JFrame {
 				{
 					jLabel2 = new JLabel();
 					jPanel1.add(jLabel2);
-					jLabel2.setText("Lastbuild: 2012/09/20");
+					jLabel2.setText("Lastbuild: 2012/11/13");
 					jLabel2.setBounds(102, 115, 180, 18);
 				}
 				{

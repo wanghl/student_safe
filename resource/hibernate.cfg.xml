@@ -29,9 +29,9 @@
 			org.hibernate.cache.EhCacheProvider
 		</property>
 		<!-- 开启二级缓存,其实hibernate默认就是开启的,这里显示的指定一下 -->
-   		 <property name="hibernate.cache.use_second_level_cache">true</property> 
+   		 <!--  property name="hibernate.cache.use_second_level_cache">true</property--> 
 		<!-- 是否开启查询缓存 -->
-		<property name="hibernate.cache.use_query_cache">true</property>
+		<!--  property name="hibernate.cache.use_query_cache">true</property-->
 		<mapping resource="hbm/Messagelog.hbm.xml" />
 		<mapping resource="hbm/Studentrfid.hbm.xml" />
 		<mapping resource="hbm/Studentfamily.hbm.xml" />

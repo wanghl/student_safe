@@ -10,6 +10,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -30,6 +32,7 @@ import com.zephyr.studentsafe.dao.HibernateUtil;
 import com.zephyr.studentsafe.dao.StudentDAO;
 import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.ProcessStudentData;
+import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.ui.action.button.ButtonsAction;
 import com.zephyr.studentsafe.ui.action.button.IButtonsAction;
 import com.zephyr.studentsafe.ui.dialog.AboutFrame;
@@ -151,9 +154,34 @@ public class ZephyrPntMainFrame extends javax.swing.JFrame {
 			{
 				this.setTitle("\u7d2b\u67ab\u201c\u5e73\u5b89\u901a\u201d\u6821\u56ed\u5b89\u5168\u7ba1\u7406\u5e73\u53f0");
 				this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("com/zephyr/studentsafe/icons/log.gif")).getImage());
+				
 			}
+				
 			{
 				mainPanel = new JPanel();
+				InputMap imk1 = mainPanel.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+				imk1.put(KeyStroke.getKeyStroke("F8"), "test input window");
+				ActionMap am1 = mainPanel.getActionMap();
+				am1.put("test input window", new AbstractAction(){
+
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						String r = (String) JOptionPane.showInputDialog(
+								null, 
+								"输入卡号和进出方向，格式：" +
+								"卡号&方向\n", 
+								"提示...", 
+								JOptionPane.INFORMATION_MESSAGE);
+						
+						if(r != null)
+						{
+							List l = new ArrayList();
+							l.add(r);
+							StudentReaderQueue.put(l);
+						}
+					}
+					
+				});
 				BoxLayout mainPanelLayout = new BoxLayout(mainPanel, javax.swing.BoxLayout.Y_AXIS);
 				mainPanel.setLayout(mainPanelLayout);
 				getContentPane().add(mainPanel, BorderLayout.CENTER);
