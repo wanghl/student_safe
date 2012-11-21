@@ -43,7 +43,7 @@
         	<one-to-many class="com.zephyr.studentsafe.bo.Studentfamily" ></one-to-many>
         </set>
         <!-- class setting -->
-        <many-to-one name="classInfo" column="class" class="com.zephyr.studentsafe.bo.ClassInfo"  fetch="select" /> 
+        <many-to-one name="classInfo" column="class" class="com.zephyr.studentsafe.bo.ClassInfo"   fetch="select" /> 
          <!-- teacher  -->
         <many-to-one name="teacherInfo" column="teacher" class="com.zephyr.studentsafe.bo.Teacher"  fetch="select" />  
     </class>

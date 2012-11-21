@@ -311,6 +311,7 @@ public class StudentInfoManage extends javax.swing.JDialog {
 									if (e.getKeyCode() == e.VK_ENTER)
 										{
 											queryButtonEvent();
+											studentNumber.setText("");
 										}
 									}
 

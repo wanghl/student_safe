@@ -395,7 +395,7 @@ public class ButtonsAction implements IButtonsAction {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				MessageSenderFrame inst = new MessageSenderFrame();
-				inst.setLocationRelativeTo(new ZephyrPntMainFrame());
+				inst.setLocationRelativeTo(null);
 				inst.setVisible(true);
 			}
 		});
