@@ -25,9 +25,11 @@ public class MobileMessageHandler {
 			if ( handler == null ){
 				handler = new APIClient();
 				init() ;
+				System.out.println(1);
 				return handler ;
 			}
 			else{
+				System.out.println(0);
 				return handler ;
 			}
 	}
@@ -77,11 +79,11 @@ public class MobileMessageHandler {
 
 	
 	public static void main(String[] argvs) throws StudentSafeException{
-		APIClient a = MobileMessageHandler.getInstance();
-		APIClient b = MobileMessageHandler.getInstance();
-		if ( a == b ){
-			System.out.println("ok");
+		MobileMessageHandler a = new MobileMessageHandler();
+		for ( int i =0 ; i< 100 ; i++)
+		{
+			a.getInstance() ;
+			
 		}
-		
 	}
 }

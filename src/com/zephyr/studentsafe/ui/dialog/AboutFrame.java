@@ -76,13 +76,13 @@ public class AboutFrame extends javax.swing.JFrame {
 				{
 					jLabel1 = new JLabel();
 					jPanel1.add(jLabel1);
-					jLabel1.setText("\u201c\u5e73\u5b89\u901a\u201d\u5e73\u5b89\u6821\u56ed\u7ba1\u7406\u7cfb\u7edf V1.1");
+					jLabel1.setText("\u201c\u5e73\u5b89\u901a\u201d\u5e73\u5b89\u6821\u56ed\u7ba1\u7406\u7cfb\u7edf V2.0");
 					jLabel1.setBounds(74, 65, 241, 18);
 				}
 				{
 					jLabel2 = new JLabel();
 					jPanel1.add(jLabel2);
-					jLabel2.setText("Lastbuild: 2012/11/18");
+					jLabel2.setText("Lastbuild: 2012/12/02");
 					jLabel2.setBounds(102, 115, 180, 18);
 				}
 				{

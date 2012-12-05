@@ -38,10 +38,35 @@ public class StudentTimeBookDAO extends BaseDAO{
 		}
 		return list.isEmpty() ? null : list.get(0);
 	}
+	//
+	public Studenttimebook getMaxMessageSendTime(String cardid){
+		Session s = null;
+		Studenttimebook t = null ;
+		try {
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			
+			t  = (Studenttimebook) s.createSQLQuery(
+					"select *  from studenttimebook s where rfidcardid=:c order by time desc")
+					
+					.addEntity("s", Studenttimebook.class)
+					.setParameter("c", cardid)
+					.setMaxResults(1)
+					.uniqueResult();
+			s.getTransaction().commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if (s != null) {
+				s.close();
+			}
+		}
+		return t ;
+	}
 	
 	public static void main(String[] argvs) {
 		StudentTimeBookDAO dao = new StudentTimeBookDAO();
-		System.out.println(dao.getTimeBookByCardId("207729").getStudentName());
+		System.out.println(dao.getMaxMessageSendTime("132868").getTime().toLocaleString());
 	}
 
 }

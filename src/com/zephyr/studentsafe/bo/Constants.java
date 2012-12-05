@@ -26,9 +26,15 @@ public class Constants {
 	public static final String BAUDRATE="baudrate";
 	public static final String NO_SCAN_TIMES="no_scan_times";
 	public static final String RECEIVE_RPT_TIME="receive_rpt_time";
+	public static final String RECEIVE_MO_TIME="receive_mo_time";
+	public static final String RECEIVE_MO_MOBILE="receive_mo_mobile";
 	public static final String SEND_TEACHER_KQ = "send_teacher_kq"; //给教师发进出校门班级考情
 	public static final String TIME_TO_SCHOOL = "time_to_school"; //早上上学时间
 	public static final String TIME_OUT_SCHOOL = "time_out_school"; //下午放学时间.
+	public static final String CHECK_MESSAGE_SEND_TIME = "check_message_send_time";
+	public static final String MESSAGE_BETWEEN_TIME = "message_between_time";
+	
+	public static final String RECEIVE_MO = "receive_mo" ;
 	
 	///.-------------------------------------------------------
 	//messagelog messagetype字段 ，信息类型

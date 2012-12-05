@@ -359,6 +359,35 @@ public class StudentDAO extends BaseDAO {
 		}
 		return l ;
 	}
+	
+	
+	public List getStudentByPhoneNumber(String phoneNumber){
+		Session s = null ;
+		List l = new ArrayList() ;
+		Studentrfid st = new Studentrfid();
+		try{
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			Studentfamily f = new Studentfamily();
+			f.setFamilyPhone(phoneNumber);
+			 f = (Studentfamily) getByExample(Studentfamily.class,f).get(0);
+			 l =  s.createCriteria(Studentrfid.class)
+				.add(Expression.eq("studentUID", f.getStudentUID()))
+				.setFetchMode("classInfo", FetchMode.JOIN)
+				.setFetchMode("teacherInfo", FetchMode.JOIN)
+				.setCacheRegion("myCacheRegion")
+				.setMaxResults(1).list();
+		}catch (Exception e){
+			e.printStackTrace();
+		}finally{
+			if (s != null){
+				s.close();
+			}
+		}
+		
+		return l ;
+		
+	}
 
 
 	public static void main(String[] argvs) {

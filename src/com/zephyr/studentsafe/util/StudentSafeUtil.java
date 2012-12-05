@@ -227,7 +227,7 @@ public class StudentSafeUtil {
 		Map<String, String> map = new HashMap<String, String>();
 		Map<String, String> ret = new HashMap<String, String>();
 		Locale loc = new Locale("zh", "CN");
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日hh点mm分", loc);
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日HH点mm分", loc);
 		String message = null;
 		Schooleinfor sinfo = (Schooleinfor) dao.get(Schooleinfor.class);
 		if (sinfo != null) {

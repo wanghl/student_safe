@@ -15,8 +15,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTabbedPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.exception.StudentSafeException;
@@ -45,7 +48,6 @@ public class SettingFrame extends javax.swing.JFrame {
 	private JTabbedPane jTabbedPane1;
 	private JPanel jPanel1;
 	private JComboBox reader2Box;
-	private JLabel jLabel13;
 	private JLabel jLabel3;
 	private JLabel jLabel4;
 	private JLabel jLabel5;
@@ -55,6 +57,16 @@ public class SettingFrame extends javax.swing.JFrame {
 	private JPasswordField password;
 	private static JCheckBox sendTeacherKQ;
 	private JTextField timeOutSchool;
+	private JCheckBox receiveMO;
+	private JTextField receiveMobile;
+	private JLabel jLabel18;
+	private JLabel jLabel17;
+	private JLabel jLabel16;
+	private JTextField receiveMOTime;
+	private JLabel jLabel15;
+	private JLabel jLabel14;
+	private JTextField betweenTime;
+	private JCheckBox checkSendTime;
 	private JLabel jLabel12;
 	private JTextField timeToSchool;
 	private JLabel jLabel11;
@@ -178,31 +190,31 @@ public class SettingFrame extends javax.swing.JFrame {
 				{
 					jPanel2 = new JPanel();
 					jTabbedPane1.addTab("软件参数", null, jPanel2, null);
-					jPanel2.setPreferredSize(new java.awt.Dimension(553, 437));
+					jPanel2.setPreferredSize(new java.awt.Dimension(529, 437));
 					jPanel2.setLayout(null);
 					{
 						jLabel4 = new JLabel();
 						jPanel2.add(jLabel4);
-						jLabel4.setText("\u63a5\u6536\u77ed\u4fe1\u56de\u6267\u95f4\u9694");
-						jLabel4.setBounds(14, 35, 131, 18);
+						jLabel4.setText("\u63a5\u6536\u56de\u6267\u95f4\u9694:");
+						jLabel4.setBounds(14, 11, 131, 18);
 					}
 					{
 						receiveRPTtime = new JTextField();
 						receiveRPTtime.setText(StudentSafeUtil.getStringValue(Constants.RECEIVE_RPT_TIME));
 						jPanel2.add(receiveRPTtime);
-						receiveRPTtime.setBounds(159, 32, 186, 24);
+						receiveRPTtime.setBounds(118, 8, 178, 24);
 					}
 					{
 						jLabel5 = new JLabel();
 						jPanel2.add(jLabel5);
-						jLabel5.setText("\u79bb\u5f00\u533a\u57df\u5224\u5b9a");
-						jLabel5.setBounds(14, 80, 131, 18);
+						jLabel5.setText("\u79bb\u5f00\u533a\u57df\u5224\u5b9a:");
+						jLabel5.setBounds(14, 99, 131, 18);
 					}
 					{
 						noScanTimes = new JTextField();
 						noScanTimes.setText(StudentSafeUtil.getStringValue(Constants.NO_SCAN_TIMES));
 						jPanel2.add(noScanTimes);
-						noScanTimes.setBounds(159, 80, 186, 24);
+						noScanTimes.setBounds(118, 96, 178, 24);
 					}
 					{
 						jPanel5 = new JPanel();
@@ -239,17 +251,116 @@ public class SettingFrame extends javax.swing.JFrame {
 							jLabel12.setBounds(232, 48, 97, 18);
 						}
 						{
+							jLabel14 = new JLabel();
+							jPanel5.add(jLabel14);
+							jLabel14.setText("\u8fc7\u6ee4\u95f4\u9694\u65f6\u95f4");
+							jLabel14.setBounds(20, 115, 94, 18);
+						}
+						{
+							betweenTime = new JTextField();
+							jPanel5.add(betweenTime);
+							betweenTime.setBounds(114, 112, 98, 21);
+							betweenTime.setText(StudentSafeUtil.getStringValue(Constants.MESSAGE_BETWEEN_TIME));
+						}
+						{
 							timeOutSchool = new JTextField();
 							jPanel5.add(timeOutSchool);
 							timeOutSchool.setBounds(335, 45, 94, 24);
 							timeOutSchool.setText("16");
 						}
+						{
+							checkSendTime = new JCheckBox();
+							jPanel5.add(checkSendTime);
+							checkSendTime.setText("\u8fc7\u6ee4\u91cd\u590d\u77ed\u4fe1");
+							checkSendTime.setBounds(16, 78, 119, 28);
+							checkSendTime.addChangeListener(new ChangeListener(){
+
+								@Override
+								public void stateChanged(ChangeEvent e) {
+									// TODO Auto-generated method stub
+									if ( checkSendTime.isSelected() )
+									{
+										betweenTime.setEditable(true);
+										jLabel14.setEnabled(true);
+									}else {
+										betweenTime.setEditable(false);
+										jLabel14.setEnabled(false);
+									}
+								}
+								
+							});
+							if (StudentSafeUtil.getStringValue(Constants.CHECK_MESSAGE_SEND_TIME).equals("1"))
+							{
+								checkSendTime.setSelected(true);
+							}else
+							{
+								jLabel14.setEnabled(false);
+								betweenTime.setEditable(false);
+							}
+						}
+						
+						
 					}
 					{
-						jLabel13 = new JLabel();
-						jPanel2.add(jLabel13);
-						jLabel13.setText("\uff08\u6beb\u79d2\uff09");
-						jLabel13.setBounds(351, 35, 64, 18);
+						jLabel15 = new JLabel();
+						jPanel2.add(jLabel15);
+						jLabel15.setText("\u63a5\u6536\u56de\u590d\u95f4\u9694:");
+						jLabel15.setBounds(14, 42, 131, 17);
+					}
+					{
+						receiveMOTime = new JTextField();
+						jPanel2.add(receiveMOTime);
+						receiveMOTime.setBounds(118, 37, 178, 24);
+						receiveMOTime.setText(StudentSafeUtil.getStringValue(Constants.RECEIVE_MO_TIME)) ;
+					}
+					{
+						jLabel16 = new JLabel();
+						jPanel2.add(jLabel16);
+						jLabel16.setText("\uff08\u6beb\u79d2\uff09");
+						jLabel16.setBounds(304, 11, 64, 19);
+					}
+					{
+						jLabel17 = new JLabel();
+						jPanel2.add(jLabel17);
+						jLabel17.setText("\uff08\u79d2\uff09");
+						jLabel17.setBounds(302, 102, 57, 17);
+					}
+					{
+						jLabel18 = new JLabel();
+						jPanel2.add(jLabel18);
+						jLabel18.setText("\u63a5\u6536\u56de\u590d\u53f7\u7801:");
+						jLabel18.setBounds(14, 70, 98, 19);
+					}
+					{
+						receiveMobile = new JTextField();
+						jPanel2.add(receiveMobile);
+						receiveMobile.setBounds(118, 66, 178, 24);
+						receiveMobile.setText(StudentSafeUtil.getStringValue(Constants.RECEIVE_MO_MOBILE));
+					}
+					{
+						receiveMO = new JCheckBox();
+						jPanel2.add(receiveMO);
+						receiveMO.setText("\u63a5\u6536\u77ed\u4fe1\u56de\u590d");
+						receiveMO.setBounds(313, 36, 129, 27);
+						receiveMO.setSelected(true);
+						receiveMO.addChangeListener(new ChangeListener(){
+
+							@Override
+							public void stateChanged(ChangeEvent e) {
+								if (receiveMO.isSelected())
+								{
+									receiveMOTime.setEditable(true);
+									receiveMobile.setEnabled(true);
+								}else
+								{
+									receiveMOTime.setEditable(false);
+									receiveMobile.setEnabled(false);
+								}
+								
+							}
+							
+						}) ;
+						
 					}
 				}
 				{
@@ -406,8 +517,30 @@ public class SettingFrame extends javax.swing.JFrame {
 		SettingProperites.put(Constants.TIME_TO_SCHOOL, timeToSchool.getText()) ;
 		// time to school pm
 		SettingProperites.put(Constants.TIME_OUT_SCHOOL, timeOutSchool.getText());
-
+		value = "0" ;
+		if (checkSendTime.isSelected())
+		{
+			value = "1" ;
+		}
+		//是否过滤重复短信
+		SettingProperites.put(Constants.CHECK_MESSAGE_SEND_TIME, value) ;
+		//间隔时间
+		SettingProperites.put(Constants.MESSAGE_BETWEEN_TIME, betweenTime.getText());
+		//receive mo time
+		SettingProperites.put(Constants.RECEIVE_MO_TIME, receiveMOTime.getText());
+		//receive mo mobile
+		SettingProperites.put(Constants.RECEIVE_MO_MOBILE, receiveMobile.getText());
+		//是否接收短信回复（家长回复的短信）
+		value = "0" ;
+		if (receiveMO.isSelected())
+		{
+			value = "1";
+		}
+		SettingProperites.put(Constants.RECEIVE_MO, value);
+		//接收短信回复手机。如果为空，则只将回复短信保存到本地数据库，不转发
+		SettingProperites.put(Constants.RECEIVE_MO_MOBILE, receiveMobile.getText());
 		try {
+			//将以上配置写入配置文件
 			SettingProperites.saveSetting();
 			//关闭
 			this.dispose();
@@ -416,5 +549,6 @@ public class SettingFrame extends javax.swing.JFrame {
 			this.dispose();
 		}
 	}
+	
 
 }

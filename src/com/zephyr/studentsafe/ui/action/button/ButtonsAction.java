@@ -35,6 +35,7 @@ import com.zephyr.studentsafe.exception.StudentSafeException;
 import com.zephyr.studentsafe.impl.ProcessStudentData;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.mobilemessage.MobileMessageHandler;
+import com.zephyr.studentsafe.mobilemessage.ReceiveMessageMO;
 import com.zephyr.studentsafe.mobilemessage.ReceiveMessageRPT;
 import com.zephyr.studentsafe.mobilemessage.SendMessage2Teacher;
 import com.zephyr.studentsafe.serialport.SerialReaderManage;
@@ -44,6 +45,7 @@ import com.zephyr.studentsafe.ui.dialog.MessageSenderFrame;
 import com.zephyr.studentsafe.ui.dialog.SettingFrame;
 import com.zephyr.studentsafe.ui.dialog.StudentImportMainFrame;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
+import com.zephyr.studentsafe.util.SystemProperty;
 import com.zephyr.studentsafe.util.ThreadPoolManage;
 
 /**
@@ -330,11 +332,17 @@ public class ButtonsAction implements IButtonsAction {
 		// 执行收回执任务
 		Timer receiveRPOTask = new Timer();
 		ReceiveMessageRPT task1 = new ReceiveMessageRPT();
-		receiveRPOTask.schedule(task1, 30 * 1000,StudentSafeUtil
-				.getIntValue(Constants.RECEIVE_RPT_TIME));
-
+		receiveRPOTask.schedule(task1, 30 * 1000,SystemProperty.getReceiveRPTTime());
+		
+		//接收短信回复MO
+		if(SystemProperty.isReceiveMOFromFamily())
+		{
+			Timer receiveMOTask = new Timer();
+			ReceiveMessageMO task2 = new ReceiveMessageMO();
+			receiveMOTask.schedule(task2, 10 * 1000, SystemProperty.getReceiveMOTime()) ;
+		}
 		// 周一到周五每天早上8点、下午15点给班主任发送班级考勤情况 需要设置
-		if (StudentSafeUtil.getIntValue(Constants.SEND_TEACHER_KQ) == 1)
+		if (SystemProperty.isSendClassAttendanceMessage())
 		{
 			try {
 				JobDetail jobd = new JobDetail("job1", "group1",

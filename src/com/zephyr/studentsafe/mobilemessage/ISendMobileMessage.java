@@ -44,6 +44,8 @@ public interface ISendMobileMessage {
 	public void sendMessage(Map<String,String> message);
 	
 	public void saveLog(SendMessageResult sendResult,Map<String,String> map);
+	
+	public void sendMessage(String content ,String mobile) ;
 
 }
 

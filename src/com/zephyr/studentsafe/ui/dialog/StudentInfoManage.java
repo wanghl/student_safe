@@ -10,6 +10,8 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.HashSet;
@@ -67,6 +69,8 @@ public class StudentInfoManage extends javax.swing.JDialog {
 	private JPanel jPanel1;
 	private JScrollPane jScrollPane1;
 	private JButton newFamilyButton;
+	private JTextField phoneNumber;
+	private JLabel jLabel5;
 	private JButton deleteButton;
 	private JButton newStudentButton;
 	private JButton editButton;
@@ -228,6 +232,53 @@ public class StudentInfoManage extends javax.swing.JDialog {
 									}
 									
 								});
+								
+								//双击事件
+								studentInfoTable.addMouseListener(new MouseListener(){
+
+									@Override
+									public void mouseClicked(MouseEvent e) {
+										if (e.getClickCount() == 2)
+										{
+											StudentDAO dao = new StudentDAO();
+											String rfidcardid = (String) studentInfoTable.getValueAt(
+													studentInfoTable.getSelectedRow(), 2);
+											Studentrfid student = dao
+													.getStudentbyCardID(rfidcardid);
+											NewStudentInfo inst = new NewStudentInfo(null, student,
+													true);
+											inst.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+											inst.setLocationRelativeTo(null);
+											inst.setVisible(true);
+										}
+										
+									}
+
+									@Override
+									public void mouseEntered(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+
+									@Override
+									public void mouseExited(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+
+									@Override
+									public void mousePressed(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+
+									@Override
+									public void mouseReleased(MouseEvent e) {
+										// TODO Auto-generated method stub
+										
+									}
+								
+								});
 
 								jScrollPane1.setViewportView(studentInfoTable);
 							}
@@ -290,7 +341,7 @@ public class StudentInfoManage extends javax.swing.JDialog {
 						jPanel4 = new JPanel();
 						jPanel4.setLayout(null);
 						jPanel3.add(jPanel4);
-						jPanel4.setBounds(4, 9, 190, 192);
+						jPanel4.setBounds(4, 9, 190, 221);
 						jPanel4.setBorder(BorderFactory.createTitledBorder(""));
 						jPanel4.setToolTipText("\u67e5\u8be2");
 						jPanel4.setOpaque(false);
@@ -311,10 +362,26 @@ public class StudentInfoManage extends javax.swing.JDialog {
 									if (e.getKeyCode() == e.VK_ENTER)
 										{
 											queryButtonEvent();
-											studentNumber.setText("");
+											
 										}
 									}
 
+							});
+							//失去焦点事件
+							studentNumber.addFocusListener(new FocusListener(){
+
+								@Override
+								public void focusGained(FocusEvent e) {
+									// TODO Auto-generated method stub
+									studentNumber.setText("");
+								}
+
+								@Override
+								public void focusLost(FocusEvent e) {
+									// TODO Auto-generated method stub
+									
+								}
+								
 							});
 							SwingUtilities.invokeLater(new Runnable() {
 								public void run() {
@@ -327,18 +394,18 @@ public class StudentInfoManage extends javax.swing.JDialog {
 							jLabel4 = new JLabel();
 							jPanel4.add(jLabel4);
 							jLabel4.setText("\u6559\u5e08");
-							jLabel4.setBounds(6, 122, 36, 18);
+							jLabel4.setBounds(6, 153, 36, 17);
 						}
 						{
 							studentName = new JTextField();
 							jPanel4.add(studentName);
-							studentName.setBounds(44, 49, 139, 26);
+							studentName.setBounds(44, 51, 139, 26);
 							studentName.setText(null);
 						}
 						{
 							jLabel2 = new JLabel();
 							jPanel4.add(jLabel2);
-							jLabel2.setText("\u73ed\u7ea7");
+							jLabel2.setText("\u53f7\u7801");
 							jLabel2.setBounds(6, 88, 36, 18);
 						}
 						{
@@ -356,7 +423,7 @@ public class StudentInfoManage extends javax.swing.JDialog {
 							jPanel4.add(classList);
 							classList.insertItemAt(null, 0);
 							classList.setSelectedIndex(0);
-							classList.setBounds(44, 82, 139, 26);
+							classList.setBounds(44, 116, 139, 27);
 						}
 						{
 							jLabel3 = new JLabel();
@@ -378,16 +445,33 @@ public class StudentInfoManage extends javax.swing.JDialog {
 							jPanel4.add(teacherList);
 							teacherList.insertItemAt(null, 0);
 							teacherList.setSelectedIndex(0);
-							teacherList.setBounds(44, 114, 139, 26);
+							teacherList.setBounds(44, 149, 139, 26);
 						}
 						{
 							queryButton = new JButton();
 							jPanel4.add(queryButton);
 							queryButton.setText("\u67e5\u8be2");
-							queryButton.setBounds(28, 153, 138, 27);
+							queryButton.setBounds(28, 185, 138, 27);
 							queryButton.addActionListener(new ActionListener() {
 								public void actionPerformed(ActionEvent evt) {
 									queryButtonEvent();
+								}
+							});
+						}
+						{
+							jLabel5 = new JLabel();
+							jPanel4.add(jLabel5);
+							jLabel5.setText("\u73ed\u7ea7");
+							jLabel5.setBounds(6, 121, 32, 17);
+						}
+						{
+							phoneNumber = new JTextField();
+							jPanel4.add(phoneNumber);
+							phoneNumber.setBounds(44, 84, 139, 26);
+							phoneNumber.addActionListener(new ActionListener() {
+								public void actionPerformed(ActionEvent evt) {
+									System.out.println("phoneNumber.actionPerformed, event="+evt);
+									//TODO add your code for phoneNumber.actionPerformed
 								}
 							});
 						}
@@ -395,7 +479,7 @@ public class StudentInfoManage extends javax.swing.JDialog {
 					{
 						jPanel5 = new JPanel();
 						jPanel3.add(jPanel5);
-						jPanel5.setBounds(6, 206, 188, 455);
+						jPanel5.setBounds(6, 237, 188, 424);
 						jPanel5.setBorder(BorderFactory.createTitledBorder(""));
 						{
 							editButton = new JButton();
@@ -514,8 +598,14 @@ public class StudentInfoManage extends javax.swing.JDialog {
 		{
 			student.setTeacherInfo(((Teacher)teacherList.getSelectedItem()));
 		}
-
-		list = sdao.studentQuery(student);
+		
+		if(phoneNumber.getText() != null && ! phoneNumber.getText().equals(""))
+		{
+			list = sdao.getStudentByPhoneNumber(phoneNumber.getText());
+		}else 
+		{
+			list = sdao.studentQuery(student);
+		}
 		if (!list.isEmpty())
 		{
 			updateTable(list);

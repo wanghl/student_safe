@@ -19,9 +19,6 @@ public class PrivateMessageDAO extends BaseDAO{
 		try {
 			s = HibernateUtil.getSession();
 			s.beginTransaction();
-			String sql = "select * from messagelog where smid=" + item.getSmID() ;
-			List<Messagelog> list = s.createSQLQuery(sql).addEntity(Messagelog.class).list();
-			if (! list.isEmpty()){
 				PrivateMessage pm = new PrivateMessage();
 				
 				pm.setMessage_content(new String(item.getContent().getBytes("iso8859-1"),"gbk"));
@@ -30,9 +27,7 @@ public class PrivateMessageDAO extends BaseDAO{
 				pm.setSend_time(new Date(System.currentTimeMillis()));
 				pm.setAsk_state(1);
 				pm.setRead_state(1);
-				pm.setTeacher_id(list.get(0).getSendteacher());
 				this.saveORupdate(pm);
-			}
 			s.getTransaction().commit();
 		}catch(Exception e){
 			throw e ;

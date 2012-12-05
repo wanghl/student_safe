@@ -1,1 +1,1 @@
-${familyName}您好！您的孩子${studentName}同学已于${date}安全抵达学校。${schooleName}。
+尊敬的${familyName}您好！您的孩子${studentName}同学已于${date}离开学校。${schooleName}。
