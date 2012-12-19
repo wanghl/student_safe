@@ -25,7 +25,6 @@ import javax.swing.table.DefaultTableModel;
 
 import org.apache.log4j.Logger;
 
-import com.sun.media.Log;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
 import com.zephyr.studentsafe.ui.MessageWindow;
 import com.zephyr.studentsafe.util.StudentSafeUtil;

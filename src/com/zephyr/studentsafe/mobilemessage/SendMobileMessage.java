@@ -20,7 +20,6 @@ import java.util.Random;
 import org.apache.log4j.Logger;
 
 import com.jasson.im.api.APIClient;
-import com.sun.media.Log;
 import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.bo.Messagelog;
 import com.zephyr.studentsafe.bo.SendMessageResult;
@@ -134,7 +133,7 @@ public class SendMobileMessage implements ISendMobileMessage{
 		} catch (StudentSafeException e)
 		{
 			// TODO Auto-generated catch block
-			Log.error(e);
+			c_log.error(e);
 		}
 		
 		

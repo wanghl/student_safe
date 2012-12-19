@@ -6,10 +6,6 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.criterion.Example;
 
-
-import sun.security.provider.MD5;
-
-
 import com.zephyr.studentsafe.bo.StudentProperty;
 import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
@@ -184,7 +180,6 @@ public class BaseDAO {
 		try {
 			s = HibernateUtil.getSession();
 			s.beginTransaction();
-			MD5 e = new MD5();
 			
 			 s.createSQLQuery("insert into do_org_user(objuid,name,password,mobile) values ('"
 									+ StudentSafeUtil.getRandom() + "','" + name + "','" + 
