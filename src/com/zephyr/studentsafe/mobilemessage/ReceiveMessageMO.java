@@ -49,6 +49,7 @@ public class ReceiveMessageMO extends TimerTask{
 			}
 		} catch (StudentSafeException e) {
 			// TODO Auto-generated catch block
+			log.error(e);
 			try {
 				throw e;
 			} catch (StudentSafeException e1) {
@@ -57,6 +58,7 @@ public class ReceiveMessageMO extends TimerTask{
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			log.error(e);
 			try {
 				throw  e;
 			} catch (Exception e1) {

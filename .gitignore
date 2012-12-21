@@ -1,2 +1,4 @@
 lib/
 bin/
+WebContent/WEB-INF/classes/
+*.class

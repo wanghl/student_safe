@@ -54,9 +54,15 @@ public class ProcessThread implements Runnable{
 					//System.out.print(hv + " ");
 					stringBuffer.append(hv);
 				}
-				System.out.println(stringBuffer.toString());
+				if(log.isDebugEnabled())
+				{
+					log.debug(stringBuffer);
+				}
 				list = StudentSafeUtil.getHexString(stringBuffer.toString().split("ffff"),client.getInetAddress().getHostAddress()) ;
-				System.out.println(list);
+				if(log.isDebugEnabled())
+				{
+					log.debug(list);
+				}
 				//put to reader queue
 				StudentReaderQueue.put(list);
 				//clear StringBuffer 

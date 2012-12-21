@@ -26,17 +26,9 @@ public class Test {
 		b[13] = (byte)0x1;
 		socket.setKeepAlive(true);
 		
-		while(true)
-		{
 			
 			socket.getOutputStream().write(b);
-			try {
-				Thread.sleep(61000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+			
 		
 	}
 

@@ -30,6 +30,7 @@ public class PrivateMessageDAO extends BaseDAO{
 				this.saveORupdate(pm);
 			s.getTransaction().commit();
 		}catch(Exception e){
+			
 			throw e ;
 		}finally {
 			if (s != null ){

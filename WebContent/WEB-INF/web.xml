@@ -39,10 +39,21 @@
     <load-on-startup>1</load-on-startup>
 </servlet>
 
+<servlet>  
+        <servlet-name>log4j config file</servlet-name>  
+        <servlet-class>com.zephyr.studentsafe.servlet.Log4jServlet</servlet-class>  
+        <init-param>  
+            <param-name>configfile</param-name>  
+            <param-value>/WEB-INF/classes/log4j.properties</param-value>  
+        </init-param>  
+           
+        <load-on-startup>1</load-on-startup>  
+ </servlet>  
+
 <servlet>
 <servlet-name>ServiceSocket</servlet-name>
 <servlet-class>com.zephyr.studentsafe.socket.SocketServer</servlet-class>
-<load-on-startup>20</load-on-startup>
+<load-on-startup>10</load-on-startup>
 </servlet>
 
 <servlet>
