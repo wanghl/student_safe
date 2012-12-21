@@ -1,4 +1,6 @@
-lib/
 bin/
+lib/
 WebContent/WEB-INF/classes/
+*.jar
 *.class
+*.zip
