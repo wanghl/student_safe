@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- Generated 2010-9-14 23:25:58 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+	<class name="com.zephyr.studentsafe.bo.PrivateMessage" table="private_message" >
+		<id name="message_id" column="message_id" type="string"
+			length="50">
+			<generator class="uuid.hex"></generator>
+		</id>
+		<property name="teacher_id" type="string">
+			<column name="teacher_id" length="32" />
+		</property>
+		<property name="phone_number" type="string">
+			<column name="phone_number" length="11" />
+		</property>
+		<property name="send_time" type="timestamp">
+			<column name="send_time"  />
+		</property>
+		<property name="receive_time" type="timestamp">
+			<column name="receive_time"  />
+		</property>
+		<property name="message_content" type="text">
+			<column name="message_content"  />
+		</property>
+		
+		<property name="read_state" type="int">
+			<column name="read_state"  length="2"/>
+		</property>
+		<property name="ask_state" type="int">
+			<column name="ask_state"  length="2"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

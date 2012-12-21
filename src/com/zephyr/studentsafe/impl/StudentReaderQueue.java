@@ -14,6 +14,7 @@
 package com.zephyr.studentsafe.impl;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -34,7 +35,7 @@ import java.util.List;
 public class StudentReaderQueue {
 	
 	//
-	private static List<List<String>> studentReaderSet =  new  ArrayList<List<String>>();
+	private static List<List<String>> studentReaderSet =  Collections.synchronizedList(new  ArrayList<List<String>>());
 	
 	private StudentReaderQueue (){
 		

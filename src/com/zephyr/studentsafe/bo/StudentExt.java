@@ -12,7 +12,15 @@ public class StudentExt {
 	private int readerBnoScanTime ;
 	private int readerCnoScanTime ;
 	
-	
+	private String remoteIp ;
+	public String getRemoteIp() {
+		return remoteIp;
+	}
+
+	public void setRemoteIp(String remoteIp) {
+		this.remoteIp = remoteIp;
+	}
+
 	private int noscantimes = 0;
 	private String direction ;//进出校门方向
 	

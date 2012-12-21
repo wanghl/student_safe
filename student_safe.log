@@ -1,0 +1,1539 @@
+2012-12-19 20:31:04,531 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 20:31:12,140 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3818>
+2012-12-19 20:31:12,187 ProcessThread.java(60) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 20:34:20,968 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 20:34:23,640 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1179>
+2012-12-19 20:38:10,546 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 20:38:12,656 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2761>
+2012-12-19 20:38:12,703 ProcessThread.java(60) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 20:55:53,015 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 20:55:53,062 SocketServer.java(40) ERROR- <java.net.BindException: Address already in use: JVM_Bind>
+2012-12-19 20:56:06,375 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 20:56:08,843 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2558>
+2012-12-19 20:56:09,000 ProcessThread.java(60) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 20:56:48,406 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 20:56:51,062 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2926>
+2012-12-19 20:56:51,109 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:03:15,578 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:03:17,578 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2370>
+2012-12-19 21:03:17,640 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:04:39,343 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:04:41,078 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3022>
+2012-12-19 21:04:41,156 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:05:14,484 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:05:16,453 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3294>
+2012-12-19 21:05:16,515 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:08:17,062 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:08:19,218 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4689>
+2012-12-19 21:12:20,125 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:12:23,156 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2536>
+2012-12-19 21:12:23,203 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:12:34,078 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:12:35,875 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2647>
+2012-12-19 21:13:52,578 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:13:54,968 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3304>
+2012-12-19 21:13:55,046 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:14:03,250 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:14:05,375 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3405>
+2012-12-19 21:17:36,984 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:17:41,484 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1243>
+2012-12-19 21:17:41,562 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:22:16,890 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:22:18,671 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3272>
+2012-12-19 21:22:18,718 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:24:59,531 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:25:01,343 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4479>
+2012-12-19 21:25:01,406 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:25:28,046 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:25:29,437 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4722>
+2012-12-19 21:25:29,468 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:26:07,953 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:26:10,031 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1076>
+2012-12-19 21:26:10,062 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:35:36,921 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:35:38,375 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1706>
+2012-12-19 21:35:38,421 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:44:34,765 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:44:36,328 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1729>
+2012-12-19 21:44:36,375 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:48:57,406 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:48:59,718 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3985>
+2012-12-19 21:48:59,765 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:49:18,187 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:49:20,421 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4218>
+2012-12-19 21:49:20,468 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:50:53,921 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:50:55,453 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4930>
+2012-12-19 21:50:55,531 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:51:58,140 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:51:59,609 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1401>
+2012-12-19 21:51:59,703 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:52:23,031 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1583>
+2012-12-19 21:52:23,093 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:52:35,640 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1674>
+2012-12-19 21:52:35,640 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:53:16,656 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1970>
+2012-12-19 21:53:16,703 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:53:33,640 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:53:35,484 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2140>
+2012-12-19 21:54:29,812 SocketServer.java(18) INFO - <启动数据库>
+2012-12-19 21:54:31,937 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2563>
+2012-12-19 21:54:32,000 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:56:55,937 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3607>
+2012-12-19 21:56:55,984 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 21:59:03,296 SocketServer.java(34) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4655>
+2012-12-19 21:59:03,343 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:05:29,843 SocketServer.java(20) INFO - <启动数据库>
+2012-12-19 22:05:30,062 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:05:30,062 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:05:30,078 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:05:30,078 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:05:30,218 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:05:30,218 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:05:30,890 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:05:31,078 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:05:31,109 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:05:31,125 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:05:31,265 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:05:31,265 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:05:31,281 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:05:31,281 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:05:31,281 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:05:31,296 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:05:31,312 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:05:31,312 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:05:31,312 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:05:31,359 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:05:31,359 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:05:31,375 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:05:31,375 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:05:31,406 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:05:31,406 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:05:31,421 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:05:31,421 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:05:31,421 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:05:31,437 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:05:31,437 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=root, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:05:31,437 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:05:31,546 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:05:34,015 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:05:34,171 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2b5031c4 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ac6aec09 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dst6o51o2u2et|182da3d, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@75998307 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dst6o51o2u2et|861f24, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dst6o51o2u2et|bdb503, numHelperThreads -> 3 ]>
+2012-12-19 22:08:05,031 SocketServer.java(20) INFO - <启动数据库>
+2012-12-19 22:08:05,140 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:08:05,156 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:08:05,156 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:08:05,171 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:08:05,250 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:08:05,250 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:08:05,343 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:08:05,421 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:08:05,437 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:08:05,453 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:08:05,531 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:08:05,546 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:08:05,546 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:08:05,562 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:08:05,562 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:08:05,578 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:08:05,578 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:08:05,578 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:08:05,578 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:08:05,593 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:08:05,593 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:08:05,609 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:08:05,609 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:08:05,609 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:08:05,609 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:08:05,625 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:08:05,625 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:08:05,625 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:08:05,625 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:08:05,625 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:08:05,625 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:08:05,656 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:08:05,890 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:08:05,953 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@201d71d [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@aaec4c98 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dswhgma3gmz8|6ac461, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@1c31885 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dswhgma3gmz8|196c1b0, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dswhgma3gmz8|19360e2, numHelperThreads -> 3 ]>
+2012-12-19 22:08:06,546 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:08:06,546 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:08:06,671 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:08:06,703 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:08:06,703 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:08:06,703 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:08:06,703 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:08:06,703 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:08:06,703 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:08:06,703 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:08:06,703 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:08:06,734 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:08:06,734 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:08:06,734 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:08:06,734 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:08:06,734 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:08:06,734 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:08:06,750 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:08:06,750 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:08:06,765 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:08:06,765 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:08:06,765 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:08:06,765 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:08:06,765 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:08:06,812 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:08:07,796 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:08:07,890 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:08:07,890 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:08:07,968 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:08:08,109 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:08:08,109 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:08:08,109 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,109 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:08:08,218 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:08:08,218 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:08:08,218 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,218 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:08:08,328 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:08:08,328 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:08:08,328 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,328 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:08:08,421 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:08:08,421 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:08:08,421 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,421 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:08:08,531 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:08:08,531 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:08:08,531 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,531 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:08:08,640 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:08:08,640 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:08:08,640 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,640 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:08:08,734 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:08:08,734 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:08:08,734 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,734 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:08:08,843 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:08:08,843 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:08:08,843 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,843 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:08:08,953 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:08:08,953 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:08:08,953 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:08,953 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:08:09,046 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:08:09,046 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:08:09,046 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:08:09,046 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:08:09,062 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:08:32,500 SocketServer.java(37) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1137>
+2012-12-19 22:08:32,562 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:10:41,750 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:10:42,906 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:10:42,906 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:10:42,921 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:10:42,921 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:10:43,031 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:10:43,031 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:10:43,406 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:10:43,687 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:10:43,734 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:10:43,765 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:10:44,046 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:10:44,062 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:10:44,062 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:10:44,078 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:10:44,078 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:10:44,109 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:10:44,125 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:10:44,140 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:10:44,140 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:10:44,156 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:10:44,156 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:10:44,156 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:10:44,156 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:10:44,171 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:10:44,171 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:10:44,187 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:10:44,187 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:10:44,203 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:10:44,218 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:10:44,218 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:10:44,218 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:10:44,437 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:10:45,750 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:10:45,859 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f11add7d [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@45e83781 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dszw8b1xlx8nt|18c56d, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@3f717c71 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dszw8b1xlx8nt|5329c5, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dszw8b1xlx8nt|c05d3b, numHelperThreads -> 3 ]>
+2012-12-19 22:10:46,953 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:10:46,953 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:10:47,109 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:10:47,109 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:10:47,109 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:10:47,109 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:10:47,109 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:10:47,109 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:10:47,109 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:10:47,109 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:10:47,109 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:10:47,109 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:10:47,125 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:10:47,125 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:10:47,125 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:10:47,125 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:10:47,125 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:10:47,125 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:10:47,140 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:10:47,140 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:10:47,140 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:10:47,140 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:10:47,140 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:10:47,140 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:10:47,156 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:10:47,156 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:10:47,171 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:10:47,171 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:10:47,171 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:10:47,171 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:10:47,171 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:10:47,359 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:10:48,843 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:10:48,921 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:10:48,921 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:10:49,000 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:10:49,156 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:10:49,156 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:10:49,156 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:49,156 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:10:49,500 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:10:49,500 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:10:49,500 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:49,500 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:10:49,625 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:10:49,625 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:10:49,625 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:49,625 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:10:49,750 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:10:49,750 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:10:49,750 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:49,750 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:10:50,625 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:10:50,625 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:10:50,625 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:50,625 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:10:50,765 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:10:50,765 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:10:50,765 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:50,765 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:10:50,875 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:10:50,875 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:10:50,875 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:50,875 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:10:51,000 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:10:51,000 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:10:51,000 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:51,000 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:10:51,125 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:10:51,125 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:10:51,125 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:51,125 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:10:51,265 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:10:51,265 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:10:51,265 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:10:51,265 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:10:51,265 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:10:51,625 ProcessStudentData.java(51) INFO - <逻辑判断线程启动!>
+2012-12-19 22:11:01,328 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2199>
+2012-12-19 22:11:27,937 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:11:28,890 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:11:28,906 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:11:28,937 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:11:28,968 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:11:29,109 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:11:29,109 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:11:29,375 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:11:29,500 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:11:29,515 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:11:29,546 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:11:29,718 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:11:29,781 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:11:29,781 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:11:29,796 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:11:29,796 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:11:29,828 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:11:29,828 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:11:29,843 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:11:29,843 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:11:29,859 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:11:29,859 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:11:29,875 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:11:29,875 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:11:29,890 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:11:29,890 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:11:29,906 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:11:29,906 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:11:29,906 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:11:29,921 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:11:29,921 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:11:29,921 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:11:30,015 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:11:31,437 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:11:31,546 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@d0a26f8b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b1606722 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dt0vfo17a5iw7|182da3d, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@af745391 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dt0vfo17a5iw7|196c1b0, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dt0vfo17a5iw7|bdb503, numHelperThreads -> 3 ]>
+2012-12-19 22:11:32,234 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:11:32,234 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:11:32,359 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:11:32,359 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:11:32,359 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:11:32,359 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:11:32,359 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:11:32,359 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:11:32,359 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:11:32,359 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:11:32,359 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:11:32,359 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:11:32,359 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:11:32,359 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:11:32,359 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:11:32,359 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:11:32,359 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:11:32,375 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:11:32,375 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:11:32,375 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:11:32,375 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:11:32,375 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:11:32,375 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:11:32,375 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:11:32,375 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:11:32,375 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:11:32,390 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:11:32,390 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:11:32,390 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:11:32,390 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:11:32,390 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:11:32,421 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:11:33,109 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:11:33,109 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:11:33,109 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:11:33,187 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:11:33,343 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:11:33,343 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:11:33,343 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:33,343 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:11:33,468 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:11:33,468 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:11:33,468 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:33,468 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:11:33,593 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:11:33,593 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:11:33,593 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:33,593 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:11:33,718 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:11:33,718 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:11:33,718 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:33,718 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:11:33,843 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:11:33,843 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:11:33,843 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:33,843 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:11:34,828 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:11:34,828 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:11:34,828 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:34,828 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:11:34,968 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:11:34,968 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:11:34,968 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:34,968 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:11:35,093 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:11:35,093 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:11:35,093 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:35,093 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:11:35,218 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:11:35,218 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:11:35,218 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:35,218 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:11:35,359 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:11:35,359 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:11:35,359 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:11:35,359 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:11:35,359 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:11:35,500 ProcessStudentData.java(51) INFO - <逻辑判断线程启动!>
+2012-12-19 22:11:37,781 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2467>
+2012-12-19 22:13:32,968 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:13:34,015 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:13:34,031 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:13:34,078 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:13:34,218 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:13:34,343 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:13:34,343 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:13:34,609 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:13:34,750 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:13:34,796 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:13:34,812 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:13:34,984 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:13:35,015 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:13:35,015 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:13:35,031 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:13:35,031 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:13:35,062 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:13:35,062 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:13:35,078 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:13:35,078 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:13:35,093 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:13:35,093 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:13:35,109 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:13:35,109 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:13:35,140 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:13:35,140 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:13:35,156 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:13:35,156 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:13:35,156 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:13:35,187 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:13:35,187 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:13:35,187 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:13:35,312 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:13:36,968 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:13:37,046 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@8592195a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@2a9adbfe [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dt3k8xqjl5nx|1ec8909, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@7d35895f [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dt3k8xqjl5nx|166aa18, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dt3k8xqjl5nx|119dc16, numHelperThreads -> 3 ]>
+2012-12-19 22:13:37,875 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:13:37,875 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:13:37,953 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:13:37,953 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:13:37,953 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:13:37,953 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:13:37,953 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:13:37,953 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:13:37,953 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:13:37,953 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:13:37,953 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:13:37,953 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:13:37,968 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:13:37,968 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:13:37,968 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:13:37,968 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:13:37,968 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:13:37,968 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:13:37,968 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:13:37,968 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:13:37,968 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:13:37,968 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:13:37,968 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:13:37,968 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:13:37,984 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:13:37,984 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:13:37,984 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:13:37,984 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:13:37,984 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:13:37,984 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:13:37,984 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:13:38,015 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:13:38,593 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:13:38,593 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:13:38,593 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:13:38,656 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:13:38,781 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:13:38,781 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:13:38,781 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:38,781 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:13:38,890 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:13:38,890 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:13:38,890 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:38,890 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:13:38,984 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:13:38,984 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:13:38,984 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:38,984 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:13:39,093 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:13:39,093 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:13:39,093 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:39,093 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:13:39,218 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:13:39,218 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:13:39,218 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:39,218 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:13:39,328 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:13:39,328 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:13:39,328 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:39,328 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:13:39,437 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:13:39,437 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:13:39,437 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:39,437 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:13:39,531 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:13:39,531 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:13:39,531 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:39,531 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:13:39,640 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:13:39,640 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:13:39,640 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:39,640 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:13:39,750 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:13:39,750 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:13:39,750 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:13:39,750 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:13:39,750 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:13:39,875 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:13:42,875 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3360>
+2012-12-19 22:13:47,625 MobileMessageHandler.java(51) INFO - <短信发送服务初始化成功>
+2012-12-19 22:13:47,781 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:18:21,500 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:18:21,984 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:18:22,000 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:18:22,000 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:18:22,000 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:18:22,078 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:18:22,078 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:18:22,671 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:18:22,796 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:18:22,812 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:18:22,843 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:18:22,906 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:18:22,937 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:18:22,937 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:18:22,953 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:18:22,953 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:18:23,000 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:18:23,000 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:18:23,000 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:18:23,000 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:18:23,015 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:18:23,015 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:18:23,031 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:18:23,031 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:18:23,062 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:18:23,062 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:18:23,078 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:18:23,078 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:18:23,078 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:18:23,078 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:18:23,078 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:18:23,078 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:18:23,156 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:18:24,343 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:18:24,406 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@a5b5625c [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7eabce71 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dt9pz49qi650|182da3d, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@7cbfbae0 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dt9pz49qi650|196c1b0, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dt9pz49qi650|bdb503, numHelperThreads -> 3 ]>
+2012-12-19 22:18:26,437 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:18:26,437 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:18:26,734 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:18:26,734 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:18:26,750 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:18:26,750 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:18:26,750 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:18:26,750 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:18:26,750 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:18:26,750 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:18:26,750 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:18:26,750 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:18:26,750 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:18:26,750 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:18:26,750 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:18:26,750 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:18:26,765 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:18:26,765 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:18:26,796 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:18:26,796 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:18:26,796 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:18:26,796 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:18:26,796 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:18:26,796 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:18:26,828 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:18:26,828 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:18:26,828 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:18:26,828 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:18:26,828 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:18:26,828 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:18:26,828 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:18:26,906 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:18:27,843 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:18:27,890 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:18:27,890 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:18:27,953 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:18:28,093 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:18:28,093 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:18:28,093 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:28,093 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:18:28,203 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:18:28,203 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:18:28,203 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:28,203 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:18:28,312 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:18:28,312 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:18:28,312 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:28,312 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:18:28,406 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:18:28,406 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:18:28,406 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:28,406 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:18:28,906 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:18:28,906 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:18:28,906 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:28,906 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:18:29,015 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:18:29,015 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:18:29,015 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:29,015 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:18:29,109 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:18:29,125 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:18:29,125 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:29,125 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:18:29,234 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:18:29,234 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:18:29,234 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:29,234 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:18:29,343 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:18:29,343 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:18:29,343 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:29,343 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:18:29,453 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:18:29,453 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:18:29,453 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:18:29,453 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:18:29,453 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:18:29,609 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:18:43,156 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2033>
+2012-12-19 22:18:46,031 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:19:54,750 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:19:54,859 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:19:54,875 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:19:54,875 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:19:54,890 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:19:54,984 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:19:54,984 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:19:55,062 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:19:55,140 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:19:55,156 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:19:55,171 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:19:55,250 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:19:55,265 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:19:55,265 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:19:55,265 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:19:55,281 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:19:55,281 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:19:55,281 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:19:55,296 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:19:55,296 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:19:55,296 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:19:55,296 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:19:55,312 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:19:55,312 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:19:55,312 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:19:55,312 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:19:55,328 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:19:55,328 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:19:55,328 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:19:55,343 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:19:55,343 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:19:55,343 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:19:55,375 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:19:55,593 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:19:55,671 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@ac956614 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@bbebe6a8 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dtbp2lck8ikj|1c5f743, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@8a98ba3 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtbp2lck8ikj|166aa18, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtbp2lck8ikj|b6e39f, numHelperThreads -> 3 ]>
+2012-12-19 22:19:56,296 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:19:56,296 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:19:56,359 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:19:56,375 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:19:56,375 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:19:56,375 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:19:56,375 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:19:56,375 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:19:56,375 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:19:56,375 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:19:56,375 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:19:56,375 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:19:56,375 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:19:56,375 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:19:56,390 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:19:56,390 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:19:56,390 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:19:56,390 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:19:56,390 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:19:56,390 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:19:56,390 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:19:56,421 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:19:56,890 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:19:56,890 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:19:56,890 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:19:56,953 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:19:57,109 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:19:57,109 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:19:57,109 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,109 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:19:57,218 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:19:57,234 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:19:57,234 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,234 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:19:57,359 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:19:57,359 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:19:57,359 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,359 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:19:57,484 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:19:57,484 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:19:57,484 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,484 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:19:57,593 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:19:57,593 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:19:57,593 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,593 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:19:57,734 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:19:57,734 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:19:57,734 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,734 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:19:57,843 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:19:57,843 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:19:57,843 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,859 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:19:57,968 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:19:57,968 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:19:57,968 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:57,968 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:19:58,109 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:19:58,109 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:19:58,109 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:58,109 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:19:58,234 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:19:58,234 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:19:58,234 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:19:58,234 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:19:58,234 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:19:58,328 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:20:01,703 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2628>
+2012-12-19 22:20:04,171 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:21:14,296 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:21:14,421 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:21:14,421 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:21:14,421 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:21:14,437 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:21:14,515 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:21:14,515 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:21:14,625 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:21:14,734 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:21:14,765 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:21:14,796 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:21:14,890 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:21:14,906 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:21:14,906 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:21:14,921 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:21:14,921 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:21:14,937 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:21:14,937 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:21:14,937 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:21:14,937 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:21:14,953 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:21:14,953 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:21:14,968 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:21:14,968 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:21:14,968 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:21:14,968 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:21:14,984 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:21:14,984 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:21:14,984 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:21:15,000 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:21:15,000 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:21:15,000 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:21:15,046 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:21:15,296 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:21:15,359 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@76a49297 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8da739de [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dtdek5lwtkm2|6ac461, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@7665d3ff [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtdek5lwtkm2|196c1b0, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtdek5lwtkm2|19360e2, numHelperThreads -> 3 ]>
+2012-12-19 22:21:15,968 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:21:15,968 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:21:16,031 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:21:16,046 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:21:16,046 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:21:16,046 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:21:16,046 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:21:16,046 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:21:16,046 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:21:16,046 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:21:16,046 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:21:16,046 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:21:16,046 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:21:16,046 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:21:16,062 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:21:16,062 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:21:16,062 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:21:16,062 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:21:16,062 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:21:16,062 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:21:16,062 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:21:16,093 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:21:16,546 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:21:16,546 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:21:16,562 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:21:16,625 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:21:16,781 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:21:16,781 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:21:16,781 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:16,781 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:21:16,906 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:21:16,906 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:21:16,906 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:16,906 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:21:17,015 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:21:17,015 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:21:17,015 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,015 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:21:17,140 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:21:17,140 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:21:17,140 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,140 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:21:17,296 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:21:17,296 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:21:17,296 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,296 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:21:17,421 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:21:17,421 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:21:17,421 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,421 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:21:17,531 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:21:17,531 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:21:17,531 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,531 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:21:17,656 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:21:17,656 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:21:17,656 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,656 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:21:17,781 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:21:17,781 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:21:17,781 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,781 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:21:17,906 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:21:17,906 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:21:17,906 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:21:17,906 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:21:17,906 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:21:18,015 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:21:21,625 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3247>
+2012-12-19 22:21:21,718 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:21:24,312 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:21:47,562 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3446>
+2012-12-19 22:21:47,593 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:21:50,046 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:22:06,218 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3594>
+2012-12-19 22:22:06,250 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:22:08,750 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:24:47,000 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:24:47,125 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:24:47,125 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:24:47,125 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:24:47,140 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:24:47,203 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:24:47,203 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:24:47,296 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:24:47,390 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:24:47,406 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:24:47,421 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:24:47,500 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:24:47,531 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:24:47,531 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:24:47,546 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:24:47,546 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:24:47,546 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:24:47,546 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:24:47,562 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:24:47,562 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:24:47,578 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:24:47,578 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:24:47,578 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:24:47,578 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:24:47,593 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:24:47,593 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:24:47,593 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:24:47,593 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:24:47,593 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:24:47,609 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:24:47,609 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:24:47,609 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:24:47,640 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:24:47,875 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:24:47,953 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@15d52b43 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@66d6191d [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dthyli1ykp6du|4c4975, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@13fa5af7 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dthyli1ykp6du|1b9ce4b, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dthyli1ykp6du|e2cb55, numHelperThreads -> 3 ]>
+2012-12-19 22:24:48,531 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:24:48,531 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:24:48,578 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:24:48,593 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:24:48,593 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:24:48,593 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:24:48,593 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:24:48,593 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:24:48,593 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:24:48,593 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:24:48,593 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:24:48,593 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:24:48,593 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:24:48,593 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:24:48,609 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:24:48,609 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:24:48,609 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:24:48,609 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:24:48,609 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:24:48,609 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:24:48,609 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:24:48,609 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:24:48,640 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:24:49,062 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:24:49,093 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:24:49,093 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:24:49,171 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:24:49,296 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:24:49,296 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:24:49,296 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:49,296 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:24:49,390 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:24:49,390 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:24:49,390 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:49,390 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:24:49,500 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:24:49,500 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:24:49,500 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:49,500 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:24:49,609 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:24:49,609 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:24:49,609 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:49,609 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:24:49,718 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:24:49,718 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:24:49,718 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:49,718 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:24:49,828 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:24:49,828 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:24:49,828 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:49,828 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:24:49,921 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:24:49,921 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:24:49,921 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:49,921 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:24:50,031 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:24:50,031 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:24:50,031 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:50,031 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:24:50,125 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:24:50,125 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:24:50,125 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:50,125 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:24:50,250 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:24:50,250 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:24:50,250 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:24:50,250 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:24:50,250 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:24:50,343 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:24:53,328 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4937>
+2012-12-19 22:24:53,375 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:24:56,984 MobileMessageHandler.java(51) INFO - <短信发送服务初始化成功>
+2012-12-19 22:24:57,078 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:24:57,359 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:24:57,468 ProcessQueueData.java(121) ERROR- <处理卡号为132868的学生信息时发生错误！>
+2012-12-19 22:24:57,468 ProcessQueueData.java(122) ERROR- <java.lang.NullPointerException>
+2012-12-19 22:25:40,046 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:25:40,468 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:25:40,468 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:25:40,500 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:25:40,500 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:25:40,593 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:25:40,593 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:25:40,765 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:25:40,859 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:25:40,875 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:25:40,890 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:25:41,015 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:25:41,031 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:25:41,046 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:25:41,046 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:25:41,046 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:25:41,062 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:25:41,062 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:25:41,078 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:25:41,078 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:25:41,093 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:25:41,093 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:25:41,093 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:25:41,093 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:25:41,109 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:25:41,109 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:25:41,109 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:25:41,125 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:25:41,125 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:25:41,125 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:25:41,125 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:25:41,125 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:25:41,187 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:25:41,640 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:25:41,734 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@631cf264 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e988ff78 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dtj41p1x4wh|1dd7bc5, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e6135136 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtj41p1x4wh|1fe4169, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtj41p1x4wh|746ad0, numHelperThreads -> 3 ]>
+2012-12-19 22:25:42,421 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:25:42,421 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:25:42,484 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:25:42,500 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:25:42,500 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:25:42,500 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:25:42,500 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:25:42,500 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:25:42,500 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:25:42,500 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:25:42,500 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:25:42,500 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:25:42,500 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:25:42,500 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:25:42,515 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:25:42,515 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:25:42,515 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:25:42,515 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:25:42,515 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:25:42,515 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:25:42,515 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:25:42,546 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:25:43,078 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:25:43,093 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:25:43,093 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:25:43,187 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:25:43,312 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:25:43,312 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:25:43,312 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:43,312 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:25:43,421 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:25:43,421 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:25:43,421 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:43,421 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:25:43,531 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:25:43,531 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:25:43,531 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:43,531 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:25:43,640 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:25:43,640 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:25:43,640 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:43,640 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:25:44,109 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:25:44,109 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:25:44,109 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:44,109 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:25:44,234 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:25:44,234 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:25:44,234 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:44,234 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:25:44,343 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:25:44,343 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:25:44,343 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:44,343 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:25:44,453 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:25:44,453 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:25:44,453 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:44,453 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:25:44,546 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:25:44,546 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:25:44,546 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:44,546 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:25:44,656 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:25:44,656 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:25:44,656 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:25:44,656 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:25:44,656 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:25:44,765 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:26:59,062 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1957>
+2012-12-19 22:27:05,671 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:27:24,812 MobileMessageHandler.java(51) INFO - <短信发送服务初始化成功>
+2012-12-19 22:27:24,890 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:27:25,187 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:27:25,296 ProcessQueueData.java(121) ERROR- <处理卡号为132868的学生信息时发生错误！>
+2012-12-19 22:27:25,296 ProcessQueueData.java(122) ERROR- <java.lang.NullPointerException>
+2012-12-19 22:27:50,343 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2505>
+2012-12-19 22:27:50,375 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:28:05,046 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:28:05,375 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:28:35,609 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:2902>
+2012-12-19 22:28:35,609 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:28:40,937 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:29:41,328 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:29:41,421 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:29:41,437 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:29:41,437 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:29:41,453 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:29:41,531 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:29:41,531 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:29:41,640 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:29:41,734 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:29:41,750 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:29:41,781 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:29:41,843 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:29:41,859 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:29:41,859 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:29:41,875 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:29:41,875 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:29:41,875 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:29:41,875 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:29:41,890 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:29:41,890 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:29:41,890 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:29:41,890 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:29:41,921 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:29:41,921 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:29:41,921 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:29:41,921 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:29:41,937 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:29:41,937 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:29:41,937 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:29:41,953 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:29:41,953 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:29:41,953 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:29:41,984 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:29:42,218 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:29:42,296 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@a8c6e6 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ea44a016 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dto9pq1xy0s1y|1c5f743, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@37024511 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dto9pq1xy0s1y|166aa18, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dto9pq1xy0s1y|b6e39f, numHelperThreads -> 3 ]>
+2012-12-19 22:29:45,531 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:29:45,531 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:29:45,609 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:29:45,625 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:29:45,625 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:29:45,625 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:29:45,625 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:29:45,625 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:29:45,625 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:29:45,625 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:29:45,625 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:29:45,625 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:29:45,625 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:29:45,625 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:29:45,625 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:29:45,640 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:29:45,640 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:29:45,640 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:29:45,640 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:29:45,640 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:29:45,671 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:29:46,109 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:29:46,109 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:29:46,109 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:29:46,187 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:29:46,328 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:29:46,328 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:29:46,328 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:46,328 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:29:46,453 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:29:46,453 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:29:46,453 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:46,453 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:29:46,578 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:29:46,578 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:29:46,578 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:46,578 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:29:46,718 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:29:46,718 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:29:46,718 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:46,718 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:29:46,875 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:29:46,875 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:29:46,875 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:46,875 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:29:47,000 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:29:47,000 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:29:47,000 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:47,000 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:29:47,109 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:29:47,125 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:29:47,125 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:47,125 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:29:47,234 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:29:47,234 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:29:47,234 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:47,234 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:29:47,359 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:29:47,359 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:29:47,359 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:47,359 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:29:47,484 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:29:47,484 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:29:47,484 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:29:47,484 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:29:47,484 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:29:47,593 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:29:52,625 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3475>
+2012-12-19 22:29:52,656 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:29:56,640 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:30:02,593 SocketServer.java(22) INFO - <启动数据库>
+2012-12-19 22:30:02,718 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-19 22:30:02,718 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-19 22:30:02,718 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-19 22:30:02,734 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-19 22:30:02,796 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-19 22:30:02,796 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-19 22:30:02,875 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-19 22:30:02,968 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-19 22:30:02,968 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-19 22:30:03,000 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-19 22:30:03,078 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-19 22:30:03,078 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-19 22:30:03,078 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-19 22:30:03,093 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-19 22:30:03,093 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-19 22:30:03,109 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-19 22:30:03,109 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-19 22:30:03,125 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-19 22:30:03,125 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-19 22:30:03,125 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-19 22:30:03,125 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-19 22:30:03,140 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-19 22:30:03,140 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-19 22:30:03,140 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-19 22:30:03,140 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-19 22:30:03,156 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-19 22:30:03,156 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-19 22:30:03,156 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-19 22:30:03,171 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-19 22:30:03,171 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-19 22:30:03,171 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-19 22:30:03,187 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-19 22:30:03,421 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-19 22:30:03,515 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4c9dcf11 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@39b78624 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1dtoq2p1f5pd6z|6ac461, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@4c5f1079 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtoq2p1f5pd6z|196c1b0, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1dtoq2p1f5pd6z|19360e2, numHelperThreads -> 3 ]>
+2012-12-19 22:30:06,593 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-19 22:30:06,593 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-19 22:30:06,656 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-19 22:30:06,656 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-19 22:30:06,656 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-19 22:30:06,656 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-19 22:30:06,656 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-19 22:30:06,656 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-19 22:30:06,656 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-19 22:30:06,656 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-19 22:30:06,656 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-19 22:30:06,671 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-19 22:30:06,671 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-19 22:30:06,671 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-19 22:30:06,671 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-19 22:30:06,671 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-19 22:30:06,671 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-19 22:30:06,671 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-19 22:30:06,671 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-19 22:30:06,671 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-19 22:30:06,671 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-19 22:30:06,671 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-19 22:30:06,671 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-19 22:30:06,671 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-19 22:30:06,703 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-19 22:30:07,140 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-19 22:30:07,140 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-19 22:30:07,140 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-19 22:30:07,203 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-19 22:30:07,328 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-19 22:30:07,328 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-19 22:30:07,328 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:07,328 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:30:07,421 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-19 22:30:07,421 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-19 22:30:07,421 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:07,421 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-19 22:30:07,531 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-19 22:30:07,531 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-19 22:30:07,531 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:07,531 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-19 22:30:07,640 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-19 22:30:07,640 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-19 22:30:07,640 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:07,640 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:30:07,765 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-19 22:30:07,765 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-19 22:30:07,765 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:07,765 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-19 22:30:07,859 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-19 22:30:07,859 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-19 22:30:07,859 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:07,859 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:30:07,968 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-19 22:30:07,968 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-19 22:30:07,968 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:07,968 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:30:08,062 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-19 22:30:08,062 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-19 22:30:08,062 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:08,062 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-19 22:30:08,171 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-19 22:30:08,171 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-19 22:30:08,171 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:08,171 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-19 22:30:08,281 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-19 22:30:08,281 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-19 22:30:08,281 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-19 22:30:08,281 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-19 22:30:08,281 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-19 22:30:08,359 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-19 22:30:08,359 SocketServer.java(48) ERROR- <java.net.BindException: Address already in use: JVM_Bind>
+2012-12-19 22:30:15,546 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3646>
+2012-12-19 22:30:15,578 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:30:17,890 ProcessQueueData.java(108) INFO - <卡号为132868的学生重复进出，过滤短信>
+2012-12-19 22:30:31,218 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3807>
+2012-12-19 22:30:31,265 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-19 22:30:34,343 MobileMessageHandler.java(51) INFO - <短信发送服务初始化成功>
+2012-12-19 22:30:34,453 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-19 22:30:34,781 SendMobileMessage.java(58) INFO - <短信发送成功>
+2012-12-20 09:09:48,557 SocketServer.java(22) INFO - <启动数据库>
+2012-12-20 09:09:49,182 Environment.java(514) INFO - <Hibernate 3.2.6>
+2012-12-20 09:09:49,182 Environment.java(547) INFO - <hibernate.properties not found>
+2012-12-20 09:09:49,197 Environment.java(681) INFO - <Bytecode provider name : cglib>
+2012-12-20 09:09:49,197 Environment.java(598) INFO - <using JDK 1.4 java.sql.Timestamp handling>
+2012-12-20 09:09:49,276 Configuration.java(1432) INFO - <configuring from resource: /hibernate.cfg.xml>
+2012-12-20 09:09:49,276 Configuration.java(1409) INFO - <Configuration resource: /hibernate.cfg.xml>
+2012-12-20 09:09:49,666 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Messagelog.hbm.xml>
+2012-12-20 09:09:49,838 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Messagelog -> messagelog>
+2012-12-20 09:09:49,869 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentrfid.hbm.xml>
+2012-12-20 09:09:49,901 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentrfid -> studentrfid>
+2012-12-20 09:09:50,010 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studentfamily.hbm.xml>
+2012-12-20 09:09:50,026 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studentfamily -> studentfamily>
+2012-12-20 09:09:50,026 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Schooleinfor.hbm.xml>
+2012-12-20 09:09:50,041 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Schooleinfor -> schooleinfor>
+2012-12-20 09:09:50,041 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Studenttimebook.hbm.xml>
+2012-12-20 09:09:50,057 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Studenttimebook -> studenttimebook>
+2012-12-20 09:09:50,057 Configuration.java(559) INFO - <Reading mappings from resource : hbm/CardException.hbm.xml>
+2012-12-20 09:09:50,072 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.CardException -> card_exception>
+2012-12-20 09:09:50,072 Configuration.java(559) INFO - <Reading mappings from resource : hbm/ClassInfo.hbm.xml>
+2012-12-20 09:09:50,119 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.ClassInfo -> class>
+2012-12-20 09:09:50,119 Configuration.java(559) INFO - <Reading mappings from resource : hbm/PrivateMessage.hbm.xml>
+2012-12-20 09:09:50,135 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.PrivateMessage -> private_message>
+2012-12-20 09:09:50,135 Configuration.java(559) INFO - <Reading mappings from resource : hbm/Teacher.hbm.xml>
+2012-12-20 09:09:50,151 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.Teacher -> do_org_user>
+2012-12-20 09:09:50,151 Configuration.java(559) INFO - <Reading mappings from resource : hbm/StudentProperty.hbm.xml>
+2012-12-20 09:09:50,166 HbmBinder.java(300) INFO - <Mapping class: com.zephyr.studentsafe.bo.StudentProperty -> student_property>
+2012-12-20 09:09:50,166 Configuration.java(1547) INFO - <Configured SessionFactory: null>
+2012-12-20 09:09:50,166 HbmBinder.java(2382) INFO - <Mapping collection: com.zephyr.studentsafe.bo.Studentrfid.studentFamily -> studentfamily>
+2012-12-20 09:09:50,166 C3P0ConnectionProvider.java(81) INFO - <C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8>
+2012-12-20 09:09:50,166 C3P0ConnectionProvider.java(82) INFO - <Connection properties: {user=pnt, password=****, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider}>
+2012-12-20 09:09:50,166 C3P0ConnectionProvider.java(85) INFO - <autocommit mode: false>
+2012-12-20 09:09:50,307 MLog.java(80) INFO - <MLog clients using log4j logging.>
+2012-12-20 09:09:51,588 C3P0Registry.java(204) INFO - <Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]>
+2012-12-20 09:09:51,666 AbstractPoolBackedDataSource.java(462) INFO - <Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@82e39301 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@af63575b [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge18c8r1egjhsg1ap5ans|1c5f743, idleConnectionTestPeriod -> 0, initialPoolSize -> 2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 3000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@caa601fb [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1egjhsg1ap5ans|861f24, jdbcUrl -> jdbc:mysql://221.194.156.93:3306/studentsafe?characterEncoding=utf-8, properties -> {user=******, password=******, provider_class_inner=com.hibernate.connection.C3P0ConnectionProvider} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge18c8r1egjhsg1ap5ans|b6e39f, numHelperThreads -> 3 ]>
+2012-12-20 09:09:52,432 SettingsFactory.java(89) INFO - <RDBMS: MySQL, version: 5.5.28-log>
+2012-12-20 09:09:52,432 SettingsFactory.java(90) INFO - <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.10 ( Revision: ${svn.Revision} )>
+2012-12-20 09:09:52,713 Dialect.java(152) INFO - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2012-12-20 09:09:52,713 TransactionFactoryFactory.java(31) INFO - <Using default transaction strategy (direct JDBC transactions)>
+2012-12-20 09:09:52,713 TransactionManagerLookupFactory.java(33) INFO - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2012-12-20 09:09:52,713 SettingsFactory.java(143) INFO - <Automatic flush during beforeCompletion(): disabled>
+2012-12-20 09:09:52,713 SettingsFactory.java(147) INFO - <Automatic session close at end of transaction: disabled>
+2012-12-20 09:09:52,729 SettingsFactory.java(154) INFO - <JDBC batch size: 15>
+2012-12-20 09:09:52,744 SettingsFactory.java(157) INFO - <JDBC batch updates for versioned data: disabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(162) INFO - <Scrollable result sets: enabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(170) INFO - <JDBC3 getGeneratedKeys(): enabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(178) INFO - <Connection release mode: auto>
+2012-12-20 09:09:52,744 SettingsFactory.java(202) INFO - <Maximum outer join fetch depth: 2>
+2012-12-20 09:09:52,744 SettingsFactory.java(205) INFO - <Default batch fetch size: 1>
+2012-12-20 09:09:52,744 SettingsFactory.java(209) INFO - <Generate SQL with comments: disabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(213) INFO - <Order SQL updates by primary key: disabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(217) INFO - <Order SQL inserts for batching: disabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(386) INFO - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2012-12-20 09:09:52,744 ASTQueryTranslatorFactory.java(24) INFO - <Using ASTQueryTranslatorFactory>
+2012-12-20 09:09:52,744 SettingsFactory.java(225) INFO - <Query language substitutions: {}>
+2012-12-20 09:09:52,744 SettingsFactory.java(230) INFO - <JPA-QL strict compliance: disabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(235) INFO - <Second-level cache: enabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(239) INFO - <Query cache: disabled>
+2012-12-20 09:09:52,744 SettingsFactory.java(373) INFO - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2012-12-20 09:09:52,760 SettingsFactory.java(254) INFO - <Optimize cache for minimal puts: disabled>
+2012-12-20 09:09:52,760 SettingsFactory.java(263) INFO - <Structured second-level cache entries: disabled>
+2012-12-20 09:09:52,776 SettingsFactory.java(283) INFO - <Echoing all SQL to stdout>
+2012-12-20 09:09:52,776 SettingsFactory.java(290) INFO - <Statistics: disabled>
+2012-12-20 09:09:52,776 SettingsFactory.java(294) INFO - <Deleted entity synthetic identifier rollback: disabled>
+2012-12-20 09:09:52,776 SettingsFactory.java(309) INFO - <Default entity-mode: pojo>
+2012-12-20 09:09:52,776 SettingsFactory.java(313) INFO - <Named query checking : enabled>
+2012-12-20 09:09:52,885 SessionFactoryImpl.java(161) INFO - <building session factory>
+2012-12-20 09:09:53,760 SessionFactoryObjectFactory.java(82) INFO - <Not binding factory to JNDI, no JNDI name configured>
+2012-12-20 09:09:53,760 SchemaUpdate.java(115) INFO - <Running hbm2ddl schema update>
+2012-12-20 09:09:53,760 SchemaUpdate.java(126) INFO - <fetching database metadata>
+2012-12-20 09:09:53,854 SchemaUpdate.java(138) INFO - <updating schema>
+2012-12-20 09:09:54,026 TableMetadata.java(39) INFO - <table found: studentsafe.card_exception>
+2012-12-20 09:09:54,026 TableMetadata.java(40) INFO - <columns: [memo, event, cardid, scan_date, objuid]>
+2012-12-20 09:09:54,026 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,026 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-20 09:09:54,151 TableMetadata.java(39) INFO - <table found: studentsafe.class>
+2012-12-20 09:09:54,151 TableMetadata.java(40) INFO - <columns: [classname, teacher, objuid]>
+2012-12-20 09:09:54,151 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,151 TableMetadata.java(43) INFO - <indexes: [newindex1, primary]>
+2012-12-20 09:09:54,276 TableMetadata.java(39) INFO - <table found: studentsafe.messagelog>
+2012-12-20 09:09:54,276 TableMetadata.java(40) INFO - <columns: [memo, classname, sendphone, state, rfidcardid, messagetype, messageloguid, messagedesc, smid, studentname, sendteacher, sendtime, teacher]>
+2012-12-20 09:09:54,276 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,276 TableMetadata.java(43) INFO - <indexes: [classname, sendphone, studentname, smid, sendteacher]>
+2012-12-20 09:09:54,401 TableMetadata.java(39) INFO - <table found: studentsafe.private_message>
+2012-12-20 09:09:54,401 TableMetadata.java(40) INFO - <columns: [ask_state, send_time, phone_number, receive_time, message_id, read_state, teacher_id, message_content]>
+2012-12-20 09:09:54,401 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,401 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-20 09:09:54,526 TableMetadata.java(39) INFO - <table found: studentsafe.schooleinfor>
+2012-12-20 09:09:54,526 TableMetadata.java(40) INFO - <columns: [schooledesc, address, schooleuid, msgmodel1, msgmodel3, outschoolemsg, inschoolemsg, msgmodel2, msgmodel5, schoolename, msgmodel4, headmaster]>
+2012-12-20 09:09:54,526 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,526 TableMetadata.java(43) INFO - <indexes: []>
+2012-12-20 09:09:54,651 TableMetadata.java(39) INFO - <table found: studentsafe.do_org_user>
+2012-12-20 09:09:54,651 TableMetadata.java(40) INFO - <columns: [modifydate, birthday, deptuid, user_code, password, creator, modifier, email, address, name, gender, telephone, mversion, objuid, mobile]>
+2012-12-20 09:09:54,651 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,651 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-20 09:09:54,760 TableMetadata.java(39) INFO - <table found: studentsafe.student_property>
+2012-12-20 09:09:54,760 TableMetadata.java(40) INFO - <columns: [last_scan_date, lase_scan_date, lase_scan_state, last_scan_state, remaining_time, link_student, objuid]>
+2012-12-20 09:09:54,760 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,760 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-20 09:09:54,885 TableMetadata.java(39) INFO - <table found: studentsafe.studentfamily>
+2012-12-20 09:09:54,885 TableMetadata.java(40) INFO - <columns: [relationship, issendmessage, familysex, studentuid, familyuid, familyphone, familyname]>
+2012-12-20 09:09:54,885 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:54,885 TableMetadata.java(43) INFO - <indexes: [primary, fke83d055f68575ca9]>
+2012-12-20 09:09:55,026 TableMetadata.java(39) INFO - <table found: studentsafe.studentrfid>
+2012-12-20 09:09:55,026 TableMetadata.java(40) INFO - <columns: [lastscanstate, studentuid, lastscandate, studentbirthday, rfidcardid, class, lowcardnumber, teacher, remaining_time, studentname, studentsex, studentid]>
+2012-12-20 09:09:55,026 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:55,026 TableMetadata.java(43) INFO - <indexes: [fk8c624b0a49d1a2e, birthday, sex, name, primary, class, teacher, fk8c624b0a8cef3fa8, cardid]>
+2012-12-20 09:09:55,151 TableMetadata.java(39) INFO - <table found: studentsafe.studenttimebook>
+2012-12-20 09:09:55,151 TableMetadata.java(40) INFO - <columns: [time, event, rfidcardid, studentname, objuid]>
+2012-12-20 09:09:55,151 TableMetadata.java(42) INFO - <foreign keys: []>
+2012-12-20 09:09:55,151 TableMetadata.java(43) INFO - <indexes: [primary]>
+2012-12-20 09:09:55,151 SchemaUpdate.java(160) INFO - <schema update complete>
+2012-12-20 09:09:55,307 ProcessStudentData.java(50) INFO - <逻辑判断线程启动!>
+2012-12-20 09:09:59,807 SocketServer.java(42) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:3901>
+2012-12-20 09:09:59,807 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-20 09:11:55,276 SocketServer.java(22) INFO - <启动数据库>
+2012-12-20 09:11:57,932 SocketServer.java(41) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4733>
+2012-12-20 09:11:58,088 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-20 09:12:19,588 SocketServer.java(22) INFO - <启动数据库>
+2012-12-20 09:12:21,557 SocketServer.java(41) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:4884>
+2012-12-20 09:12:21,588 ProcessThread.java(61) ERROR- <java.net.SocketException: Connection reset>
+2012-12-20 09:23:56,729 SocketServer.java(22) INFO - <启动数据库>
+2012-12-20 09:23:59,166 SocketServer.java(41) INFO - <收到通讯箱连接请求，IP地址：/127.0.0.1:1621>
+2012-12-20 09:23:59,307 ProcessThread.java(62) ERROR- <java.net.SocketException: Connection reset>

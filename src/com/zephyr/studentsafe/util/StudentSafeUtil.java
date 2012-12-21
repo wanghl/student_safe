@@ -74,7 +74,7 @@ public class StudentSafeUtil {
 		if (config == null) {
 			try {
 				config = new PropertiesConfiguration(
-						"resource/studentsafe.properties");
+						"studentsafe.properties");
 				config.setReloadingStrategy(new FileChangedReloadingStrategy());
 				return config;
 			} catch (ConfigurationException e) {
@@ -167,7 +167,7 @@ public class StudentSafeUtil {
 	 * @param str
 	 * @return
 	 */
-	public static List<String> getHexString(String[] str) {
+	public static List<String> getHexString(String[] str,String ip) {
 		// TODO: 阅读器传来的卡号第一位表示卡片的电池电量 。0为正常1为电池电量低
 		// 需实现监控卡片电量的功能
 		List<String> list = new ArrayList<String>();
@@ -183,7 +183,7 @@ public class StudentSafeUtil {
 				}
 				rfid = s.substring(6, 14);
 				tigger = s.substring(16, 18);
-				list.add(Integer.valueOf(rfid, 16).toString() + "&" + tigger);
+				list.add(Integer.valueOf(rfid, 16).toString() + "&" + tigger + "&" + ip);
 			}
 		} catch (NumberFormatException e1) {
 			e1.printStackTrace();
@@ -258,7 +258,7 @@ public class StudentSafeUtil {
 			FileOutputStream out = new FileOutputStream(new File("message.ftl"));
 			out.write(ftlTemplate.getBytes());
 			Configuration cfg = new Configuration();
-			Template temp = cfg.getTemplate("message.ftl", "gbk");
+			Template temp = cfg.getTemplate("message.ftl", "utf-8");
 			temp.process(data, sw);
 
 		} catch (TemplateException e) {

@@ -64,7 +64,7 @@ public class StudentDAO extends BaseDAO {
 				.setFetchMode("classInfo", FetchMode.JOIN)
 				.setFetchMode("teacherInfo", FetchMode.JOIN)
 				.setCacheRegion("myCacheRegion")
-				.setMaxResults(1).list();
+				.list();
 			if(!l.isEmpty())
 			{
 				student = (Studentrfid) l.get(0);

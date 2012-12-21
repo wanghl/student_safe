@@ -15,7 +15,6 @@ import org.apache.log4j.Logger;
 import com.zephyr.studentsafe.bo.Constants;
 import com.zephyr.studentsafe.bo.StudentExt;
 import com.zephyr.studentsafe.exception.StudentSafeException;
-import com.zephyr.studentsafe.ui.action.ProcessJTableEvent;
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 
 
@@ -73,6 +72,7 @@ public class ProcessStudentData implements Runnable {
 						StudentExt st = new StudentExt();
 						st.setRfidCardID(array[0]);
 						st.setFirstArea(array[1]);
+						st.setRemoteIp(array[2]);
 						StudentQueue.put(st);
 					} else {
 						//更新最后一次经过区域
@@ -84,7 +84,7 @@ public class ProcessStudentData implements Runnable {
 					}
 					
 				}
-				ProcessJTableEvent.updateMonitTableData() ;
+				//ProcessJTableEvent.updateMonitTableData() ;
 				
 				try {
 					countNoscanTimes() ;
@@ -120,19 +120,8 @@ public class ProcessStudentData implements Runnable {
 					//如果未检测到的次数大于设定次数
 					if (student.getNoscantimes() >= StudentSafeUtil.getIntValue(Constants.NO_SCAN_TIMES)){
 						StudentQueue.pop(student);
-						ProcessJTableEvent.updateMonitTableData() ;
-						//结果刷到界面表格上
-						//正常模式下，刷新主界面的table
-						if (this._DEBUG_MODEL == 0 ){
-						
-							ProcessJTableEvent.updateTableUI(student);
-							
-							ProcessQueueData.run(student);
-						}else {
-							//调试模式   尼玛。。。debug model 
-							ProcessJTableEvent.updateTableUI(student);
-							
-						}
+						MonitorDataPool.addMonitorData(student);
+						ProcessQueueData.run(student);
 						
 					}
 				}
@@ -145,19 +134,9 @@ public class ProcessStudentData implements Runnable {
 			  student.setNoscantimes(student.getNoscantimes() + 1) ;
 			  if (student.getNoscantimes() >= StudentSafeUtil.getIntValue(Constants.NO_SCAN_TIMES)){
 					StudentQueue.pop(student);
-					ProcessJTableEvent.updateMonitTableData() ;
-
-					//结果刷到界面表格上 
-					if (this._DEBUG_MODEL == 0 ){
-						
-						ProcessJTableEvent.updateTableUI(student);
-						
-						ProcessQueueData.run(student);
-					}else {
-						//调试模式   尼玛。。。debug model 
-						ProcessJTableEvent.updateTableUI(student);
-						
-					}
+					MonitorDataPool.addMonitorData(student);
+					ProcessQueueData.run(student);
+					
 					
 					
 				}
