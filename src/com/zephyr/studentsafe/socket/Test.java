@@ -8,7 +8,7 @@ public class Test {
 	
 	public static void main(String[] argvs) throws UnknownHostException, IOException{
 		
-		Socket socket = new Socket("221.194.156.93",8086);
+		Socket socket = new Socket("127.0.0.1",8086);
 		byte[] b = new byte[14];
 		b[0] = (byte)0xff;
 		b[1] = (byte)0xff;
@@ -27,7 +27,8 @@ public class Test {
 		socket.setKeepAlive(true);
 		
 			
-			socket.getOutputStream().write(b);
+			socket.getOutputStream().write("xxxxx\n".getBytes());
+			socket.close();
 			
 		
 	}

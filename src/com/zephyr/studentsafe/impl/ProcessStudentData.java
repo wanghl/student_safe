@@ -121,6 +121,7 @@ public class ProcessStudentData implements Runnable {
 					if (student.getNoscantimes() >= StudentSafeUtil.getIntValue(Constants.NO_SCAN_TIMES)){
 						StudentQueue.pop(student);
 						MonitorDataPool.addMonitorData(student);
+						log.info("卡号为 " + student.getRfidCardID() + " 的学生" + student.getEvent());
 						ProcessQueueData.run(student);
 						
 					}
@@ -135,6 +136,7 @@ public class ProcessStudentData implements Runnable {
 			  if (student.getNoscantimes() >= StudentSafeUtil.getIntValue(Constants.NO_SCAN_TIMES)){
 					StudentQueue.pop(student);
 					MonitorDataPool.addMonitorData(student);
+					log.info("卡号为 " + student.getRfidCardID() + " 的学生" + student.getEvent());
 					ProcessQueueData.run(student);
 					
 					

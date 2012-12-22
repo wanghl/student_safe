@@ -26,7 +26,6 @@ public class ReceiveMessageRPT extends TimerTask {
 				// 初始化
 				APIClient handler = MobileMessageHandler.getInstance();
 				RPTItem[] items = handler.receiveRPT();
-				System.out.println("接收回执 长度" + items.length);
 				if (items != null && items.length == 0) {
 					log.info("无回执内容");
 					return;

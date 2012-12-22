@@ -35,42 +35,11 @@ public class ProcessQueueData {
 			// 进入点和离开点相同的情况下 不更新数据库记录
 			if (s.getEvent() != "出校" && s.getEvent() != "入校")
 			{
-				log.info("学生" + s.getRfidCardID() + "进入点和离开点相同，不更新数据库记录");
+				//log.info("学生" + s.getRfidCardID() + "进入点和离开点相同，不更新数据库记录");
 				return;
 			}
 			Studentrfid student = dao.getStudentbyCardID(s.getRfidCardID());
-
-			StudentProperty property = new StudentProperty();
-			property.setLinkStudent(student.getStudentUID());
-			List l = dao.getByExample(StudentProperty.class, property);
-			if (!l.isEmpty())
-			{
-				property = (StudentProperty) l.get(0);
-			}
-			// 刷新每天检测到的时间
-			Calendar c = Calendar.getInstance();
-			int h = c.get(Calendar.HOUR_OF_DAY);
-			// 每天早上8点 中午14点给老师发送班级考勤短信。
-			// 早上入校（8点之前）状态是1 下午上课之间（1点半之前）入校状态是2
-			// 这样8点统计考勤的时候查询当天lastscanstate=1 的数据，14点统计的时候查询=2的
-			int amTime = StudentSafeUtil.getIntValue(Constants.TIME_TO_SCHOOL);
-			int pmTime = StudentSafeUtil.getIntValue(Constants.TIME_OUT_SCHOOL);
-			if (h < amTime && s.getEvent().equals("入校"))
-			{
-				// 8点之前正常到校的
-				property.setLastScanState(1);
-			} else if ((h < 15 && h >= 8) && s.getEvent().equals("入校"))
-			{
-				// 8点（包括8点）到下午2点之间到校的 （这其中可能有部分是迟到的)
-				property.setLastScanState(2);
-
-			} else if (h >= pmTime && s.getEvent().equals("出校"))
-			{
-				property.setLastScanState(3);
-			}
-			property.setLastScanDate(Calendar.getInstance().getTime());
-			// dao.saveORupdate(student);
-			dao.saveORupdate(property);
+			
 			// 发短信
 			// 判断是否启用了重复短信过滤功能
 			if (SystemProperty.isMessageFilterEnabled())
@@ -116,6 +85,7 @@ public class ProcessQueueData {
 				saveStudentTimeBook(s,student);
 				sender.sendMessage(student, s);
 			}
+			
 		} catch (Exception e)
 		{
 			log.error("处理卡号为" + s.getRfidCardID() + "的学生信息时发生错误！");

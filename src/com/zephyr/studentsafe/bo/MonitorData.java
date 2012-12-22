@@ -31,5 +31,12 @@ public class MonitorData {
 	private int outSchool; 
 	private int notLeave ;
 	
+	//归零    再坚持一把 。。。 不知道对不对的坚持
+	
+	public void clear(){
+		this.inSchool = 0 ;
+		this.outSchool = 0 ;
+		this.notLeave = 0 ;
+	}
 
 }
