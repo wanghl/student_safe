@@ -1,6 +1,14 @@
 package com.zephyr.studentsafe.util;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.PropertiesConfiguration;
+
 import com.zephyr.studentsafe.bo.Constants;
+import com.zephyr.studentsafe.exception.StudentSafeException;
 
 public class SystemProperty {
 	// 是否接收短信回复MO
@@ -55,5 +63,55 @@ public class SystemProperty {
 	public static int getMessageBetweenTime() {
 		return StudentSafeUtil.getIntValue(Constants.MESSAGE_BETWEEN_TIME);
 	}
+	
+	//网络异常是否短信通知管理员
+	
+	public static boolean sendNetworkErrorMessage()
+	{
+		return StudentSafeUtil.getStringValue(Constants.SEND_NETWORK_ERROR_MESSAGE).equals("1") ;
+	}
+	
+	//收到新连接 ，短信通知管理员
+	
+	public static boolean sendSocketOpenedMessge()
+	{
+		return StudentSafeUtil.getStringValue(Constants.SEND_SOCKET_OPENED_MESSAGE).equals("1");
+	}
+	//阅读器无心跳短信报警
+	
+	public static boolean sendReaderErrorMessage()
+	{
+		return StudentSafeUtil.getStringValue(Constants.SEND_READER_ERROR_MESSAGE).equals("1") ;
+	}
+	//保存配置
+		public static void saveSetting(Map map) throws StudentSafeException{
+			PropertiesConfiguration g = StudentSafeUtil.getConfig();
+			for (Iterator<String> it = map.keySet().iterator();it.hasNext();){
+				String key = it.next();
+				g.setProperty(key, map.get(key));
+				try {
+					g.save();
+				} catch (ConfigurationException e) {
+					throw new StudentSafeException("保存配置文件错误："+ e.getLocalizedMessage());
+				}
+			}
+		}
+			
+	//保存配置  KEY  VALUE
+			
+	public static void saveStting(String key ,String value)
+	{
+		Map map = new HashMap();
+		
+		map.put(key, value);
+		
+		try {
+			saveSetting(map);
+		} catch (StudentSafeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
+		
 }

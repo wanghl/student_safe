@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>ssss</display-name>
+  <display-name>student_safe</display-name>
+  <session-config>    
+    <session-timeout>30</session-timeout>      
+  </session-config>  
+  
   <servlet>
     <servlet-name>freemarker</servlet-name>
     <servlet-class>
@@ -49,20 +53,62 @@
            
         <load-on-startup>1</load-on-startup>  
  </servlet>  
-
 <servlet>
-<servlet-name>ServiceSocket</servlet-name>
-<servlet-class>com.zephyr.studentsafe.socket.SocketServer</servlet-class>
+<servlet-name>MinaServer</servlet-name>
+<servlet-class>com.zephyr.studentsafe.mina.MinaServer</servlet-class>
 <load-on-startup>10</load-on-startup>
 </servlet>
 
+
 <servlet>
-<servlet-name>ProcessServlet</servlet-name>
-<servlet-class>com.zephyr.studentsafe.servlet.ProcessServlet</servlet-class>
+<servlet-name>loginServlet</servlet-name>
+<servlet-class>com.zephyr.studentsafe.servlet.LogInServlet</servlet-class>
 </servlet>
 
 <servlet-mapping>
-<servlet-name>ProcessServlet</servlet-name>
+<servlet-name>loginServlet</servlet-name>
+<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>logoffServlet</servlet-name>
+<servlet-class>com.zephyr.studentsafe.servlet.LogOffServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>logoffServlet</servlet-name>
+<url-pattern>/logoff</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>paramterServlet</servlet-name>
+<servlet-class>com.zephyr.studentsafe.servlet.ParamterServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>paramterServlet</servlet-name>
+<url-pattern>/param</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>BlackListServlet</servlet-name>
+<servlet-class>com.zephyr.studentsafe.servlet.BlackListServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>BlackListServlet</servlet-name>
+<url-pattern>/blacklist</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>GetMonitorDataServlet</servlet-name>
+<servlet-class>com.zephyr.studentsafe.servlet.GetMonitorDataServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>GetMonitorDataServlet</servlet-name>
 <url-pattern>/job</url-pattern>
 </servlet-mapping>
 

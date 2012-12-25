@@ -15,7 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.zephyr.studentsafe.bo.MonitorData;
 import com.zephyr.studentsafe.impl.MonitorDataPool;
+import com.zephyr.studentsafe.impl.StudentQueue;
 import com.zephyr.studentsafe.impl.StudentReaderQueue;
+import com.zephyr.studentsafe.util.IPManUtil;
 
 /**
  * @author Administrator
@@ -42,10 +44,13 @@ public class GetMonitorDataServlet extends HttpServlet {
 			data =  MonitorDataPool.getMonitorData(key); 
 			
 			map.put("ip", key);
+			map.put("linkschool", IPManUtil.getStringValue(key)) ;
 			map.put("inschool", Integer.toString(data.getInSchool())) ;
 			map.put("outschool", Integer.toString(data.getOutSchool()));
 			map.put("notleave", Integer.toString(data.getNotLeave()));
 			map.put("waitprocess", Integer.toString(StudentReaderQueue.getSize()));
+			map.put("processqueue", Integer.toString(StudentQueue.getSize()));
+			map.put("receivedatalength",Float.toString(data.getReceivedDataLength()));
 			list.add(map);
 		}
 		request.setAttribute("data", list);

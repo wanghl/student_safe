@@ -25,11 +25,9 @@ public class MobileMessageHandler {
 			if ( handler == null ){
 				handler = new APIClient();
 				init() ;
-				System.out.println(1);
 				return handler ;
 			}
 			else{
-				System.out.println(0);
 				return handler ;
 			}
 	}

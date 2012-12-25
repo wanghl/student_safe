@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>北京紫枫平安通数据监控平台</title>
+    <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -31,7 +31,36 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
-   
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript">
+
+    	function getIPDetail(type,ip)
+    	{
+    		var url = "http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=" + ip ;
+			$.getScript(url,function(){ 
+            	if (remote_ip_info.ret == '1'){   
+            		if(type == 1)
+            		{
+            			$(document.getElementById(ip+"_city")).text(remote_ip_info.province + " " + remote_ip_info.city + " " + remote_ip_info.district);
+            		}
+            		if(type ==2)
+            		{
+            			$(document.getElementById(ip+"_isp")).text(remote_ip_info.isp);
+
+            		}
+            		} else {   
+            		//alert('错误', '没有找到匹配的 IP 地址信息！');   
+            		}  
+            	
+            } );  
+    	}
+    	
+    	
+    	
+            
+          
+      
+    </script>
   </head>
 
   <body>
@@ -77,47 +106,37 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-tabs nav-stacked">
               <li class="nav-header">系统信息</li>
-              <li class="active" ><a  href="/student_safe/job"><i class="icon-home"></i>基本信息</span></a></li>
+              <li><a  href="/student_safe/job"><i class="icon-home"></i>基本信息</span></a></li>
                <li><a  href="/student_safe/param"><i class="icon-pencil"></i>参数设置</span></a></li>
-               <li><a  href="/student_safe/blacklist"><i class="icon-list-alt"></i>IP黑名单</span></a></li>
+               <li class="active" ><a  href="/student_safe/blacklist"><i class="icon-list-alt"></i>IP黑名单</span></a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span10">
           <div class="hero-unit">
-            
             <table class="table table-bordered">
 	        <thead>
           <tr>
-            <th>通讯箱出口IP</th>
-            <th>关联学校</th>
-            <th>进校人数</th>
-            <th>出校人数</th>
-            <th>未离开区域人数</th>
-            <th>缓冲队列长度</th>
-            <th>运算队列长度</th>
-            <th>接收字节长度(MB)</th>
+            <th>IP地址</th>
+            <th>归属地</th>
+            <th>链路类型</th>
+            <th>访问权限</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            
-            <#list data as map>
-            <tr>
-            	<td> ${map.ip} </td>
-            	<td> ${map.linkschool ! " "}</td>
-            	<td> ${map.inschool} </td>
-            	<td> ${map.outschool} </td>
-            	<td> ${map.notleave} </td>
-            	<td> ${map.waitprocess} </td>
-            	<td> ${map.processqueue} </td>
-            	<td> ${map.receivedatalength}</td>
+            <#list data as ip>
+            <tr >
+            	<td > ${ip} </td>
+            	<td id="${ip}_city" > <script>getIPDetail(1,"${ip}")</script></td>
+            	<td id="${ip}_isp"><script>getIPDetail(2,"${ip}")</script> </td>
+            	<td> 禁止访问</td>
             </tr>
             </#list>
           </tr>
         </tbody>
       </table>
-       <button class="btn btn-primary" onclick="javascript:window.location.reload() ;">刷新</button>
+           <!--button  class="btn btn-primary">新增</button-->
       </div>
          
         </div><!--/span-->
@@ -128,13 +147,40 @@
       <footer>
         <p>&copy; Company 2012</p>
       </footer>
+      
+         <div class="modal hide fade" id="Modal">
+			 <form method="post" action="/student_safe/blacklist" >
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">×</a>
+					<h3>新增IP黑名单</h3>
+				</div>
+				<div class="modal-body">
+					<input name="ipaddress"  type="text" class="span3" placeholder="输入IP地址...">
+				</div>
+				<div class="modal-footer">
+				<a href="#" class="btn " data-dismiss="modal">关闭</a>
+					 <button type="submit" class="btn btn-primary">保存</a>
+				</div>
+				</form>
+				</div>
+				<script type="text/javascript">
+					$("button").click(function() {
+
+							$('#Modal').modal({
+								backdrop : false,
+								keyboard : true,
+								show : true
+							});
+
+								});
+				</script>
 
     </div><!--/.fluid-container-->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
     <script src="assets/js/bootstrap-modal.js"></script>
@@ -148,7 +194,8 @@
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
     
+    
    
- 
+
   </body>
 </html>

@@ -2,6 +2,18 @@ package com.zephyr.studentsafe.bo;
 
 public class MonitorData {
 	
+	private float receiveCount  ;
+	
+	public synchronized void addReceiveDataLength(float t)
+	{
+		receiveCount += t ;
+	}
+	
+	public float getReceivedDataLength()
+	{
+		return receiveCount / 1024 ;
+	}
+	
 	private int inSchool ;
 	public int getInSchool() {
 		return inSchool;
@@ -37,6 +49,7 @@ public class MonitorData {
 		this.inSchool = 0 ;
 		this.outSchool = 0 ;
 		this.notLeave = 0 ;
+		this.receiveCount = 0 ;
 	}
 
 }

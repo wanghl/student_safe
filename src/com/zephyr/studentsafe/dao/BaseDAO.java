@@ -9,6 +9,7 @@ import org.hibernate.criterion.Example;
 import com.zephyr.studentsafe.bo.StudentProperty;
 import com.zephyr.studentsafe.bo.Studentfamily;
 import com.zephyr.studentsafe.bo.Studentrfid;
+import com.zephyr.studentsafe.bo.Teacher;
 
 import com.zephyr.studentsafe.util.StudentSafeUtil;
 
@@ -240,6 +241,43 @@ public class BaseDAO {
 			}
 		}
 		
+	}
+	
+	public boolean verificationUser(String userName, String password)
+	{
+		Session s = null ;
+		List l = null ;
+		try{
+			s = HibernateUtil.getSession();
+			s.beginTransaction();
+			Teacher t = new Teacher();
+			t.setName(userName);
+			t.setPassword(password);
+			List lt = getByExample(Teacher.class ,t);
+			if(lt.isEmpty())
+			{
+				return false ;
+			}
+			t = (Teacher) lt.get(0);
+			lt = s.createSQLQuery("select r.name from do_org_role r, do_org_user_role ur  where r.objuid = ur.role_uid and ur.user_uid =?")
+			.setString(0, t.getObjUID()).list() ;
+			if(lt.isEmpty())
+			{
+				return false;
+			}else if( ! lt.get(0).toString().equals("系统管理员"))
+			{
+				return false; 
+			}
+			s.getTransaction().commit();
+		}catch (Exception e){
+			e.printStackTrace();
+		}finally{
+			if (s != null){
+				s.close();
+			}
+		}
+		
+		return true;
 	}
 	
 	

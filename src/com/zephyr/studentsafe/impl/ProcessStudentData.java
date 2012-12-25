@@ -59,7 +59,6 @@ public class ProcessStudentData implements Runnable {
 			String[] array;
 			for (int i = 0; i < StudentReaderQueue.getSize(); i++) {
 				list = StudentReaderQueue.get(i);
-				System.out.println("处理队列" + list);
 				//从队列中删除当前处理的卡号信息
 				StudentReaderQueue.pop(i);
 				// 遍历当前list

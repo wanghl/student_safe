@@ -34,6 +34,8 @@ public class Constants {
 	public static final String CHECK_MESSAGE_SEND_TIME = "check_message_send_time";
 	public static final String MESSAGE_BETWEEN_TIME = "message_between_time";
 	
+	public static final String SEND_READER_ERROR_MESSAGE = "send_reader_error_message";
+	
 	public static final String RECEIVE_MO = "receive_mo" ;
 	
 	///.-------------------------------------------------------
@@ -45,7 +47,11 @@ public class Constants {
 	public static final String MESSAGE_TYPE_BULLETIN = "4"; 	//通知公告
 	public static final int  MESSAGE_TYPE_MO = 5; 	//手机回复短信 （家长回复)
 	
+	public static final String SEND_NETWORK_ERROR_MESSAGE = "send_network_error_message";//网络连接异常短信通知
 	
+	public static final String SEND_SOCKET_OPENED_MESSAGE = "send_socket_opened_message";//网络连接异常短信通知
+
+	public static final String BLACK_LIST = "black_list";
 	
 	
 

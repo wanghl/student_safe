@@ -52,6 +52,7 @@ public class ProcessQueueData {
 				{
 					saveStudentTimeBook(s,student);
 					sender.sendMessage(student, s);
+					return ;
 				}
 				//setup2 如果本次进出方向和上次不同，直接发短信
 				if (! tbk.getEvent().equals(s.getEvent()))

@@ -1,4 +1,4 @@
-package com.zephyr.studentsafe.socket;
+package com.zephyr.studentsafe.mina;
 
 import java.io.BufferedReader;
 import java.io.IOException;

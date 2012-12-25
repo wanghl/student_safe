@@ -7,6 +7,10 @@ import java.util.Set;
 import com.zephyr.studentsafe.bo.MonitorData;
 import com.zephyr.studentsafe.bo.StudentExt;
 
+/**
+ * @author Administrator
+ * 存放连接到服务器的通讯箱IP地址 及其对应学校当天的进出校人数
+ */
 public class MonitorDataPool {
 	
 	private static Map<String,MonitorData> map = new HashMap<String,MonitorData>();
@@ -32,12 +36,24 @@ public class MonitorDataPool {
 		}
 	}
 	
+	public static synchronized void addReceivedDataLength(String key,float length) 
+	{
+		MonitorData data = map.get(key);
+		data.addReceiveDataLength(length);
+		map.put(key, data);
+	}
+	
 	public static synchronized MonitorData getMonitorData(String key){
 		return map.get(key);
 	}
 	
 	public static synchronized Set getKeySet(){
 		return map.keySet() ;
+	}
+	
+	public static void pop(String key)
+	{
+		map.remove(key);
 	}
 	
 	

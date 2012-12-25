@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bootstrap, from Twitter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+</style>
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+	href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+	href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+	href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+	href="assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> <a class="brand" href="#">紫枫平安通校园安全平台集中处理数据监控</a>
+				<div class="nav-collapse collapse">
+					<#if Session.user?exists>
+					<div class="btn-group pull-right">
+
+						<button class="btn">
+							<i class="icon-user"></i>${Session.user}
+						</button>
+						<button class="btn dropdown-toggle" data-toggle="dropdown">
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="/student_safe/logoff">退出</a></li>
+						</ul>
+					</div>
+					<#else>
+					<form class="navbar-form pull-right" method="post"
+						action="/student_safe/login">
+						<input name="username" type="text" class="input-small"
+							placeholder="用户名"> <input name="password" type="password"
+							class="input-small" placeholder="密码">
+						<button type="submit" class="btn">登录</button>
+					</form>
+					</#if>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<div class="well sidebar-nav">
+					<ul class="nav nav-tabs nav-stacked">
+						<li class="nav-header">系统信息</li>
+						<li><a href="/student_safe/job"><i class="icon-home"></i>基本信息</span></a></li>
+						<li class="active"><a href="/student_safe/param"><i
+								class="icon-pencil"></i>参数设置</span></a></li>
+						<li><a href="/student_safe/blacklist"><i
+								class="icon-list-alt"></i>IP地址黑名单</span></a></li>
+					</ul>
+				</div>
+				<!--/.well -->
+			</div>
+			<!--/span-->
+			<div class="span10">
+				<div class="hero-unit">
+				<#if Session.user?exists >
+				 <div class="alert alert-info" >
+				 	<strong>注意：以下配置修改后即刻生效!</strong>
+				 </div>
+				 </#if>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>键</th>
+								<th>值</th>
+								<#if Session.user?exists ><th>操作</th></#if>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><#list data as map>
+							<tr>
+								<td>${map.key}</td>
+								<td>${map.value}</td>
+								<#if Session.user?exists >
+								<td>
+									<button id="${map.id}btn" href="#" class="btn btn-warning">编辑</button>
+								</td>
+								</#if>
+							</tr>
+							<div class="modal hide fade" id="${map.id}Modal">
+							  <form method="post" action="/student_safe/param?key=${map.id}" >
+								<div class="modal-header">
+									<a class="close" data-dismiss="modal">×</a>
+									<h5>${map.desc}</h5>
+								</div>
+								<div class="modal-body">
+									<input name="${map.id}"  type="text" class="span3" placeholder="输入修改的值">
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn " data-dismiss="modal">关闭</a>
+									 <button type="submit" class="btn btn-primary">保存更新</a>
+								</div>
+								</form>
+							</div>
+							<script type="text/javascript">
+								$("#${map.id}btn").click(function() {
+
+									$('#${map.id}Modal').modal({
+										backdrop : false,
+										keyboard : true,
+										show : true
+									});
+
+								});
+							</script>
+							</#list>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<!--/span-->
+		</div>
+		<!--/row-->
+
+		<hr>
+
+		<footer>
+			<p>&copy; Company 2012</p>
+		</footer>
+
+
+
+	</div>
+	<!--/.fluid-container-->
+
+
+
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap-transition.js"></script>
+	<script src="assets/js/bootstrap-alert.js"></script>
+	<script src="assets/js/bootstrap-modal.js"></script>
+	<script src="assets/js/bootstrap-dropdown.js"></script>
+	<script src="assets/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/js/bootstrap-tab.js"></script>
+	<script src="assets/js/bootstrap-tooltip.js"></script>
+	<script src="assets/js/bootstrap-popover.js"></script>
+	<script src="assets/js/bootstrap-button.js"></script>
+	<script src="assets/js/bootstrap-collapse.js"></script>
+	<script src="assets/js/bootstrap-carousel.js"></script>
+	<script src="assets/js/bootstrap-typeahead.js"></script>
+
+</body>
+</html>
